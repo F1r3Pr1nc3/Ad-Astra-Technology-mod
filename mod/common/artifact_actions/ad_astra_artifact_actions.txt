@@ -1,0 +1,32 @@
+@minor_artifact_decision_cost = 100 # 2 < v3.7
+@minor_artifact_decision_duration = 3600
+
+# Shard Autopsy
+artifact_shard_autopsy = {
+	resources = {
+		category = artifact_actions
+		cost = {
+			minor_artifacts = 1000
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	potential = {
+		has_relic = r_rubricator
+		NOR = {
+			has_country_flag = shard_autopsy_complete
+			has_technology = tech_dragon_armor
+		}
+	}
+
+	effect = {
+	custom_tooltip = artifact_shard_autopsy_effect
+		hidden_effect = {
+			add_research_option = tech_dragon_armor
+			set_country_flag = shard_autopsy_complete
+		}
+	}
+}

@@ -1,0 +1,476 @@
+# ##################
+# AD ASTRA NORMAL BUILDINGS TECHNOLOGIES
+# ##################
+# Unified Research Hives
+tech_unified_research_hives = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_basic_science_lab_3"
+		"tech_space_science_3"
+		"tech_sensors_4"
+		"tech_self_aware_logic"
+		"tech_power_hub_2"
+		"tech_combat_computers_3"
+		"tech_power_plant_4"
+		"tech_colonization_4"
+		"tech_advanced_metallurgy_2"
+		"tech_mine_dark_matter"
+		"tech_zero_point_power"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+######################################################
+# The Infinity Network
+tech_the_infinity_network_hive = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_unified_research_hives"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_hive_empire = yes }
+	modifier = { job_cynosural_drone_hive_mind_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Streamlined Mega-Production
+tech_streamlined_megaproduction_hive = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_construction_templates"
+		"tech_space_defense_station_improvement"
+		"tech_space_mining_4"
+		"tech_mineral_purification_2"
+		"tech_mining_3"
+		"tech_ship_armor_4"
+		"tech_collective_production_methods"
+		"tech_alloys_2"
+		"tech_self_aware_logic"
+		"tech_mass_drivers_4"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_gestalt = no }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+	}
+}
+
+#############################################################################
+# Starlifting Operations
+tech_starlift_operations_hive = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_streamlined_megaproduction_hive"
+		"tech_space_mining_5"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_hive_empire = yes }
+	modifier = { job_starlift_drone_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Adaptive Hive Networks
+tech_adaptive_hive_networks = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_nutrient_replication"
+		"tech_food_processing_2"
+		"tech_colonization_5"
+		"tech_galactic_administration"
+		"tech_galactic_bureaucracy"
+		"tech_colonization_4"
+		"tech_basic_science_lab_3"
+		"tech_self_aware_logic"
+		"tech_hive_confluence"
+		"tech_adaptive_bureaucracy"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	modifier = { job_macro_synapse_drone_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+#############################################################################
+# Adaptive Hive Cores
+tech_adaptive_hive_cores = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_adaptive_hive_networks"
+		"tech_climate_restoration"
+		"tech_gene_expressions"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Synaptic Beacons
+tech_synaptic_beacons = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_hive_confluence"
+		"tech_autocurating_vault"
+		"tech_galactic_administration"
+		"tech_autonomous_agents"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#############################################################################
+# Synaptic Hive Core
+tech_synaptic_hive_core = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_synaptic_beacons"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#######################################################################################################
+#######################################################################################################
+# Militarized Colonies
+tech_war_hives = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_global_defense_grid"
+		"tech_combat_training"
+		"tech_command_matrix"
+		"tech_galactic_administration"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	modifier = { job_warmind_drone_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Adaptive War Hives
+tech_adaptive_war_hives = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = { "tech_war_hives" }
+	weight = @tier5weight2
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = {
+				any_owned_planet = {
+					OR = {
+						merg_is_arcology = yes
+						merg_is_hive_world = yes
+					}
+				}
+				has_ascension_perk = ap_hive_worlds
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# World-Scale War Hives
+tech_world_scale_war_hives = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = {
+		"tech_war_hives"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight2
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Orbital War Hives
+tech_orbital_war_hives = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_war_hives"
+		"tech_habitat_1"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Dread Hive Mutations
+tech_dread_hive_mutations = {
+	area = society
+	category = { biology }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_war_hives"
+		"tech_gene_expressions"
+		"tech_gene_seed_purification"
+		"tech_gene_banks"
+		"tech_morphogenetic_field_mastery"
+	}
+	weight = @tier5weight1
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+		}
+	}
+}
+
+#######################################################################################
+# Xenodraconian Mutations
+tech_xenodraconian_mutations = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_war_hives"
+		"tech_gene_expressions"
+		"tech_gene_seed_purification"
+		"tech_gene_banks"
+		"tech_dragon_armor"
+	}
+	weight = @tier5weight3
+	is_rare = yes
+	potential = { is_hive_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOT = { has_tradition = tr_genetics_resequencing }
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}

@@ -1,0 +1,259 @@
+#################################
+## Ad Astra Technology Access
+#################################
+### The purpose of these events is simple - research a technology and another bonus technology gets added. Simple as that. This allows a complete disconnected
+### Of Ad Astra technology from the standard research trees - putting it one major step closer to becoming completely free-standing. This is critical for
+### Future purposes.
+namespace = adastratech
+
+country_event = {
+	id = adastratech.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		# is_country_type_with_subjects = yes needless as this event fires mainly exact for these
+		NOT = { has_country_flag = no_ad_astra_master_tech }
+	}
+	immediate = {
+		# Switch does not work still in v3.14
+		if		= { limit = { last_increased_tech = tech_strike_craft_1			NOT = { has_technology = tech_strike_craft_1_mastery } }				give_technology = { tech = tech_strike_craft_1_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_strike_craft_2			NOT = { has_technology = tech_strike_craft_2_mastery } }				give_technology = { tech = tech_strike_craft_2_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_strike_craft_3			NOT = { has_technology = tech_strike_craft_3_mastery } }				give_technology = { tech = tech_strike_craft_3_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_crystal_armor_1		NOT = { has_technology = tech_crystal_armor_1_mastery } }				give_technology = { tech = tech_crystal_armor_1_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_crystal_armor_2		NOT = { has_technology = tech_crystal_armor_2_mastery } }				give_technology = { tech = tech_crystal_armor_2_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_powered_exoskeletons	NOT = { has_technology = tech_powered_exoskeletons_mastery } }			give_technology = { tech = tech_powered_exoskeletons_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_robotic_workers		NOT = { has_technology = tech_robotic_workers_mastery } }				give_technology = { tech = tech_robotic_workers_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_droid_workers			NOT = { has_technology = tech_droid_workers_mastery } }					give_technology = { tech = tech_droid_workers_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_synthetic_workers		NOT = { has_technology = tech_synthetic_workers_mastery } }				give_technology = { tech = tech_synthetic_workers_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_swarmer_missiles_1		NOT = { has_technology = tech_swarmer_missiles_1_mastery } }			give_technology = { tech = tech_swarmer_missiles_1_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_automated_exploration	NOT = { has_technology = tech_automated_exploration_mastery } }			give_technology = { tech = tech_automated_exploration_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_sapient_ai				NOT = { has_technology = tech_sapient_ai_mastery } }					give_technology = { tech = tech_sapient_ai_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_synchronized_defences	NOT = { has_technology = tech_synchronized_defences_mastery } }			give_technology = { tech = tech_synchronized_defences_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_planetary_shield_generator NOT = { has_technology = tech_planetary_shield_generator_mastery } } give_technology = { tech = tech_planetary_shield_generator_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_lasers_2				NOT = { has_technology = tech_lasers_2_mastery } }						give_technology = { tech = tech_lasers_2_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_mining_drone_weapon_1	NOT = { has_technology = tech_mining_drone_weapon_1_mastery } }			give_technology = { tech = tech_mining_drone_weapon_1_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_space_cloud_weapon_1	NOT = { has_technology = tech_space_cloud_weapon_1_mastery } }			give_technology = { tech = tech_space_cloud_weapon_1_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_genome_mapping			NOT = { has_technology = tech_genome_mapping_mastery } }				give_technology = { tech = tech_genome_mapping_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_cloning				NOT = { has_technology = tech_cloning_mastery } }						give_technology = { tech = tech_cloning_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_gene_banks				NOT = { has_technology = tech_gene_banks_mastery } }					give_technology = { tech = tech_gene_banks_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_regenerative_hull_tissue NOT = { has_technology = tech_regenerative_hull_tissue_mastery } }	give_technology = { tech = tech_regenerative_hull_tissue_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_doctrine_fleet_size_5	NOT = { has_technology = tech_doctrine_fleet_size_5_mastery } }			give_technology = { tech = tech_doctrine_fleet_size_5_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		else_if = { limit = { last_increased_tech = tech_space_whale_weapon_1	NOT = { has_technology = tech_space_whale_weapon_1_mastery } }			give_technology = { tech = tech_space_whale_weapon_1_mastery } set_timed_country_flag = { flag = no_ad_astra_master_tech days = 1 } }
+		# Fallback for some reason
+		if = { limit = { has_country_flag = no_ad_astra_master_tech }
+			country_event = { id = adastratech.2 days = 1 }
+		}
+	}
+}
+
+# on_single_player_save_game_load (just for better savegame compat.)
+event = {
+	id = adastratech.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			if = { limit = { is_country_type_with_subjects = yes }
+				country_event = { id = adastratech.2 scopes = { from = this } }
+				country_event = { id = adastratech.26 } # is_fallen_empire
+			} else = {
+				country_event = { id = adastratech.29  } # origin_post_apocalyptic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = adastratech.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = from
+	}
+	immediate = {
+		from = {
+			if = { limit = { NOT = { is_variable_set = tech_progress_factor } }
+				if = { limit = { is_ai = yes }
+					set_variable = { which = tech_progress_factor value = 1 }
+					subtract_variable = { which = tech_progress_factor value = event_target:global_event_country.tech_progress_factor }
+				} else = {
+					set_variable = { which = tech_progress_factor value = event_target:global_event_country.tech_progress_factor }
+				}
+			}
+
+			if		= { limit = { has_technology = tech_strike_craft_1				NOT = { has_technology = tech_strike_craft_1_mastery } }				add_research_option = tech_strike_craft_1_mastery				add_tech_progress = { tech = tech_strike_craft_1_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_strike_craft_2				NOT = { has_technology = tech_strike_craft_2_mastery } }				add_research_option = tech_strike_craft_2_mastery				add_tech_progress = { tech = tech_strike_craft_2_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_strike_craft_3				NOT = { has_technology = tech_strike_craft_3_mastery } }				add_research_option = tech_strike_craft_3_mastery				add_tech_progress = { tech = tech_strike_craft_3_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_crystal_armor_1				NOT = { has_technology = tech_crystal_armor_1_mastery } }				add_research_option = tech_crystal_armor_1_mastery				add_tech_progress = { tech = tech_crystal_armor_1_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_crystal_armor_2				NOT = { has_technology = tech_crystal_armor_2_mastery } }				add_research_option = tech_crystal_armor_2_mastery				add_tech_progress = { tech = tech_crystal_armor_2_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_powered_exoskeletons		NOT = { has_technology = tech_powered_exoskeletons_mastery } }			add_research_option = tech_powered_exoskeletons_mastery			add_tech_progress = { tech = tech_powered_exoskeletons_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_robotic_workers				NOT = { has_technology = tech_robotic_workers_mastery } }				add_research_option = tech_robotic_workers_mastery				add_tech_progress = { tech = tech_robotic_workers_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_droid_workers				NOT = { has_technology = tech_droid_workers_mastery } }					add_research_option = tech_droid_workers_mastery				add_tech_progress = { tech = tech_droid_workers_mastery					progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_synthetic_workers			NOT = { has_technology = tech_synthetic_workers_mastery } }				add_research_option = tech_synthetic_workers_mastery			add_tech_progress = { tech = tech_synthetic_workers_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_swarmer_missiles_1			NOT = { has_technology = tech_swarmer_missiles_1_mastery } }			add_research_option = tech_swarmer_missiles_1_mastery			add_tech_progress = { tech = tech_swarmer_missiles_1_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_automated_exploration		NOT = { has_technology = tech_automated_exploration_mastery } }			add_research_option = tech_automated_exploration_mastery		add_tech_progress = { tech = tech_automated_exploration_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_sapient_ai					NOT = { has_technology = tech_sapient_ai_mastery } }					add_research_option = tech_sapient_ai_mastery					add_tech_progress = { tech = tech_sapient_ai_mastery					progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_synchronized_defences		NOT = { has_technology = tech_synchronized_defences_mastery } }			add_research_option = tech_synchronized_defences_mastery		add_tech_progress = { tech = tech_synchronized_defences_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_planetary_shield_generator	NOT = { has_technology = tech_planetary_shield_generator_mastery } }	add_research_option = tech_planetary_shield_generator_mastery	add_tech_progress = { tech = tech_planetary_shield_generator_mastery	progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_lasers_2					NOT = { has_technology = tech_lasers_2_mastery } }						add_research_option = tech_lasers_2_mastery						add_tech_progress = { tech = tech_lasers_2_mastery						progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_mining_drone_weapon_1		NOT = { has_technology = tech_mining_drone_weapon_1_mastery } }			add_research_option = tech_mining_drone_weapon_1_mastery		add_tech_progress = { tech = tech_mining_drone_weapon_1_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_space_cloud_weapon_1		NOT = { has_technology = tech_space_cloud_weapon_1_mastery } }			add_research_option = tech_space_cloud_weapon_1_mastery			add_tech_progress = { tech = tech_space_cloud_weapon_1_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_genome_mapping				NOT = { has_technology = tech_genome_mapping_mastery } }				add_research_option = tech_genome_mapping_mastery				add_tech_progress = { tech = tech_genome_mapping_mastery				progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_cloning						NOT = { has_technology = tech_cloning_mastery } }						add_research_option = tech_cloning_mastery						add_tech_progress = { tech = tech_cloning_mastery						progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_gene_banks					NOT = { has_technology = tech_gene_banks_mastery } }					add_research_option = tech_gene_banks_mastery					add_tech_progress = { tech = tech_gene_banks_mastery					progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_regenerative_hull_tissue 	NOT = { has_technology = tech_regenerative_hull_tissue_mastery } }		add_research_option = tech_regenerative_hull_tissue_mastery		add_tech_progress = { tech = tech_regenerative_hull_tissue_mastery		progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_doctrine_fleet_size_5		NOT = { has_technology = tech_doctrine_fleet_size_5_mastery } }			add_research_option = tech_doctrine_fleet_size_5_mastery		add_tech_progress = { tech = tech_doctrine_fleet_size_5_mastery			progress = tech_progress_factor } }
+			else_if = { limit = { has_technology = tech_space_whale_weapon_1		NOT = { has_technology = tech_space_whale_weapon_1_mastery } }			add_research_option = tech_space_whale_weapon_1_mastery			add_tech_progress = { tech = tech_space_whale_weapon_1_mastery			progress = tech_progress_factor } }
+			# else_if = { # For performance reason, set final flag!?
+			# 	limit = {
+			# 		has_technology = tech_space_whale_weapon_1_mastery
+			# 		has_technology = tech_strike_craft_2_mastery
+			# 		has_technology = tech_strike_craft_3_mastery
+			# 		has_technology = tech_crystal_armor_1_mastery
+			# 		has_technology = tech_crystal_armor_2_mastery
+			# 		has_technology = tech_powered_exoskeletons_mastery
+			# 		has_technology = tech_robotic_workers_mastery
+			# 		has_technology = tech_droid_workers_mastery
+			# 		has_technology = tech_synthetic_workers_mastery
+			# 		has_technology = tech_swarmer_missiles_1_mastery
+			# 		has_technology = tech_automated_exploration_mastery
+			# 		has_technology = tech_sapient_ai_mastery
+			# 		has_technology = tech_synchronized_defences_mastery
+			# 		has_technology = tech_planetary_shield_generator_mastery
+			# 		has_technology = tech_lasers_2_mastery
+			# 		has_technology = tech_mining_drone_weapon_1_mastery
+			# 		has_technology = tech_space_cloud_weapon_1_mastery
+			# 		has_technology = tech_genome_mapping_mastery
+			# 		has_technology = tech_cloning_mastery
+			# 		has_technology = tech_gene_banks_mastery
+			# 		has_technology = tech_regenerative_hull_tissue_mastery
+			# 		has_technology = tech_doctrine_fleet_size_5_mastery
+			# 		has_technology = tech_space_whale_weapon_1_mastery
+			# 	}
+			# 	set_country_flag = no_ad_astra_master_tech
+			# 	clear_variable = tech_progress_factor
+			# }
+		}
+	}
+}
+
+# Capital changed (just to be more safe)
+planet_event = {
+	id = adastratech.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = from # Not on game start (because too early?)
+		exists = owner
+	}
+	immediate = {
+		owner = {
+			if = { limit = { NOT = { has_country_flag = no_ad_astra_master_tech } }
+				country_event = { id = adastratech.2 days = 1 scopes = { from = this } }
+			}
+		}
+	}
+}
+
+# The progress should be var depending on game difficulty and AI
+event = {
+	id = adastratech.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = { limit = { NOT = { exists = event_target:global_event_country } }
+			random_country = { # Should be superfluous and not possible.
+				limit = { is_country_type = global_event }
+				save_global_event_target_as = global_event_country
+			}
+		}
+		event_target:global_event_country = {
+			if = { limit = { NOT = { is_variable_set = tech_progress_factor } }
+				switch = { trigger = is_difficulty
+					0 = { set_variable = { which = tech_progress_factor value = 1.00 } }
+					1 = { set_variable = { which = tech_progress_factor value = 0.99 } }
+					2 = { set_variable = { which = tech_progress_factor value = 0.75 } }
+					3 = { set_variable = { which = tech_progress_factor value = 0.50 } }
+					4 = { set_variable = { which = tech_progress_factor value = 0.25 } }
+					5 = { set_variable = { which = tech_progress_factor value = 0.01 } }
+					default = { set_variable = { which = tech_progress_factor value = 0 } }
+				}
+			}
+		}
+	}
+}
+
+###########################################################################
+### Shoddy Engineering (DEBUFF - Pirate Balancing)
+country_event = {
+	id = adastratech.25
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_pirate_country = yes
+		NOR = {
+			is_country_type = marauder_raiders
+			is_country_type = awakened_marauders
+			is_gestalt = yes
+			has_technology = tech_shoddy_engineering
+		}
+	}
+	immediate = {
+		if = { limit = { is_difficulty <= 3 }
+			set_timed_country_flag = { flag = no_ad_astra_master_tech days = 2 }
+			give_technology = { tech = tech_shoddy_engineering }
+		}
+	}
+}
+
+### The Path Onwards High
+country_event = {
+	id = adastratech.26
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_fallen_empire = yes
+		NOR = {
+			has_technology = tech_aegis_forge
+			has_technology = tech_atomic_forge
+			has_technology = tech_celestial_paradise
+			has_technology = tech_cynosural_singularity
+			has_technology = tech_world_engine
+		}
+	}
+	immediate = {
+		add_research_option = tech_aegis_forge
+		add_research_option = tech_atomic_forge
+		add_research_option = tech_celestial_paradise
+		add_research_option = tech_cynosural_singularity
+		add_research_option = tech_world_engine
+	}
+}
+
+### Old Enemies Clash Again
+country_event = {
+	id = adastratech.28
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		end_game_years_passed > 0
+		is_endgame_crisis = yes
+		NOT = { has_technology = tech_old_enemies }
+	}
+	immediate = {
+		give_technology = { tech = tech_old_enemies }
+	}
+}
+
+##################################################################################################################
+### Tomb World Technologies
+country_event = {
+	id = adastratech.29
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_apocalyptic_empire = yes
+		NOT = { has_technology = tech_localized_paraterraforming }
+	}
+	immediate = { add_research_option = tech_localized_paraterraforming }
+}

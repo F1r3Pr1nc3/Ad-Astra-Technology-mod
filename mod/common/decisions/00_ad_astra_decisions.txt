@@ -1,0 +1,265 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+# HIT-THE-DECK Decision
+decision_emergency_shelter_directives = {
+	owned_planets_only = yes
+	sound = event_air_raid_siren
+	icon = decision_expel_population
+
+	prerequisites = { "tech_emergency_shelter_directives" }
+
+	enactment_time = 14
+	resources = {
+		category = decisions
+		cost = { energy = 500 }
+	}
+
+	potential = {
+		NOT = { has_modifier = planet_retreated_populace }
+	}
+
+	effect = {
+		add_modifier = { modifier = "planet_retreated_populace" }
+	}
+
+	ai_weight = {
+		weight = 1
+
+		modifier = {
+			factor = 5000
+			has_orbital_bombardment = yes
+		}
+
+		modifier = {
+			factor = 0
+			has_orbital_bombardment = no
+		}
+	}
+}
+
+# ALL-CLEAR Decision
+decision_end_emergency_shelter_directives = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	enactment_time = 14
+	resources = { category = decisions }
+
+	potential = { has_modifier = planet_retreated_populace }
+
+	effect = {
+		hidden_effect = { remove_modifier = planet_retreated_populace }
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 5000
+			has_orbital_bombardment = no
+		}
+
+		modifier = {
+			factor = 0
+			has_orbital_bombardment = yes
+		}
+	}
+}
+
+#######################################################################################################
+
+# Dome Constructions
+decision_dome_constructions = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_dome_constructions
+
+	enactment_time = 365
+	prerequisites = { "tech_localized_paraterraforming" }
+
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				num_districts = { type = any value < 5 }
+			}
+			energy = 200
+			minerals = 200
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 5 }
+				num_districts = { type = any value < 10 }
+			}
+			energy = 300
+			minerals = 300
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 10 }
+				num_districts = { type = any value < 15 }
+			}
+			energy = 400
+			minerals = 400
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 15 }
+				num_districts = { type = any value < 20 }
+			}
+			energy = 500
+			minerals = 500
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 20 }
+				num_districts = { type = any value < 25 }
+			}
+			energy = 600
+			minerals = 600
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 25 }
+				num_districts = { type = any value < 30 }
+				num_districts = { type = any value >= 30 }
+			}
+			energy = 700
+			minerals = 700
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_modifier = planet_domed_districts
+			is_planet_class = pc_gaia
+			merg_is_machine_world = yes
+			merg_is_hive_world = yes
+			merg_is_arcology = yes
+		}
+		habitable_structure = no
+	}
+
+	effect = {
+		add_modifier = { modifier = "planet_domed_districts" }
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_housing < 1
+		}
+
+		modifier = {
+			factor = 0
+			free_housing < 1
+		}
+	}
+}
+
+# Dome Deconstructions
+decision_dome_deconstructions = {
+	owned_planets_only = yes
+	icon = decision_dome_constructions
+
+	enactment_time = 365
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				num_districts = { type = any value < 5 }
+			}
+			energy = 150
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 5 }
+				num_districts = { type = any value < 10 }
+			}
+			energy = 200
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 10 }
+				num_districts = { type = any value < 15 }
+			}
+			energy = 250
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 15 }
+				num_districts = { type = any value < 20 }
+			}
+			energy = 300
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 20 }
+				num_districts = { type = any value < 25 }
+			}
+			energy = 350
+		}
+		cost = {
+			trigger = {
+				num_districts = { type = any value >= 25 }
+				num_districts = { type = any value < 30 }
+				num_districts = { type = any value >= 30 }
+			}
+			energy = 400
+		}
+
+		# Recycled Materials
+
+		produces = {
+			trigger = {
+				num_districts = { type = any value < 5 }
+			}
+			minerals = 50
+		}
+		produces = {
+			trigger = {
+				num_districts = { type = any value >= 5 }
+				num_districts = { type = any value < 10 }
+			}
+			minerals = 100
+		}
+		produces = {
+			trigger = {
+				num_districts = { type = any value >= 10 }
+				num_districts = { type = any value < 15 }
+			}
+			minerals = 150
+		}
+		produces = {
+			trigger = {
+				num_districts = { type = any value >= 15 }
+				num_districts = { type = any value < 20 }
+			}
+			minerals = 200
+		}
+		produces = {
+			trigger = {
+				num_districts = { type = any value >= 20 }
+				num_districts = { type = any value < 25 }
+			}
+			minerals = 250
+		}
+		produces = {
+			trigger = {
+				num_districts = { type = any value >= 25 }
+				num_districts = { type = any value < 30 }
+				num_districts = { type = any value >= 30 }
+			}
+			minerals = 300
+		}
+	}
+
+	potential = { has_modifier = planet_domed_districts }
+
+	effect = { remove_modifier = planet_domed_districts }
+
+	ai_weight = { weight = 0 }
+}

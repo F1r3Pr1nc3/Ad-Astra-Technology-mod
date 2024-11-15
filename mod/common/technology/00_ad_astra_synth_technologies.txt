@@ -1,0 +1,105 @@
+####################################################################################
+######										  ####################################
+#####		 AD ASTRA TECHNOLOGIES				   ##############################
+######										   ###################################
+####################################################################################
+# Nanite Assemblers
+tech_nanite_assemblers_mastery = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	weight = @tier1weight1
+	prerequisites = { "tech_nanite_assemblers" }
+	modifier = {
+		planet_building_build_speed_mult = 0.05
+		starbase_shipyard_build_speed_mult = 0.05
+		country_ship_upgrade_cost_mult = -0.05
+		planet_pop_assembly_mult = 0.05
+		planet_pops_consumer_goods_upkeep_mult = -0.05
+	}
+}
+
+# Bionic Material Engineering
+tech_bionic_material_engineering = {
+	cost = @tier4cost2
+	area = society
+	category = { biology }
+	tier = 4
+	is_rare = yes
+	prerequisites = { "tech_biomechanics" "tech_colonization_4" }
+	weight = @tier4cost2
+	potential = { is_machine_empire = yes }
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+		MACHINE_species_trait_points_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 0.1
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+		# modifier = { factor = 1.5 research_leader = { area = society has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = society has_level > 3 } } }
+	}
+	ai_weight = {
+		factor = 3		# Rare tech
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+# Living Matter Theorem  (Living Cybernetics Equivalent)
+# @tech_living_matter_theorem_megaproject_POINTS = 1
+tech_living_matter_theorem = {
+	cost = @tier4cost2
+	area = society
+	category = { biology }
+	tier = 4
+	is_rare = yes
+	prerequisites = {
+		"tech_colonization_4"
+		"tech_mine_living_metal"
+		"tech_regenerative_hull_tissue"
+		"tech_advanced_metallurgy_2"
+	}
+	weight = @tier4cost2
+	potential = { is_machine_empire = yes }
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+		MACHINE_species_trait_points_add = 1
+		description = tech_living_matter_theorem_megaproject_modifier_desc
+		description_parameters = {
+			POINTS = 1			# @tech_living_matter_theorem_megaproject_POINTS
+		}
+		BIOLOGICAL_species_trait_points_add = 1		# @tech_living_matter_theorem_megaproject_POINTS
+	}
+	weight_modifier = {
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 0.1
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+		# modifier = { factor = 1.5 research_leader = { area = society has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = society has_level > 3 } } }
+	}
+	ai_weight = {
+		factor = 3		# Rare tech
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}

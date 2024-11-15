@@ -1,0 +1,311 @@
+#############################
+### AD ASTRA TECHNOLOGIES ###
+#############################
+# These technologies are only available if their primary origin technologies are researched.
+# As such, they have no weight or cost. They simply unlock and that's it. This also allows Ad Astra to become
+# Completely stand-alone. Which is a really, really, really good thing.
+
+# Nutrient Replicators
+tech_nutrient_replication_mastery = {
+	cost = @tier2cost3
+	area = society
+	tier = 3
+	is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_nutrient_replication" }
+	weight = @tier1weight3
+
+	modifier = {
+		planet_building_build_speed_mult = 0.05
+		starbase_shipyard_build_speed_mult = 0.05
+		country_ship_upgrade_cost_mult = -0.05
+		planet_pop_assembly_mult = 0.05
+		planet_pops_consumer_goods_upkeep_mult = -0.05
+	}
+}
+
+#######################################################################
+
+# Genome Mapping
+tech_genome_mapping_mastery = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_genome_mapping" }
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	modifier = {
+		army_health = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+	}
+}
+
+# Cloning
+tech_cloning_mastery = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_cloning" }
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	modifier = {
+		leader_lifespan_add = 5
+		army_health = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+	}
+}
+
+# Gene Banks
+tech_gene_banks_mastery = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { biology }
+	is_rare = yes
+	prerequisites = { "tech_gene_banks" }
+
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	modifier = {
+		leader_lifespan_add = 5
+		army_health = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+	}
+}
+
+# Regenerative Hull Tissue
+tech_regenerative_hull_tissue_mastery = {
+	area = society
+	cost = @tier3cost2
+	tier = 3
+	is_rare = yes
+	category = { materials }
+	ai_update_type = military
+	prerequisites = { "tech_regenerative_hull_tissue" }
+
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	modifier = {
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+#####################################################################################
+
+# Centralized Command
+tech_centralized_command_mastery = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_centralized_command" }
+
+	weight = @tier1weight1
+
+	modifier = {
+		army_morale = 0.05
+		army_starting_experience_add = 25
+	}
+}
+
+# Combat Training
+tech_combat_training_mastery = {
+	cost = @tier2cost3
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_combat_training" }
+
+	weight = @tier1weight1
+
+	modifier = {
+		army_morale = 0.10
+		army_starting_experience_add = 25
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+	}
+}
+
+#############################################################################
+
+# Space Warfare Simulations (Tier 1)
+tech_space_warfare_simulations = {
+	area = society
+	cost = @tier1cost1
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight1
+
+	prerequisites = { "tech_doctrine_fleet_size_1" "tech_doctrine_navy_size_1" }
+
+	modifier = {
+		ship_fire_rate_mult = 0.01
+		ship_weapon_range_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		ships_upkeep_mult = -0.01
+		armies_upkeep_mult = -0.01
+		starbases_upkeep_mult = -0.01
+		ship_starting_experience_add = 10
+	}
+}
+
+# Deep Strike Simulations (Tier 2)
+tech_deep_strike_simulations = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier1weight1
+
+	prerequisites = { "tech_doctrine_fleet_size_2" "tech_doctrine_navy_size_2" }
+
+	modifier = {
+		ship_fire_rate_mult = 0.01
+		ship_weapon_range_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		ships_upkeep_mult = -0.01
+		armies_upkeep_mult = -0.01
+		starbases_upkeep_mult = -0.01
+		ship_starting_experience_add = 10
+	}
+}
+
+# Campaign Simulation Systems (Tier 3)
+tech_campaign_simulation_systems = {
+	cost = @tier1cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier1weight1
+
+	prerequisites = { "tech_doctrine_fleet_size_3" "tech_doctrine_navy_size_3" }
+
+	modifier = {
+		ship_fire_rate_mult = 0.01
+		ship_weapon_range_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		ships_upkeep_mult = -0.01
+		armies_upkeep_mult = -0.01
+		starbases_upkeep_mult = -0.01
+		ship_starting_experience_add = 10
+	}
+}
+
+# Independent Operation Standardization (Tier 4)
+tech_independent_operation_standardization = {
+	area = society
+	cost = @tier4cost1
+	tier = 4
+	category = { military_theory }
+	weight = @tier1weight1
+
+	prerequisites = { "tech_doctrine_fleet_size_4" "tech_doctrine_navy_size_4" }
+
+	modifier = {
+		ship_fire_rate_mult = 0.02
+		ship_weapon_range_mult = 0.02
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.02
+		ships_upkeep_mult = -0.01
+		armies_upkeep_mult = -0.01
+		starbases_upkeep_mult = -0.01
+		ship_starting_experience_add = 10
+	}
+}
+
+# Doctrine: Armada Battle Formation
+tech_doctrine_fleet_size_5_mastery = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_5" }
+
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	modifier = {
+		ship_fire_rate_mult = 0.01
+		ship_weapon_range_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		ship_starting_experience_add = 10
+	}
+}
+
+#############################################################################
+# Psionic Theory
+tech_psionic_theory_mastery = {
+	cost = @tier2cost3
+	area = society
+	tier = 3
+	category = { psionics }
+	is_rare = yes
+	prerequisites = { "tech_psionic_theory" }
+
+	weight = @tier1weight1
+	is_reverse_engineerable = no
+
+	modifier = { army_morale = 0.05 }
+}
+
+# Precognition Interface
+tech_precognition_interface_mastery = {
+	cost = @tier4cost2
+	area = society
+	tier = 4
+	category = { psionics }
+	is_rare = yes
+	prerequisites = { "tech_precognition_interface" }
+
+	weight = @tier1weight1
+	is_reverse_engineerable = no
+
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		ship_shield_mult = 0.01
+		weapon_type_kinetic_weapon_damage_mult = 0.01
+		weapon_type_explosive_weapon_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+	}
+}
+
+###################################################################################
+
+tech_psionic_shield_mastery = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield" }
+	weight = @tier1weight1
+	modifier = { army_health = 0.03 shipclass_military_station_hull_mult = 0.03 ship_shield_mult = 0.03 }
+}

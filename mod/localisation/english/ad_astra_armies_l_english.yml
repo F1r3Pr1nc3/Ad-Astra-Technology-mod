@@ -1,0 +1,71 @@
+﻿l_english:
+ ####################################################################################################################################
+ #############                  #####################################################################################################
+ ###########   AD ASTRA ARMIES   ####################################################################################################
+ ############                   #####################################################################################################
+ ####################################################################################################################################
+
+# Mobile Command Vehicle (Normal / Hive)
+ arsenal_command_vehicle:0 "Arsenal Command Vehicle"
+ arsenal_command_vehicle_plural:0 "Arsenal Command Vehicles"
+ arsenal_command_vehicle_desc:0 "Effectively massive mobile fortresses and supercarriers in their own right, each Arsenal Command Vehicle is the heart of a larger battlegroup that surrounds it, serving as the command centre of an entire assault army and able to manufacture entire base facilities and super-heavy vehicle flotillas using local resources as the campaign progresses."
+
+# Mobile Command Vehicle (Machine Empire Unique)
+ arsenal_command_vehicle_synthetic:0 "Arsenal Command Unit"
+ arsenal_command_vehicle_synthetic_plural:0 "Arsenal Command Unit"
+ arsenal_command_vehicle_synthetic_desc:0 "Effectively massive mobile fortresses and supercarriers in their own right, each Arsenal Command Vehicle is the heart of a larger battlegroup that surrounds it, serving as the command centre of an entire assault army and able to manufacture entire base facilities and super-heavy vehicle flotillas using local resources as the campaign progresses."
+
+# Cybernetic Commander (Normal)
+ cybernetic_commander:0 "Cybernetic Commander"
+ cybernetic_commander_plural:0 "Cybernetic Commanders"
+ cybernetic_commander_desc:0 "Towering high above the battlefield below, the Cybernetic Commander is always singular on the battlefield. This colossal unit is able to manufacture, deploy and command gargantuan armies using its integrated fabricator systems – the Commander itself armed with fortress-grade weapons and armoured to match a small starship.\n\nOne Commander can in minutes create a planetary base - within hours, entire armies. Among the empire's forces, they are difficult to rival; the very core of gigantic armies that serve as its extending, all-pulverizing arm."
+
+# Cybernetic Commander (Machine Empire Unique)
+ warform_commander:0 "Warform Commander"
+ warform_commander_plural:0 "Warform Commanders"
+ warform_commander_desc:0 "Towering high above the battlefield below, the Warform Commander is always singular on the battlefield. This colossal unit is able to manufacture, deploy and command gargantuan armies using its integrated fabricator systems - the Commander itself armed with fortress-grade weapons and armoured to match a small starship.\n\nOne Commander can in minutes create a planetary base - within hours, entire armies. Among the empire's forces, they are difficult to rival; the very core of gigantic armies that serve as its extending, all-pulverizing arm."
+
+# Wyrmguard (Genetic)
+ wyrmguard:0 "Wyrmguard"
+ wyrmguard_plural:0 "Wyrmguards"
+ wyrmguard_desc:0 "The Wyrmguard are the companions of the reborn Ether Drakes. Even among the empire's most powerful forces, they are all but peerless - wearing armour moulded after the molecular structure of the Drakes they travel with and wielding the empire's most powerful defensive and offensive technologies.\n\nThe Drakes themselves, their natural weapons and armour aside, are clad in the empire's strongest armour plating and outfitted with its most advanced technology - their bodies bristling with enough point-defence weapons and shield generators to rival corvettes without hindering their movement. Where they roam, the sky and all below belong solely to them."
+
+# Occulari Orders (Psionic)
+ occulari_order:0 "Occulari Order"
+ occulari_order_plural:0 "Occulari Orders"
+ occulari_order_desc:0 "The Occulari are Psi-gifted individuals of such power, that their very presence is in itself a strategic weapon. Able to wield power on a scale that is utterly staggering, with equipment and weapons to match, these individuals fight for their empire for reasons not well understood, yet align with its own intents and goals … at least as far as we are able to tell. To engage them would require more than most armies that can be fielded."
+
+# Omega Fortress (Synthetic)
+ omega_fortress:0 "Omega Fortress"
+ omega_fortress_plural:0 "Omega Fortresses"
+ omega_fortress_desc:0 "A true colossus were there ever to be one and dwarfing even entire pre-FTL cities, the Omega Fortress is the ultimate weapon among this empire's armies, bar none. In effect a single gigantic Commander, the Fortress commands a vast number of sub-commanders and is in itself a gigantic mobile manufacturing facility with a production capability comparable to districts.\n\nThe Fortress itself is encased in ship-grade armour, shields and weapons - the most potent weapon of all wielded by the Fortress aside its gigantic army is the 'Enigmatic Core' which is interlinked to the Commander.\n\nIt is quite simply the Enigmatic Fortress in a much smaller form ... though one proportionally every bit as powerful."
+
+# Omega Fortress (Machine Empire Unique)
+ omega_fortress_synthetic:0 "Omega Fortress"
+ omega_fortress_synthetic_plural:0 "Omega Fortresses"
+ omega_fortress_synthetic_desc:0 "A true colossus were there ever to be one and dwarfing even entire pre-FTL cities, the Omega Fortress is the ultimate weapon among this empire's armies, bar none. In effect a single gigantic Commander, the Fortress commands a vast number of sub-commanders and is in itself a gigantic mobile manufacturing facility with a production capability comparable to districts.\n\nThe Fortress itself is encased in ship-grade armour, shields and weapons - the most potent weapon of all wielded by the Fortress aside its gigantic army is the 'Enigmatic Core' which is interlinked to the Commander.\n\nIt is quite simply the Enigmatic Fortress in a much smaller form ... though one proportionally every bit as powerful."
+
+# Colossi Army
+ colossi_army:0 "Colossi Army"
+ colossi_army_plural:0 "Colossi Armies"
+ colossi_army_desc:0 "More than a mere army of Psionically gifted soldiers, the Colossi are true giants in a literal sense on the battlefield. Towering above normal forces in their Zro-infused mechanized frames, they wield incredible psionic and technological power, though they also require more specialized equipment for deployment, such as their own specialized Arsenal Command Vehicle as a base of operations."
+
+# Xeno Reavers
+ xeno_reavers:0 "Xeno Reavers"
+ xeno_reavers_plural:0 "Xeno Reavers"
+ xeno_reavers_desc:0 "A new and extremely powerful variation of the original Xenomorph, infused with advanced cybernetics, starship hull material bones and a chitin of starship armour alloys. Their bodies are integrated with advanced Anti-Armor weapons and their melee strikes are powerful enough to break through reinforced blast-doors with little issue, while they themselves are virtually impervious to anything short of heavy anti-armour weapons.\n\nThe Reavers are noted to be equipped with a vast myriad of safeguards – voluntarily, apparently – including micro-atomic self-destructs - among other things - as a means to avoid capture. The entire horde is supervised by a cadre of scientists and commanders on the other side of the world in question or from a safe orbital position."
+
+# Augment Forces
+ augment_forces:0 "Augment Force"
+ augment_forces_plural:0 "Augment Forces"
+ augment_forces_desc:0 "Slaves that have undergone some of the most extreme cybernetic and chemical enhancements known to their empire - including complete and unconditional obedience to their masters. Able to carry suicidal forms of weaponry and encased in cheap mass-produced ultra-heavy armor suits, they are incapable of feeling pain or fear but require extensive facilities to mass-produce and most of all, replace after inevitable losses."
+
+# Replicant Arsenal Force
+ replicant_arsenal_force:0 "Replicant Arsenal Force"
+ replicant_arsenal_force_plural:0 "Replicant Arsenal Forces"
+ replicant_arsenal_force_desc:0 "A massive force of vat-grown clones based out of an Arsenal Command Battlegroup. While they suffer the same inherent issues as their more regular forces, these clone forces have the added advantage of making full use of the battlegroup's significant firepower and increased logistical capacity in their campaigns."
+
+# Gene-Vanguard Army
+ gene_vanguard_army:0 "Gene-Vanguard Army"
+ gene_vanguard_army_plural:0 "Gene-Vanguard Armies"
+ gene_vanguard_army_desc:0 "Consists of both regular and Gene-Warrior forces that operate out of an Arsenal Command Battlegroup in varying proportions depending on doctrine and higher-level decisions. The force is as a result far more powerful than a regular Gene-Warrior Army due to its massively increased logistical and military capacity - including super-heavy combat gear and other augmentations."

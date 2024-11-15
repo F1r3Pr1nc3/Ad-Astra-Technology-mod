@@ -1,0 +1,186 @@
+####################################################################################
+######										  ####################################
+#####		 AD ASTRA GUARDIAN TECHNOLOGIES		  ##############################
+######										   ###################################
+####################################################################################
+# Dragon Scale Armor
+tech_dragon_armor_mastery = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @tier5weight3
+	prerequisites = { "tech_dragon_armor" }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_materials } }
+	}
+	modifier = {
+		army_health = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		pop_environment_tolerance = 0.01
+	}
+}
+
+# Enigmatic Encoder
+tech_enigmatic_encoder_mastery = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { computing }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	# is_reverse_engineerable = no
+	prerequisites = { "tech_enigmatic_encoder" }
+	modifier = {
+		army_health = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = physics has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = physics has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = physics has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+# Enigmatic Decoder
+tech_enigmatic_decoder_mastery = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { computing }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	# is_reverse_engineerable = no
+	prerequisites = { "tech_enigmatic_decoder" }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = physics has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = physics has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = physics has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+	modifier = {
+		army_damage_mult = 0.05
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_starbase_damage_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_energy_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.05
+	}
+}
+
+##########################################################################
+# Dragonforged Thermal Recyclers
+tech_drakeforged_thermal_recyclers = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = { industry }
+	ai_update_type = all
+	weight = @tier5weight3
+	potential = {
+		OR = { has_technology = tech_dragon_armor has_relic = r_dragon_trophy }
+	}
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_energy_weapon_fire_rate_mult = 0.05
+		army_damage_mult = 0.05
+		country_energy_produces_mult = 0.05
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+##########################################################################
+# Superior Recycling Systems
+tech_superior_recycling_systems = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = { industry }
+	ai_update_type = all
+	weight = @tier5weight3
+	prerequisites = { "tech_nanite_repair_system" }
+	modifier = {
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		ships_upkeep_mult = -0.05
+		armies_upkeep_mult = -0.1
+		planet_building_refund_mult = 0.1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}

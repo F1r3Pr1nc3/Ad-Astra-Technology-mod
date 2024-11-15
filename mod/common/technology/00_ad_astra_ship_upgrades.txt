@@ -1,0 +1,2065 @@
+##################
+### TECH COSTS ###
+##################
+# If you change any of these, use replace in files so the values are the same across all files
+# ##################
+# CERAMO-METAL HULLS
+# ##################
+# Corvette Ceramo-Metal Hulls
+tech_corvette_hull_1_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_corvette_hull_1" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = { shipsize_corvette_build_speed_mult = -0.02 shipsize_corvette_hull_add = 50 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Destroyer Ceramo-Metal Hulls
+tech_destroyer_hull_1_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_destroyer_hull_1" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = { shipsize_destroyer_build_speed_mult = -0.02 shipsize_destroyer_hull_add = 100 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Cruiser Ceramo-Metal Hulls
+tech_cruiser_hull_1_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_cruiser_hull_1" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = { shipsize_cruiser_build_speed_mult = -0.02 shipsize_cruiser_hull_add = 200 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Battleship Ceramo-Metal Hulls
+tech_battleship_hull_1_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_battleship_hull_1" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = { shipsize_battleship_build_speed_mult = -0.02 shipsize_battleship_hull_add = 400 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Titan Ceramo-Metal Hulls
+tech_titan_hull_1_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_titan_hull_1" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = { shipsize_titan_hull_add = 1000 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Starbase Ceramo-Metal Hulls
+tech_starbase_hull_1_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_defense_platform_hull_1" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = {
+		shipsize_military_station_small_hull_add = 100
+		starbase_upgrade_cost_mult = 0.02
+		starbase_upgrade_speed_mult = -0.02
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+############################################################################################################
+############################################################################################################
+# ##################
+# PLASTEEL HULLS
+# ##################
+# Corvette Plasteel Hulls
+tech_corvette_hull_2_upgrade = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_corvette_hull_1_upgrade" "tech_corvette_hull_1" "tech_ship_armor_3" }
+	weight = @tier2weight3
+	modifier = { shipsize_corvette_build_speed_mult = -0.02 shipsize_corvette_hull_add = 50 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Destroyer Plasteel Hulls
+tech_destroyer_hull_2_upgrade = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_destroyer_hull_1_upgrade" "tech_destroyer_hull_1" "tech_ship_armor_3" }
+	weight = @tier2weight3
+	modifier = { shipsize_destroyer_build_speed_mult = -0.02 shipsize_destroyer_hull_add = 100 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Cruiser Plasteel Hulls
+tech_cruiser_hull_2_upgrade = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_cruiser_hull_1" "tech_cruiser_hull_1_upgrade" "tech_ship_armor_3" }
+	weight = @tier2weight3
+	modifier = { shipsize_cruiser_build_speed_mult = -0.02 shipsize_cruiser_hull_add = 200 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Battleship Plasteel Hulls
+tech_battleship_hull_2_upgrade = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_battleship_hull_1" "tech_battleship_hull_1_upgrade" "tech_ship_armor_3" }
+	weight = @tier2weight3
+	modifier = { shipsize_battleship_build_speed_mult = -0.02 shipsize_battleship_hull_add = 400 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Titan Plasteel Hulls
+tech_titan_hull_2_upgrade = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_titan_hull_1" "tech_titan_hull_1_upgrade" "tech_ship_armor_3" }
+	weight = @tier2weight3
+	modifier = { shipsize_titan_hull_add = 1000 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Starbase Plasteel Hulls
+tech_starbase_hull_2_upgrade = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_hull_1_upgrade" "tech_ship_armor_3" }
+	weight = @tier2weight3
+	modifier = {
+		shipsize_military_station_small_hull_add = 100
+		starbase_upgrade_cost_mult = 0.02
+		starbase_upgrade_speed_mult = -0.02
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+############################################################################################################
+############################################################################################################
+# ##################
+# DURASTEEL HULLS
+# ##################
+# Corvette Durasteel Hulls
+tech_corvette_hull_3_upgrade = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_corvette_hull_2_upgrade" "tech_corvette_hull_1" "tech_ship_armor_4" }
+	weight = @tier3weight2
+	modifier = { shipsize_corvette_build_speed_mult = -0.02 shipsize_corvette_hull_add = 50 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Destroyer Durasteel Hulls
+tech_destroyer_hull_3_upgrade = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_destroyer_hull_2_upgrade" "tech_destroyer_hull_1" "tech_ship_armor_4" }
+	weight = @tier3weight2
+	modifier = { shipsize_destroyer_build_speed_mult = -0.02 shipsize_destroyer_hull_add = 100 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Cruiser Durasteel Hulls
+tech_cruiser_hull_3_upgrade = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_cruiser_hull_1" "tech_cruiser_hull_2_upgrade" "tech_ship_armor_4" }
+	weight = @tier3weight2
+	modifier = { shipsize_cruiser_build_speed_mult = -0.02 shipsize_cruiser_hull_add = 200 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Battleship Durasteel Hulls
+tech_battleship_hull_3_upgrade = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_battleship_hull_1" "tech_battleship_hull_2_upgrade" "tech_ship_armor_4" }
+	weight = @tier3weight2
+	modifier = { shipsize_battleship_build_speed_mult = -0.02 shipsize_battleship_hull_add = 400 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Titan Durasteel Hulls
+tech_titan_hull_3_upgrade = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_titan_hull_1" "tech_titan_hull_2_upgrade" "tech_ship_armor_4" }
+	weight = @tier3weight2
+	modifier = { shipsize_titan_hull_add = 1000 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Starbase Durasteel Hulls
+tech_starbase_hull_3_upgrade = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_hull_2_upgrade" "tech_ship_armor_4" }
+	weight = @tier3weight2
+	modifier = {
+		shipsize_military_station_small_hull_add = 100
+		starbase_upgrade_cost_mult = 0.02
+		starbase_upgrade_speed_mult = -0.02
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+############################################################################################################
+############################################################################################################
+# ##################
+# NEUTRONIUM HULLS
+# ##################
+# Corvette Neutronium Hulls
+tech_corvette_hull_4_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_corvette_hull_3_upgrade" "tech_corvette_hull_2" "tech_ship_armor_5" }
+	weight = @tier4weight1
+	modifier = { shipsize_corvette_build_speed_mult = -0.04 shipsize_corvette_hull_add = 100 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Destroyer Neutronium Hulls
+tech_destroyer_hull_4_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_destroyer_hull_3_upgrade" "tech_destroyer_hull_2" "tech_ship_armor_5" }
+	weight = @tier4weight1
+	modifier = { shipsize_destroyer_build_speed_mult = -0.04 shipsize_destroyer_hull_add = 200 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Cruiser Neutronium Hulls
+tech_cruiser_hull_4_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_cruiser_hull_2" "tech_cruiser_hull_3_upgrade" "tech_ship_armor_5" }
+	weight = @tier4weight1
+	modifier = { shipsize_cruiser_build_speed_mult = -0.04 shipsize_cruiser_hull_add = 400 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Battleship Neutronium Hulls
+tech_battleship_hull_4_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_battleship_hull_2" "tech_battleship_hull_3_upgrade" "tech_ship_armor_5" }
+	weight = @tier4weight1
+	modifier = { shipsize_battleship_build_speed_mult = -0.04 shipsize_battleship_hull_add = 800 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Titan Neutronium Hulls
+tech_titan_hull_4_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_titan_hull_2" "tech_titan_hull_3_upgrade" "tech_ship_armor_5" }
+	weight = @tier4weight1
+	modifier = { shipsize_titan_hull_add = 2000 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Starbase Neutronium Hulls
+tech_starbase_hull_4_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_space_defense_station_improvement" "tech_starbase_hull_3_upgrade" "tech_ship_armor_5" }
+	weight = @tier4weight1
+	modifier = {
+		shipsize_military_station_small_hull_add = 200
+		starbase_upgrade_cost_mult = 0.04
+		starbase_upgrade_speed_mult = -0.04
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+############################################################################################################
+############################################################################################################
+# ##################
+# DRAGONSCALE MATERIALS
+# ##################
+# Dragonforged Corvette Hulls
+tech_corvette_hull_5_upgrade = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_corvette_hull_4_upgrade" "tech_dragon_armor" }
+	weight = @tier4weight3
+	modifier = { shipsize_corvette_build_speed_mult = -0.1 shipsize_corvette_hull_add = 100 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Dragonforged Destroyer Hulls
+tech_destroyer_hull_5_upgrade = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_destroyer_hull_4_upgrade" "tech_dragon_armor" }
+	weight = @tier4weight3
+	modifier = { shipsize_destroyer_build_speed_mult = -0.1 shipsize_destroyer_hull_add = 200 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Dragonforged Cruiser Hulls
+tech_cruiser_hull_5_upgrade = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_cruiser_hull_4_upgrade" "tech_dragon_armor" }
+	weight = @tier4weight3
+	modifier = { shipsize_cruiser_build_speed_mult = -0.1 shipsize_cruiser_hull_add = 400 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Dragonforged Battleship Hulls
+tech_battleship_hull_5_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_battleship_hull_4_upgrade" "tech_dragon_armor" }
+	weight = @tier4weight1
+	modifier = { shipsize_battleship_build_speed_mult = -0.1 shipsize_battleship_hull_add = 800 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Dragonforged Titan Hulls
+tech_titan_hull_5_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_titan_hull_4_upgrade" "tech_dragon_armor" }
+	weight = @tier4weight1
+	modifier = { shipsize_titan_hull_add = 2000 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################
+# Dragonforged Starbase Hulls
+tech_starbase_hull_5_upgrade = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_hull_4_upgrade" "tech_dragon_armor" }
+	weight = @tier4weight1
+	modifier = {
+		shipsize_military_station_small_hull_add = 200
+		starbase_upgrade_cost_mult = 0.10
+		starbase_upgrade_speed_mult = -0.1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#########################################################################################
+#########################################################################################
+############### STRIKE CRAFT AND SHUTTLES ###############################################
+# Ceramo-Metallic Strike and Shuttle Designs (Regular)
+tech_strike_craft_upgrade_1_regular = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_standardized_fusion_grids"
+		"tech_polarized_armour"
+		"tech_standardized_ceramo_metal_materials"
+		"tech_reactor_boosters_2"
+		"tech_strike_craft_1"
+	}
+	weight = @tier2weight1
+	potential = { is_gestalt = no }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		ship_landing_time_mult = -0.05
+		country_admin_cap_add = 5
+		local_trade_protection_add = 1
+		pop_resettlement_cost_mult = -0.01
+		pop_growth_from_immigration = 0.01
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+# Ceramo-Metallic Strike and Shuttle Designs (Gestalt)
+tech_strike_craft_upgrade_1_gestalt = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_standardized_fusion_grids"
+		"tech_polarized_armour"
+		"tech_standardized_ceramo_metal_materials"
+		"tech_reactor_boosters_2"
+		"tech_strike_craft_1"
+	}
+	weight = @tier2weight1
+	potential = { is_gestalt = yes }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		ship_landing_time_mult = -0.05
+		country_admin_cap_add = 5
+		pop_resettlement_cost_mult = -0.01
+		pop_growth_from_immigration = 0.01
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Plasteel Strike Craft Engineering (Regular)
+tech_strike_craft_upgrade_2_regular = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_strike_craft_upgrade_1_regular"
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_strike_craft_2"
+	}
+	weight = @tier2weight3
+	potential = { is_gestalt = no }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		local_trade_protection_add = 1
+		ship_sensor_range_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+# Plasteel Strike Craft Engineering (Gestalt)
+tech_strike_craft_upgrade_2_gestalt = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_strike_craft_upgrade_1_gestalt"
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_strike_craft_2"
+	}
+	weight = @tier2weight3
+	potential = { is_gestalt = yes }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		ship_sensor_range_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Durasteel Strike Craft Engineering (Regular)
+tech_strike_craft_upgrade_3_regular = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = {
+		"tech_strike_craft_upgrade_2_regular"
+		"tech_strike_craft_3"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+	}
+	weight = @tier3weight2
+	potential = { is_gestalt = no }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		local_trade_protection_add = 1
+		ship_sensor_range_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+# Durasteel Strike Craft Engineering (Gestalt)
+tech_strike_craft_upgrade_3_gestalt = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = {
+		"tech_strike_craft_upgrade_2_gestalt"
+		"tech_strike_craft_3"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+	}
+	weight = @tier3weight2
+	potential = { is_gestalt = yes }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		ship_sensor_range_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Neutronium Strike Craft Engineering (Regular)
+tech_strike_craft_upgrade_4_regular = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {
+		"tech_strike_craft_upgrade_3_regular"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	potential = { is_gestalt = no }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		local_trade_protection_add = 2
+		ship_sensor_range_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+# Neutronium Strike Craft Engineering (Gestalt)
+tech_strike_craft_upgrade_4_gestalt = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {
+		"tech_strike_craft_upgrade_3_gestalt"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	potential = { is_gestalt = yes }
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		weapon_type_strike_craft_speed_mult = 0.05
+		local_trade_protection_add = 2
+		ship_sensor_range_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Plasteel Shuttle Engineering
+tech_shuttle_upgrade_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_strike_craft_2"
+	}
+	weight = @tier2weight3
+	potential = {
+		OR = { has_technology = tech_strike_craft_upgrade_1_regular has_technology = tech_strike_craft_upgrade_1_gestalt }
+	}
+	modifier = {
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		ship_landing_time_mult = -0.05
+		country_admin_cap_add = 5
+		pop_resettlement_cost_mult = -0.01
+		pop_growth_from_immigration = 0.01
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Durasteel Shuttle Engineering
+tech_shuttle_upgrade_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = {
+		"tech_shuttle_upgrade_2"
+		"tech_strike_craft_3"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+	}
+	weight = @tier3weight2
+	modifier = {
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		ship_landing_time_mult = -0.05
+		country_admin_cap_add = 5
+		pop_resettlement_cost_mult = -0.01
+		pop_growth_from_immigration = 0.01
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#######################################################################################################################
+# Neutronium Shuttle Engineering
+tech_shuttle_upgrade_4 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {
+		"tech_shuttle_upgrade_3"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	modifier = {
+		station_researchers_produces_mult = 0.02
+		station_gatherers_produces_mult = 0.02
+		ship_landing_time_mult = -0.05
+		country_admin_cap_add = 10
+		pop_resettlement_cost_mult = -0.02
+		pop_growth_from_immigration = 0.02
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#########################################################################################
+#########################################################################################
+############### COLONY SHIP UPGRADES  ###################################################
+# Colonial Carriers (Tier 1)
+tech_colony_ship_upgrade_1 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_standardized_fusion_grids"
+		"tech_polarized_armour"
+		"tech_standardized_ceramo_metal_materials"
+		"tech_reactor_boosters_2"
+		"tech_cryostasis_1"
+	}
+	weight = @tier2weight1
+	modifier = {
+		shipclass_colonizer_hull_mult = 1
+		planet_colony_development_speed_mult = 0.05
+		ship_colonizer_cost_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Colonial Mothership (Tier 2)
+tech_colony_ship_upgrade_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_colony_ship_upgrade_1"
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_cryostasis_2"
+	}
+	weight = @tier2weight3
+	modifier = {
+		shipclass_colonizer_hull_mult = 1
+		planet_colony_development_speed_mult = 0.05
+		planet_housing_add = 1
+		ship_colonizer_cost_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#############################################################################################################
+# Colonial Starbase (Tier 3)
+tech_colony_ship_upgrade_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = {
+		"tech_colony_ship_upgrade_2"
+		"tech_habitat_1"
+		"tech_battleships"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+	}
+	weight = @tier3weight2
+	modifier = {
+		shipclass_colonizer_hull_mult = 1
+		planet_colony_development_speed_mult = 0.1
+		planet_housing_add = 1
+		colony_start_num_pops_add = 1
+		ship_colonizer_cost_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################################
+# Colonial Titan (Tier 4)
+tech_colony_ship_upgrade_4 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {
+		"tech_colony_ship_upgrade_3"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+		"tech_titan_hull_1"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	modifier = {
+		shipclass_colonizer_hull_mult = 2
+		planet_colony_development_speed_mult = 0.1
+		planet_housing_add = 1
+		colony_start_num_pops_add = 1
+		ship_colonizer_cost_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+################################################################################################
+# Colonial Juggernaut Retrofits
+tech_colony_ship_upgrade_5 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_colony_ship_upgrade_4" "tech_juggernaut" }
+	weight = @tier5weight3
+	is_rare = yes
+	modifier = { shipclass_colonizer_hull_mult = 1 planet_colony_development_speed_mult = 0.1 colony_start_num_pops_add = 1 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft } }
+	}
+}
+
+#########################################################################################
+#########################################################################################
+############### SCIENCE SHIP UPGRADES  ##################################################
+# Frontier Exploration Retrofits (Tier 1 - Expansion)
+tech_science_ship_upgrade_1_ancrel = {
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { computing }
+	prerequisites = {
+		"tech_standardized_fusion_grids"
+		"tech_polarized_armour"
+		"tech_standardized_ceramo_metal_materials"
+		"tech_reactor_boosters_2"
+		"tech_automated_exploration"
+		"tech_space_science_2"
+	}
+	weight = @tier2weight1
+	potential = { has_ancrel = yes }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.01
+		ship_archaeological_site_excavation_speed_mult = 0.05
+		shipclass_science_ship_build_cost_mult = 0.25 # 1
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = physics has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = physics has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = physics has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#####################################################################################
+# Frontier Exploration Retrofits (Tier 1 - No Expansion)
+tech_science_ship_upgrade_1 = {
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { computing }
+	prerequisites = {
+		"tech_standardized_fusion_grids"
+		"tech_polarized_armour"
+		"tech_standardized_ceramo_metal_materials"
+		"tech_reactor_boosters_2"
+		"tech_automated_exploration"
+		"tech_space_science_2"
+	}
+	weight = @tier2weight1
+	icon = "tech_science_ship_upgrade_1_ancrel"
+	potential = { has_ancrel = no }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.01
+		shipclass_science_ship_build_cost_mult = 0.25 # 1
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = physics has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = physics has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = physics has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Exploration Cruiser (Expansion)
+tech_science_ship_upgrade_2_ancrel = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_science_ship_upgrade_1_ancrel"
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_space_science_3"
+	}
+	weight = @tier2weight3
+	potential = { has_ancrel = yes }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.01
+		ship_archaeological_site_excavation_speed_mult = 0.05
+		shipclass_science_ship_build_cost_mult = 0.25 # 1
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Exploration Cruiser (Expansion)
+tech_science_ship_upgrade_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	prerequisites = {
+		"tech_science_ship_upgrade_1"
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_space_science_3"
+	}
+	weight = @tier2weight3
+	icon = "tech_science_ship_upgrade_2_ancrel"
+	potential = { has_ancrel = no }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.01
+		shipclass_science_ship_build_cost_mult = 0.25 # 1
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Explorer Starbase (Tier 3)
+tech_science_ship_upgrade_3_ancrel = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = {
+		"tech_science_ship_upgrade_2_ancrel"
+		"tech_habitat_1"
+		"tech_battleships"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+		"tech_space_science_4"
+	}
+	weight = @tier3weight2
+	potential = { has_ancrel = yes }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.01
+		ship_archaeological_site_excavation_speed_mult = 0.05
+		shipclass_science_ship_build_cost_mult = 0.25 # 1
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Explorer Starbase (Tier 3)
+tech_science_ship_upgrade_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = {
+		"tech_science_ship_upgrade_2_ancrel"
+		"tech_habitat_1"
+		"tech_battleships"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+		"tech_space_science_4"
+	}
+	weight = @tier3weight2
+	icon = "tech_science_ship_upgrade_3_ancrel"
+	potential = { has_ancrel = no }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.01
+		shipclass_science_ship_build_cost_mult = 0.25 # 1
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Exploration Titan (Tier 4)
+tech_science_ship_upgrade_4_ancrel = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {
+		"tech_science_ship_upgrade_3_ancrel"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+		"tech_titan_hull_1"
+		"tech_space_science_5"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	potential = { has_ancrel = yes }
+	modifier = {
+		shipclass_science_ship_hull_mult = 2
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.02
+		ship_archaeological_site_excavation_speed_mult = 0.05
+		ship_archaeological_site_clues_add = 1
+		shipclass_science_ship_build_cost_mult = 0.5 # 2
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Exploration Titan (Tier 4)
+tech_science_ship_upgrade_4 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {
+		"tech_science_ship_upgrade_3_ancrel"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+		"tech_titan_hull_1"
+		"tech_space_science_5"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	icon = "tech_science_ship_upgrade_4_ancrel"
+	potential = { has_ancrel = no }
+	modifier = {
+		shipclass_science_ship_hull_mult = 2
+		science_ship_survey_speed = 0.05
+		shipclass_science_ship_disengage_mult = 0.05
+		ship_anomaly_generation_chance_mult = 0.02
+		ship_anomaly_research_speed_mult = 0.02
+		station_researchers_produces_mult = 0.02
+		shipclass_science_ship_build_cost_mult = 0.5 # 2
+		shipclass_science_ship_build_speed_mult = -0.15 # -0.5
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################
+#############################################################################################################
+# Exploration Juggernaut Retrofits (Tier 5 - Ancient Relics)
+tech_science_ship_upgrade_5_ancrel = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_science_ship_upgrade_4_ancrel" "tech_juggernaut" }
+	weight = @tier5weight3
+	is_rare = yes
+	potential = { has_ancrel = yes }
+	modifier = {
+		shipclass_science_ship_hull_mult = 1
+		science_ship_survey_speed = 0.05
+		ship_anomaly_research_speed_mult = 0.05
+		ship_archaeological_site_excavation_speed_mult = 0.05
+		ship_archaeological_site_clues_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################
+# Exploration Juggernaut (Tier 5 - No Ancient Relics)
+tech_science_ship_upgrade_5 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_science_ship_upgrade_4_ancrel" "tech_juggernaut" }
+	weight = @tier5weight3
+	is_rare = yes
+	icon = "tech_science_ship_upgrade_5_ancrel"
+	potential = { has_ancrel = no }
+	modifier = { shipclass_science_ship_hull_mult = 1 science_ship_survey_speed = 0.05 ship_anomaly_research_speed_mult = 0.05 }
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#########################################################################################
+#########################################################################################
+############### CONSTRUCTION SHIP UPGRADES ##############################################
+# Deep Space Engineering Expansion (Tier 1)
+tech_construction_ship_upgrade_1 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = {
+		"tech_standardized_fusion_grids"
+		"tech_polarized_armour"
+		"tech_standardized_ceramo_metal_materials"
+		"tech_reactor_boosters_2"
+		"tech_assembly_pattern"
+		"tech_modular_engineering"
+	}
+	weight = @tier2weight1
+	modifier = {
+		shipclass_constructor_hull_mult = 1
+		starbase_outpost_cost_mult = -0.02
+		station_gatherers_cost_mult = -0.02
+		station_gatherers_produces_mult = 0.01
+		megastructure_build_speed_mult = 0.05
+		shipclass_constructor_build_speed_mult = -0.5
+		shipclass_constructor_build_cost_mult = 2
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#####################################################################################################
+# Deep Space Construction Cruisers (Tier 2)
+tech_construction_ship_upgrade_2 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = {
+		"tech_construction_ship_upgrade_1"
+		"tech_standardized_micro_fusion_grids"
+		"tech_reinforced_polarized_armour"
+		"tech_plasteel_reinforcement_standardization"
+		"tech_construction_templates"
+		"tech_space_defense_station_improvement"
+	}
+	weight = @tier2cost3
+	modifier = {
+		shipclass_constructor_hull_mult = 1
+		starbase_outpost_cost_mult = -0.02
+		station_gatherers_cost_mult = -0.02
+		station_gatherers_produces_mult = 0.01
+		megastructure_build_speed_mult = 0.05
+		shipclass_constructor_build_speed_mult = -0.5
+		shipclass_constructor_build_cost_mult = 2
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#############################################################################################################
+# Mobile Construction Starbase (Tier 3)
+tech_construction_ship_upgrade_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = {
+		"tech_construction_ship_upgrade_2"
+		"tech_habitat_1"
+		"tech_battleships"
+		"tech_micro_fusion_cells"
+		"tech_durasteel_composite_standardization"
+		"tech_standardized_shield_arrays"
+		"tech_reactor_boosters_3"
+	}
+	weight = @tier3weight2
+	modifier = {
+		shipclass_constructor_hull_mult = 1
+		starbase_outpost_cost_mult = -0.02
+		station_gatherers_cost_mult = -0.02
+		station_gatherers_produces_mult = 0.01
+		megastructure_build_speed_mult = 0.05
+		shipclass_constructor_build_speed_mult = -0.5
+		shipclass_constructor_build_cost_mult = 2
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#############################################################################################################
+# Mobile Construction Titans
+tech_construction_ship_upgrade_4 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }
+	prerequisites = {
+		"tech_construction_ship_upgrade_3"
+		"tech_zero_point_energy_systems"
+		"tech_zero_point_armour"
+		"tech_neutronium_composite_standardization"
+		"tech_titan_hull_1"
+	}
+	weight = @tier4weight1
+	is_rare = yes
+	modifier = {
+		shipclass_constructor_hull_mult = 2
+		starbase_outpost_cost_mult = -0.04
+		station_gatherers_cost_mult = -0.04
+		station_gatherers_produces_mult = 0.02
+		megastructure_build_speed_mult = 0.05
+		shipclass_constructor_build_speed_mult = -0.5
+		shipclass_constructor_build_cost_mult = 2
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#############################################################################################################
+# Constructor Juggernaut Retrofits
+tech_construction_ship_upgrade_5 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { "tech_construction_ship_upgrade_4" "tech_juggernaut" }
+	weight = @tier5weight3
+	is_rare = yes
+	modifier = {
+		shipclass_constructor_hull_mult = 1
+		starbase_outpost_cost_mult = -0.05
+		station_gatherers_cost_mult = -0.05
+		megastructure_build_speed_mult = 0.05
+	}
+	weight_modifier = {
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_spark_of_genius } }
+		# modifier = { factor = 6 research_leader = { area = engineering has_level > 7 } }
+		# modifier = { factor = 1.5 research_leader = { area = engineering has_level > 4 } }
+		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}

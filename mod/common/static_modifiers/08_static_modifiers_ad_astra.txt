@@ -1,0 +1,22 @@
+### DECISIONS
+
+# Emergency Shelter Directive
+planet_retreated_populace = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_emergency_shelter.dds"
+	icon_frame = 2
+	planet_jobs_produces_mult = -0.75
+	pop_growth_speed = -0.5
+	pop_growth_from_immigration = -0.5
+	planet_pop_assembly_mult = -0.5
+	army_defense_health_mult = 0.2
+	planet_orbital_bombardment_damage = -0.1
+}
+
+# Domed Districts
+planet_domed_districts = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_domed_districts.dds"
+	icon_frame = 1
+	planet_districts_upkeep_mult = 0.1
+	planet_districts_cost_mult = 0.1
+	pop_environment_tolerance = 0.1
+}

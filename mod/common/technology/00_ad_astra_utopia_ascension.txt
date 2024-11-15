@@ -1,0 +1,474 @@
+####################################################################################
+######										  ####################################
+#####		 AD ASTRA TECHNOLOGIES				   ##############################
+######										   ###################################
+####################################################################################
+#### EVOLUTIONARY MASTERY
+## Biorobotics Mastery Project
+# @tech_biorobotics_mastery_POINTS = 1
+tech_biorobotics_mastery = {
+	cost = @tier5cost1
+	area = society
+	category = { biology }
+	tier = 5
+	is_rare = yes
+	prerequisites = {
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+		"tech_colonization_4"
+	}
+	weight = 10
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		country_minerals_produces_mult = 0.05
+		country_energy_produces_mult = 0.05
+		country_food_produces_mult = 0.05
+		army_health = 0.05
+		army_damage_mult = 0.05
+		army_morale = 0.05
+		ship_weapon_damage = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+		ship_speed_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_starbase_damage_mult = 0.05
+		leader_lifespan_add = 50
+		MACHINE_species_trait_points_add = 1
+		description = tech_biorobotics_mastery_modifier_desc
+		description_parameters = {
+			POINTS = 1			# @tech_biorobotics_mastery_POINTS
+		}
+		BIOLOGICAL_species_trait_points_add = 1		# @tech_biorobotics_mastery_POINTS
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		factor = 15		# Rare tech
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+		}
+	}
+}
+
+## Bionic Suit Technology
+tech_bionic_suit_technology = {
+	cost = @tier4cost3
+	area = society
+	category = { biology }
+	tier = 5
+	is_rare = yes
+	weight = @tier5weight1
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+	}
+	prerequisites = {
+		"tech_powered_exoskeletons"
+		"tech_colonization_4"
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.05
+		army_health = 0.05
+		army_damage_mult = 0.05
+		leader_lifespan_add = 5
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_building_build_speed_mult = 0.05
+		armies_upkeep_mult = -0.05
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		factor = 15		# Rare tech
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+		}
+	}
+}
+
+############################################################################################################
+############################################################################################################
+############################################################################################################
+#### SYNTHETIC EVOLUTION ( NON-MACHINE EMPIRE )
+# Quantum Foam Computing
+# @tech_quantum_foam_computing_POINTS = 1
+tech_quantum_foam_computing = {
+	cost = @tier5cost1
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = {
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+		"tech_colonization_4"
+	}
+	is_rare = yes
+	weight = 10
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_ascension_perk = ap_synthetic_evolution
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		country_minerals_produces_mult = 0.1
+		country_energy_produces_mult = 0.1
+		army_health = 0.05
+		army_damage_mult = 0.05
+		planet_pop_assembly_mult = 0.05
+		ship_weapon_damage = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+		ship_speed_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_starbase_damage_mult = 0.05
+		leader_skill_levels = 1
+		MACHINE_species_trait_points_add = 1
+		description = tech_quantum_foam_computing_modifier_desc
+		description_parameters = {
+			POINTS = 1			# @tech_quantum_foam_computing_POINTS
+		}
+		BIOLOGICAL_species_trait_points_add = 1		# @tech_quantum_foam_computing_POINTS
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
+		}
+	}
+}
+
+# Swarm Intelligence
+tech_swarm_intelligence = {
+	cost = @tier4cost3
+	area = physics
+	tier = 5
+	category = { computing }
+	is_rare = yes
+	weight = @tier5weight1
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_ascension_perk = ap_synthetic_evolution
+	}
+	prerequisites = {
+		"tech_colonization_4"
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.05
+		army_health = 0.05
+		army_damage_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_building_build_speed_mult = 0.05
+		ship_starting_experience_add = 50
+		army_starting_experience_add = 50
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
+		}
+		modifier = { factor = 2 has_ascension_perk = ap_synthetic_evolution }
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#### TRANSCENDANCE
+# Cynosural Ascension
+# @tech_cynosural_ascension_POINTS = 1
+tech_cynosural_ascension = {
+	cost = @tier5cost1
+	area = society
+	tier = 5
+	category = { psionics }
+	prerequisites = {
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+		"tech_colonization_4"
+	}
+	is_rare = yes
+	weight = 10
+	is_reverse_engineerable = no
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_tradition = tr_psionics_finish
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		country_minerals_produces_mult = 0.05
+		country_energy_produces_mult = 0.05
+		country_food_produces_mult = 0.05
+		army_morale = 0.05
+		army_health = 0.05
+		army_damage_mult = 0.05
+		ship_weapon_damage = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+		ship_speed_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_starbase_damage_mult = 0.05
+		MACHINE_species_trait_points_add = 1
+		leader_lifespan_add = 50
+		description = tech_cynosural_ascension_modifier_desc
+		description_parameters = {
+			POINTS = 1			# @tech_cynosural_ascension_POINTS
+		}
+		BIOLOGICAL_species_trait_points_add = 1		# @tech_cynosural_ascension_POINTS
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		factor = 15		# Very rare tech
+		modifier = { factor = 1.5 is_spiritualist = yes }
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
+	}
+}
+
+# Phase Armor Technology
+tech_phase_armor_technology = {
+	cost = @tier4cost3
+	area = society
+	tier = 5
+	category = { psionics }
+	prerequisites = {
+		"tech_powered_exoskeletons"
+		"tech_colonization_4"
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+	}
+	is_rare = yes
+	weight = @tier5weight1
+	is_reverse_engineerable = no
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_tradition = tr_psionics_finish
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.05
+		army_health = 0.05
+		army_damage_mult = 0.05
+		leader_lifespan_add = 5
+		ship_orbital_bombardment_mult = 0.05
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_building_build_speed_mult = 0.05
+		army_morale = 0.05
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		factor = 15		# Very rare tech
+		modifier = { factor = 1.5 is_spiritualist = yes }
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
+	}
+}
+
+############################################################################################################
+############################################################################################################
+############################################################################################################
+#### POST-SINGULARITY ASCENSION ( MACHINE EMPIRE )
+# Post-Singularity Ascension
+# @tech_post_singularity_ascension_POINTS = 1
+tech_post_singularity_ascension = {
+	cost = @tier5cost1
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = {
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+		"tech_colonization_4"
+	}
+	is_rare = yes
+	weight = 10
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_ascension_perk = ap_synthetic_age
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		country_minerals_produces_mult = 0.1
+		country_energy_produces_mult = 0.1
+		army_health = 0.05
+		army_damage_mult = 0.05
+		planet_pop_assembly_mult = 0.05
+		ship_weapon_damage = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+		ship_speed_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_starbase_damage_mult = 0.05
+		MACHINE_species_trait_points_add = 1
+		leader_skill_levels = 1
+		description = tech_post_singularity_ascension_modifier_desc
+		description_parameters = {
+			POINTS = 1			# @tech_post_singularity_ascension_POINTS
+		}
+		BIOLOGICAL_species_trait_points_add = 1		# @tech_post_singularity_ascension_POINTS
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
+		}
+	}
+}
+
+# Picotechnology
+tech_picotechnology = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 5
+	category = { industry }
+	is_rare = yes
+	weight = @tier5weight1
+	potential = {
+		OR = {
+			has_technology = tech_unified_research_networks
+			has_technology = tech_unified_research_hives
+			has_technology = tech_synchronized_research_networks
+		}
+		has_ascension_perk = ap_synthetic_age
+	}
+	prerequisites = {
+		"tech_colonization_4"
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.05
+		army_health = 0.05
+		army_damage_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		planet_building_build_speed_mult = 0.05
+		planet_army_build_speed_mult = 0.05
+		MACHINE_species_trait_points_add = 1
+	}
+	weight_modifier = {
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+	}
+	ai_weight = {
+		weight = 2
+		modifier = { factor = 2 has_ascension_perk = ap_synthetic_age }
+	}
+}

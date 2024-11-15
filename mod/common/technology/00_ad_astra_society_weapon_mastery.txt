@@ -1,0 +1,102 @@
+#############################
+### AD ASTRA TECHNOLOGIES ###
+#############################
+# These technologies are only available if their primary origin technologies are researched.
+# As such, they have no weight or cost. They simply unlock and that's it. This also allows Ad Astra to become
+# Completely stand-alone. Which is a really, really, really good thing.
+
+# Space Amoeba Strike Craft
+tech_amoeba_strike_craft_1_mastery = {
+	area = society
+	cost = @tier1cost2
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_amoeba_strike_craft_1" }
+	ai_update_type = military
+	weight = 190
+
+	modifier = {
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Swarm Strike Craft
+tech_swarm_strike_craft_1_mastery = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_swarm_strike_craft_1" }
+	ai_update_type = military
+	weight = 160
+
+	modifier = {
+		army_health = 0.02
+		army_damage_mult = 0.02
+		ship_orbital_bombardment_mult = 0.02
+		shipclass_military_station_hull_mult = 0.02
+		shipclass_military_station_damage_mult = 0.02
+		shipclass_starbase_damage_mult = 0.02
+		ship_hull_mult = 0.02
+		ship_armor_mult = 0.02
+		weapon_type_strike_craft_weapon_damage_mult = 0.02
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.02
+	}
+}
+
+# Swarm Scourge Missiles
+tech_scourge_missile_1_mastery = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_scourge_missile_1" }
+	ai_update_type = military
+	weight = 160
+
+	modifier = {
+		army_health = 0.03
+		army_damage_mult = 0.03
+		ship_orbital_bombardment_mult = 0.03
+		shipclass_military_station_hull_mult = 0.03
+		shipclass_military_station_damage_mult = 0.03
+		shipclass_starbase_damage_mult = 0.03
+		ship_hull_mult = 0.03
+		ship_armor_mult = 0.03
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_damage_mult = 0.03
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.03
+	}
+}
+
+# Space Whale Weapon
+tech_space_whale_weapon_1_mastery = {
+	area = society
+	cost = @tier1cost3
+	tier = 1
+	category = { biology }
+	ai_update_type = military
+	prerequisites = { "tech_space_whale_weapon_1" }
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	modifier = {
+		country_energy_produces_mult = 0.02
+		army_health = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}

@@ -1,0 +1,297 @@
+#############################
+### AD ASTRA TECHNOLOGIES ###
+#############################
+# These technologies are only available if their primary origin technologies are researched.
+# As such, they have no weight or cost. They simply unlock and that's it. This also allows Ad Astra to become
+# Completely stand-alone. Which is a really, really, really good thing.
+# Blue Lasers
+tech_lasers_2_mastery = {
+	area = physics
+	cost = @tier1cost3
+	tier = 1
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_lasers_2" }
+	weight = @tier2weight3
+	modifier = {
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.0025
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Multi-Spectrum Laser Conduits (Tier 1)
+tech_multi_spectrum_laser_conduits = {
+	area = physics
+	cost = @tier1cost1
+	tier = 1
+	category = { particles }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_lasers_3"
+		"tech_plasma_1"
+		"tech_disruptors_1"
+	}
+	modifier = {
+		army_damage_mult = 0.015
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_damage_mult = 0.015
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		armies_upkeep_mult = 0.015
+		armies_cost_mult = 0.015
+		starbase_upgrade_cost_mult = 0.03
+	}
+}
+
+# Ionized Plasma Conduits (Tier 2)
+tech_ionized_plasma_conduits = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_multi_spectrum_laser_conduits"
+		"tech_lasers_4"
+		"tech_plasma_2"
+		"tech_disruptors_2"
+	}
+	modifier = {
+		army_damage_mult = 0.015
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_damage_mult = 0.015
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		armies_upkeep_mult = 0.015
+		armies_cost_mult = 0.015
+		starbase_upgrade_cost_mult = 0.045
+	}
+}
+
+# Phased Plasma Weaponry (Tier 3)
+tech_phased_plasma_weaponry = {
+	area = physics
+	cost = @tier2cost3
+	tier = 3
+	category = { particles }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_ionized_plasma_conduits"
+		"tech_lasers_5"
+		"tech_plasma_3"
+		"tech_disruptors_3"
+	}
+	modifier = {
+		army_damage_mult = 0.015
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_damage_mult = 0.015
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		armies_upkeep_mult = 0.015
+		armies_cost_mult = 0.015
+		starbase_upgrade_cost_mult = 0.045
+	}
+}
+
+####################################################################################
+# Proton Particle Weapons
+tech_proton_particle_weapons = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_ionized_plasma_conduits"
+		"tech_energy_lance_1"
+		"tech_energy_torpedoes_1"
+		"tech_arc_emitter_1"
+	}
+	modifier = {
+		army_damage_mult = 0.015
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_damage_mult = 0.015
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_explosive_weapon_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		armies_upkeep_mult = 0.015
+		armies_cost_mult = 0.015
+		starbase_upgrade_cost_mult = 0.045
+	}
+}
+
+# Neutron Particle Weapons
+tech_neutron_particle_weapons = {
+	area = physics
+	cost = @tier3cost3
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_proton_particle_weapons"
+		"tech_energy_lance_2"
+		"tech_energy_torpedoes_2"
+		"tech_arc_emitter_2"
+	}
+	modifier = {
+		army_damage_mult = 0.015
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_damage_mult = 0.015
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_energy_weapon_damage_mult = 0.0125
+		weapon_type_explosive_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		armies_upkeep_mult = 0.015
+		armies_cost_mult = 0.015
+		starbase_upgrade_cost_mult = 0.045
+	}
+}
+
+################################################################################
+# Interlinked Interceptor Grids
+tech_interlinked_interceptor_grids = {
+	area = physics
+	cost = @tier2cost3
+	tier = 3
+	category = { computing }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_pd_tracking_2"
+		"tech_autocannons_2"
+		"tech_flak_batteries_2"
+	}
+	modifier = {
+		army_health = 0.03
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_hull_mult = 0.025
+		shipclass_military_station_damage_mult = 0.015
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_kinetic_weapon_damage_mult = 0.01
+		ship_armor_mult = 0.015
+		weapon_type_strike_craft_weapon_damage_mult = 0.0125
+		armies_upkeep_mult = 0.035
+		armies_cost_mult = 0.035
+		starbase_upgrade_cost_mult = 0.065
+	}
+}
+
+# Predictive Stormfire Grids
+tech_predictive_stormfire_grids = {
+	area = physics
+	cost = @tier3cost1
+	tier = 4
+	category = { computing }
+	ai_update_type = military
+	weight = @tier1weight1
+	prerequisites = {
+		"tech_interlinked_interceptor_grids"
+		"tech_pd_tracking_3"
+		"tech_autocannons_3"
+		"tech_flak_batteries_3"
+	}
+	modifier = {
+		army_health = 0.0125
+		army_damage_mult = 0.015
+		ship_orbital_bombardment_mult = 0.015
+		shipclass_military_station_hull_mult = 0.015
+		shipclass_military_station_damage_mult = 0.02
+		shipclass_starbase_damage_mult = 0.015
+		weapon_type_kinetic_weapon_damage_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		armies_upkeep_mult = 0.02
+		armies_cost_mult = 0.02
+		starbase_upgrade_cost_mult = 0.055
+	}
+}
+
+################################################################################
+# Extra-Dimensional Weaponry
+tech_extradimensional_weapon_1_mastery = {
+	area = physics
+	cost = @tier2cost3
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_extradimensional_weapon_1" }
+	ai_update_type = military
+	weight = @tier1weight3
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+		ship_orbital_bombardment_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_starbase_damage_mult = 0.05
+		ship_shield_mult = 0.05
+		weapon_type_energy_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_damage_mult = 0.05
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+	}
+}
+
+# Mining Drone Weapon
+tech_mining_drone_weapon_1_mastery = {
+	area = physics
+	cost = @tier1cost3
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_mining_drone_weapon_1" }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	modifier = {
+		country_minerals_produces_mult = 0.03
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.0025
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Space Cloud Weaponry
+tech_space_cloud_weapon_1_mastery = {
+	area = physics
+	cost = @tier1cost3
+	tier = 2
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_space_cloud_weapon_1" }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	modifier = {
+		country_energy_produces_mult = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}

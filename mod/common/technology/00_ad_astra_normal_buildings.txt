@@ -1,0 +1,831 @@
+# ##################
+# AD ASTRA NORMAL BUILDINGS TECHNOLOGIES
+# ##################
+# Unified Research Networks
+tech_unified_research_networks = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_basic_science_lab_3"
+		"tech_space_science_3"
+		"tech_sensors_4"
+		"tech_self_aware_logic"
+		"tech_power_hub_2"
+		"tech_combat_computers_3"
+		"tech_power_plant_4"
+		"tech_colonization_4"
+		"tech_advanced_metallurgy_2"
+		"tech_mine_dark_matter"
+		"tech_zero_point_power"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+######################################################
+# The Infinity Network
+tech_the_infinity_network = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_unified_research_networks"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_gestalt = no }
+	modifier = { job_cynosural_researcher_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Streamlined Mega-Production
+tech_streamlined_megaproduction = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_construction_templates"
+		"tech_space_defense_station_improvement"
+		"tech_space_mining_4"
+		"tech_mineral_purification_2"
+		"tech_mining_3"
+		"tech_ship_armor_4"
+		"tech_luxuries_2"
+		"tech_alloys_2"
+		"tech_self_aware_logic"
+		"tech_mass_drivers_4"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+	}
+}
+
+#############################################################################
+# Starlifting Operations
+tech_starlift_operations = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_streamlined_megaproduction"
+		"tech_space_mining_5"
+		"tech_global_production_strategy"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_gestalt = no }
+	modifier = { job_starlift_specialist_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# The Colonial Agency
+tech_the_colonial_agency = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_nutrient_replication"
+		"tech_food_processing_2"
+		"tech_colonization_5"
+		"tech_galactic_administration"
+		"tech_galactic_bureaucracy"
+		"tech_colonization_4"
+		"tech_basic_science_lab_3"
+		"tech_self_aware_logic"
+		"tech_frontier_hospital"
+		"tech_adaptive_bureaucracy"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	modifier = { job_colonial_agent_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+#############################################################################
+# Colonial Agency Megahubs
+tech_colonial_agency_megahubs = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_the_colonial_agency"
+		"tech_climate_restoration"
+		"tech_gene_expressions"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Social Megahubs
+tech_social_megahubs = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_interstellar_economics"
+		"tech_autocurating_vault"
+		"tech_hyper_entertainment_forum"
+		"tech_galactic_administration"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#############################################################################
+# Paradise Engineering
+tech_paradise_engineering = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_social_megahubs"
+		"tech_paradise_dome"
+		"tech_resort_colonies"
+	}
+	weight = @tier5weight3
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#############################################################################
+# Universal Forum
+tech_universal_forum = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_social_megahubs"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = {
+		is_gestalt = no
+		is_megacorp = no
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#############################################################################
+# Galactic Megacorp Forums
+tech_galactic_megacorp_forums = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_social_megahubs"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = {
+		is_gestalt = no
+		is_megacorp = yes
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#######################################################################################################
+#######################################################################################################
+# Bastions of Faith
+tech_bastions_of_faith = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_interstellar_economics"
+		"tech_transcendent_faith"
+		"tech_hyper_entertainment_forum"
+		"tech_galactic_administration"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+##################################################################################
+# The Celestial Beacons
+tech_the_celestial_beacons = {
+	area = society
+	category = { statecraft }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_bastions_of_faith"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+		}
+	}
+}
+
+#######################################################################################################
+#######################################################################################################
+# Militarized Colonies
+tech_militarized_colonies = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_global_defense_grid"
+		"tech_combat_training"
+		"tech_command_matrix"
+		"tech_galactic_administration"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	modifier = { job_strategic_command_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Ecumenopolis Defence Matrix
+tech_ecumenopolis_defence_matrix = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = { "tech_militarized_colonies" }
+	weight = @tier5weight2
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = {
+				any_owned_planet = { merg_is_arcology = yes }
+				has_ascension_perk = ap_arcology_project
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Omni-Fortress Engineering
+tech_omni_fortress_engineering = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight2
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#############################################################################################################
+# Panoptica Systems
+tech_panoptica_systems = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = { "tech_militarized_colonies" }
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 0.1 is_egalitarian = yes }
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_militarist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_militarist"
+			}
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_penal_colonies
+				has_technology = tech_slave_colonies
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Dual-Reinforced Bunker Habitats
+tech_dual_reinforced_bunker_habitats = {
+	area = society
+	category = { new_worlds }
+	tier = 3
+	cost = @tier2cost3
+	weight = @tier3weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = {
+				is_apocalyptic_empire = yes
+				has_technology = tech_tomb_world_adaption
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+##############################################################################################
+# Habitat Defence Mastery
+tech_habitat_defence_mastery = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_habitat_1"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Psi-Forge Technologies
+tech_psi_forge_technologies = {
+	area = society
+	category = { psionics }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_luxuries_2"
+		"tech_alloys_2"
+		"tech_precognition_interface"
+		"tech_mine_zro"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Bio-War Mastery
+tech_bio_war_mastery = {
+	area = society
+	category = { biology }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_gene_expressions"
+		"tech_gene_seed_purification"
+		"tech_gene_banks"
+		"tech_morphogenetic_field_mastery"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
+		}
+	}
+}
+
+##############################################################################################
+# Cybernetic Command
+tech_cybernetic_command = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_nutrient_replication"
+		"tech_combat_computers_3"
+		"tech_synthetic_workers"
+	}
+	weight = @tier5weight1
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = { has_ascension_perk = ap_the_flesh_is_weak }
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Wyrmguard
+tech_wyrmguard = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_gene_expressions"
+		"tech_gene_seed_purification"
+		"tech_gene_banks"
+	}
+	weight = @tier5weight3
+	is_rare = yes
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = { has_tradition = tr_genetics_resequencing }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_dragon_trophy
+				has_technology = tech_dragon_armor
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Enigmatic Arsenal
+tech_enigmatic_arsenal = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_mine_dark_matter"
+		"tech_ship_armor_5"
+		"tech_enigmatic_encoder"
+		"tech_enigmatic_decoder"
+	}
+	weight = @tier5weight3
+	is_rare = yes
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 has_technology = tech_enigmatic_arsenal_synthetic }
+		modifier = { factor = 0 has_technology = tech_enigmatic_arsenal }
+		modifier = {
+			factor = 0
+			NOR = { has_ascension_perk = ap_synthetic_evolution }
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Occulari Orders
+tech_occulari_order = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_militarized_colonies"
+		"tech_mine_dark_matter"
+		"tech_ship_armor_5"
+		"tech_enigmatic_encoder"
+		"tech_enigmatic_decoder"
+	}
+	weight = @tier5weight3
+	is_rare = yes
+	potential = { is_gestalt = no }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = { has_tradition = tr_psionics_finish }
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}

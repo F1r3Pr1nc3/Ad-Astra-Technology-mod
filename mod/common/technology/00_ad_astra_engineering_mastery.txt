@@ -1,0 +1,472 @@
+#############################
+### AD ASTRA TECHNOLOGIES ###
+#############################
+# These technologies are only available if their primary origin technologies are researched.
+# As such, they have no weight or cost. They simply unlock and that's it. This also allows Ad Astra to become
+# Completely stand-alone. Which is a really, really, really good thing.
+
+# ##################
+# Strike Craft
+# ##################
+
+# Strike Craft 1
+tech_strike_craft_1_mastery = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	ai_update_type = military
+	category = { voidcraft }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_strike_craft_1 }
+
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.0025
+		shipclass_starbase_damage_mult = 0.0025
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Strike Craft 2
+tech_strike_craft_2_mastery = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	ai_update_type = military
+	category = { voidcraft }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_strike_craft_2 }
+
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.0005
+		shipclass_starbase_damage_mult = 0.0025
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Strike Craft 3
+tech_strike_craft_3_mastery = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	ai_update_type = military
+	category = { voidcraft }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_strike_craft_3 }
+
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+###########################################################################################################
+
+# Standardized Ceramo-Metal Materials (Tier 1)
+tech_standardized_ceramo_metal_materials = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { materials }
+	ai_update_type = all
+	weight = @tier1weight1
+	prerequisites = { "tech_standardized_fusion_grids" "tech_ship_armor_2" }
+
+	modifier = {
+		planet_colony_development_speed_mult = 0.05
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		pop_environment_tolerance = 0.01
+	}
+}
+
+# Plasteel Reinforcement Standardization (Tier 2)
+tech_plasteel_reinforcement_standardization = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	weight = @tier1weight1
+	prerequisites = { "tech_standardized_micro_fusion_grids" "tech_standardized_ceramo_metal_materials" "tech_ship_armor_3" }
+
+	modifier = {
+		planet_colony_development_speed_mult = 0.05
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		pop_environment_tolerance = 0.01
+	}
+}
+
+# Durasteel Composite Standardization (Tier 3)
+tech_durasteel_composite_standardization = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 3
+	category = { materials }
+	ai_update_type = all
+	weight = @tier1weight1
+	prerequisites = { "tech_micro_fusion_cells" "tech_plasteel_reinforcement_standardization" "tech_ship_armor_4" }
+
+	modifier = {
+		planet_colony_development_speed_mult = 0.05
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		pop_environment_tolerance = 0.01
+	}
+}
+
+# Neutronium Composite Standardization (Tier 4)
+tech_neutronium_composite_standardization = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 4
+	category = { materials }
+	ai_update_type = all
+	weight = @tier1weight1
+	prerequisites = { "tech_zero_point_energy_systems" "tech_durasteel_composite_standardization" "tech_ship_armor_5" }
+
+	modifier = {
+		planet_colony_development_speed_mult = 0.05
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		pop_environment_tolerance = 0.01
+	}
+}
+
+##################################################################################################
+##################################################################################################
+
+# Crystal-Infused Plating
+tech_crystal_armor_1_mastery = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_crystal_armor_1 }
+	modifier = {
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+		starbase_upgrade_cost_mult = 0.015
+		pop_environment_tolerance = 0.01
+	}
+}
+
+# Crystal-Forged Plating
+tech_crystal_armor_2_mastery = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 4
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = 0
+	weight_modifier = { factor = 0 }
+
+	prerequisites = { tech_crystal_armor_2 }
+	modifier = {
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+		starbase_upgrade_cost_mult = 0.025
+		pop_environment_tolerance = 0.01
+	}
+}
+
+####################################################################################################
+####################################################################################################
+
+# Ion Pulse Propulsion (Tier 1)
+tech_ion_pulse_propulsion = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { propulsion }
+	ai_update_type = all
+	weight = @tier1weight1
+	prerequisites = { "tech_thrusters_2" "tech_afterburners_1" }
+
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		weapon_type_strike_craft_speed_mult = 0.05
+		weapon_type_explosive_speed_mult = 0.10
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.0025
+		shipclass_starbase_damage_mult = 0.0025
+		weapon_type_explosive_weapon_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.0025
+	}
+}
+
+# Plasma Pulse Propulsion (Tier 2)
+tech_plasma_pulse_propulsion = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { propulsion }
+	ai_update_type = all
+	weight = @tier1weight1
+	prerequisites = { "tech_ion_pulse_propulsion" "tech_afterburners_2" }
+
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.02
+		weapon_type_strike_craft_speed_mult = 0.05
+		weapon_type_explosive_speed_mult = 0.10
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.0025
+		shipclass_starbase_damage_mult = 0.0025
+		weapon_type_explosive_weapon_damage_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.0025
+	}
+}
+
+###################################################################################################
+###################################################################################################
+
+# Corps of Engineers
+tech_space_defense_station_improvement_mastery = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	is_rare = yes
+	weight = 160
+	prerequisites = { "tech_space_defense_station_improvement" }
+	modifier = {
+		starbase_shipyard_build_cost_mult = -0.05
+		starbase_shipyard_build_speed_mult = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
+		ship_shield_mult = 0.05
+		starbase_buildings_cost_mult = -0.05
+		starbase_modules_cost_mult = -0.05
+	}
+}
+
+###################################################################################################
+###################################################################################################
+
+# Powered Exoskeletons
+tech_powered_exoskeletons_mastery = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { industry }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_powered_exoskeletons }
+
+	modifier = {
+		army_health = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Robotic Workers
+tech_robotic_workers_mastery = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_robotic_workers }
+	modifier = {
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.0025
+		shipclass_starbase_damage_mult = 0.0025
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		armies_upkeep_mult = 0.005
+		armies_cost_mult = 0.005
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Droids
+tech_droid_workers_mastery = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_droid_workers }
+	modifier = {
+		leader_lifespan_add = 5
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.0025
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+		armies_upkeep_mult = 0.01
+		armies_cost_mult = 0.01
+		starbase_upgrade_cost_mult = 0.015
+	}
+}
+
+# Synthetics
+tech_synthetic_workers_mastery = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	category = { industry }
+	is_rare = yes
+	is_dangerous = yes
+	weight = 0
+	weight_modifier = { factor = 0 }
+	prerequisites = { tech_synthetic_workers }
+	modifier = {
+		leader_lifespan_add = 5
+		army_health = 0.01
+		army_damage_mult = 0.01
+		ship_orbital_bombardment_mult = 0.01
+		shipclass_military_station_hull_mult = 0.01
+		shipclass_military_station_damage_mult = 0.01
+		shipclass_starbase_damage_mult = 0.01
+		ship_hull_mult = 0.01
+		ship_armor_mult = 0.01
+		ship_shield_mult = 0.01
+		weapon_type_energy_weapon_damage_mult = 0.01
+		weapon_type_explosive_weapon_damage_mult = 0.01
+		weapon_type_kinetic_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_damage_mult = 0.01
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.01
+	}
+}
+
+#################################################################################################
+#################################################################################################
+
+# Assembly Patterns
+tech_assembly_pattern_mastery  = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	weight = 160
+	prerequisites = { "tech_assembly_pattern" }
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_structures_cost_mult = -0.05
+		planet_colony_development_speed_mult = 0.05
+		planet_pop_assembly_mult = 0.05
+	}
+}
+
+# Construction Templates
+tech_construction_templates_mastery  = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	is_rare = yes
+	category = { industry }
+	weight = 160
+	prerequisites = { "tech_construction_templates" }
+
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_structures_cost_mult = -0.05
+		planet_colony_development_speed_mult = 0.05
+		planet_pop_assembly_mult = 0.05
+	}
+}
+
+# Modular Engineering
+tech_modular_engineering_mastery  = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	is_rare = yes
+	category = { voidcraft }
+	weight = 160
+	prerequisites = { "tech_modular_engineering" }
+
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+		planet_structures_cost_mult = -0.05
+		planet_colony_development_speed_mult = 0.05
+		planet_pop_assembly_mult = 0.05
+	}
+}
+
+# Improved Structural Integrity
+tech_defense_platform_hull_1_mastery  = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	is_rare = yes
+	category = { voidcraft }
+	weight = 160
+	prerequisites = { "tech_defense_platform_hull_1" }
+
+	modifier = {
+		army_defense_health_mult = 0.05
+	}
+}

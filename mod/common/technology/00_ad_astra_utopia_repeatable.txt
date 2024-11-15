@@ -1,0 +1,176 @@
+###########################
+### TECH COSTS - REPEATABLE  ###
+###########################
+# Singularity Network - Synthetic Evolution (Utopia)
+tech_singularity_network = {
+	area = physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { computing }
+	levels = 5
+	is_rare = yes
+	prerequisites = {
+		"tech_advanced_metallurgy_2"
+		"tech_combat_computers_3"
+		"tech_colonization_4"
+	}
+	weight = @repeatableTechWeight
+	potential = { has_ascension_perk = ap_synthetic_evolution }
+	weight_modifier = {
+		factor = 0.5
+		modifier = { factor = @repatableTechFactor has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+		modifier = { factor = 0.01 has_technology = tech_singularity_network }
+	}
+	ai_weight = { factor = 1 }
+	weight_groups = { repeatable }
+	mod_weight_if_group_picked = { repeatable = 0.01 }
+	modifier = {
+		army_damage_mult = 0.02
+		army_health = 0.02
+		shipclass_military_station_hull_mult = 0.02
+		shipclass_military_station_damage_mult = 0.02
+		shipclass_starbase_damage_mult = 0.02
+		ship_hull_mult = 0.02
+		ship_armor_mult = 0.02
+		ship_shield_mult = 0.02
+		ship_speed_mult = 0.02
+		starbase_shipyard_build_cost_mult = 0.05
+		armies_cost_mult = 0.05
+	}
+}
+
+#######################################################
+# Bionic Engineering - Evolutionary Mastery (Utopia)
+tech_bionic_engineering = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { biology }
+	levels = 5
+	is_rare = yes
+	prerequisites = {
+		"tech_advanced_metallurgy_2"
+		"tech_combat_computers_3"
+		"tech_colonization_4"
+	}
+	weight = @repeatableTechWeight
+	potential = { has_tradition = tr_genetics_resequencing }
+	weight_modifier = {
+		factor = 0.5
+		modifier = { factor = @repatableTechFactor has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+		modifier = { factor = 0.01 has_technology = tech_bionic_engineering }
+	}
+	ai_weight = { factor = 1 }
+	weight_groups = { repeatable }
+	mod_weight_if_group_picked = { repeatable = 0.01 }
+	modifier = {
+		army_health = 0.02
+		shipclass_military_station_hull_mult = 0.02
+		ship_hull_mult = 0.02
+		ship_armor_mult = 0.02
+		ship_hull_regen_add_perc = 0.02
+		ship_armor_regen_add_perc = 0.02
+		leader_lifespan_add = 10
+		ships_upkeep_mult = -0.02
+		armies_upkeep_mult = -0.02
+	}
+}
+
+#######################################################
+# Shroud Force - Transcendance (Utopia)
+tech_shroud_force = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { psionics }
+	levels = 5
+	is_rare = yes
+	prerequisites = {
+		"tech_advanced_metallurgy_2"
+		"tech_combat_computers_3"
+		"tech_colonization_4"
+	}
+	weight = @repeatableTechWeight
+	potential = { has_tradition = tr_psionics_finish }
+	weight_modifier = {
+		factor = 0.5
+		modifier = { factor = @repatableTechFactor has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+		modifier = { factor = 0.01 has_technology = tech_shroud_force }
+	}
+	ai_weight = { factor = 1 }
+	weight_groups = { repeatable }
+	mod_weight_if_group_picked = { repeatable = 0.01 }
+	modifier = {
+		army_health = 0.02
+		shipclass_military_station_hull_mult = 0.02
+		army_damage_mult = 0.02
+		ship_tracking_add = 0.5
+		ship_accuracy_add = 0.5
+		ship_speed_mult = 0.02
+		ship_interstellar_speed_mult = 0.02
+		ship_shield_mult = 0.02
+		leader_lifespan_add = 10
+		starbase_shipyard_build_cost_mult = 0.05
+		armies_cost_mult = 0.05
+	}
+}
+
+#######################################################
+# Post-Sophont Evolution - Synthetic Age (Synthetic Dawn - Still Counts)
+tech_post_sophont_evolution = {
+	area = physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { computing }
+	levels = 5
+	is_rare = yes
+	prerequisites = {
+		"tech_advanced_metallurgy_2"
+		"tech_combat_computers_3"
+		"tech_colonization_4"
+	}
+	weight = @repeatableTechWeight
+	potential = { has_ascension_perk = ap_synthetic_age }
+	weight_modifier = {
+		factor = 0.5
+		modifier = { factor = @repatableTechFactor has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 1.5
+			has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+		}
+		modifier = { factor = 0.01 has_technology = tech_post_sophont_evolution }
+	}
+	ai_weight = { factor = 1 }
+	weight_groups = { repeatable }
+	mod_weight_if_group_picked = { repeatable = 0.01 }
+	modifier = {
+		army_damage_mult = 0.02
+		army_health = 0.02
+		shipclass_military_station_hull_mult = 0.02
+		shipclass_military_station_damage_mult = 0.02
+		shipclass_starbase_damage_mult = 0.02
+		ship_weapon_damage = 0.02
+		ship_hull_mult = 0.02
+		ship_armor_mult = 0.02
+		ship_shield_mult = 0.02
+		ship_speed_mult = 0.02
+		starbase_shipyard_build_cost_mult = 0.05
+		armies_cost_mult = 0.05
+	}
+}

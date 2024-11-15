@@ -1,0 +1,1132 @@
+##################
+### TECH COSTS ###
+##################
+# Mobile Fortifications (Tier 1)
+tech_mobile_fortifications_t1 = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_fusion_power" }
+	weight = @tier1weight2
+	modifier = { army_health = 0.01 army_defense_health_mult = 0.01 armies_upkeep_mult = -0.02 }
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#####################################################################################
+# Adaptive Fortifications (Tier 2)
+tech_adaptive_fortifications_t2 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_mobile_fortifications_t1" "tech_cold_fusion_power" "tech_ship_armor_2" }
+	weight = @tier2weight1
+	modifier = { army_health = 0.01 army_defense_health_mult = 0.01 armies_upkeep_mult = -0.02 }
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#####################################################################################
+# Mobile Bunkers (Tier 3)
+tech_mobile_bunkers_t3 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_adaptive_fortifications_t2" "tech_shields_3" "tech_pd_tracking_2" }
+	weight = @tier2weight3
+	modifier = { army_health = 0.01 army_defense_health_mult = 0.01 armies_upkeep_mult = -0.02 }
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+#####################################################################################
+# Mobile Bunkers (Tier 4)
+tech_tectonic_fortress_t4 = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_mobile_bunkers_t3" "tech_mobile_field_base" }
+	weight = @tier3weight2
+	modifier = { army_health = 0.02 army_defense_health_mult = 0.02 armies_upkeep_mult = -0.05 }
+	weight_modifier = { factor = 0.75
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+##################################################################################################
+##### HK - OTHER		#########################################################################
+##################################################################################################
+# Interlinked Drone Command Systems (Tier 1 - Normal)
+tech_interlinked_drone_command_systems_t1 = {
+	area = physics
+	tier = 1
+	cost = @tier1cost2
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_fusion_power" "tech_administrative_ai" }
+	weight = @tier1weight2
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_health = 0.01
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Drone Neural Casing Network (Tier 2 - Normal)
+tech_drone_neural_casing_network_t2 = {
+	area = physics
+	tier = 2
+	cost = @tier2cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_interlinked_drone_command_systems_t1" "tech_cold_fusion_power" "tech_combat_computers_1" }
+	weight = @tier2weight1
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_health = 0.01
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 0.75 has_ethic = ethic_pacifist }
+		modifier = { factor = 0.65 has_ethic = ethic_fanatic_pacifist }
+		modifier = { factor = 1.1 has_ethic = ethic_militarist }
+		modifier = { factor = 1.2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Drone Neural Impulse Unit (Tier 3 - Normal)
+tech_drone_neural_impulse_unit_t3 = {
+	area = physics
+	tier = 2
+	cost = @tier2cost3
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_drone_neural_casing_network_t2" "tech_self_aware_logic" }
+	weight = @tier2weight3
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_health = 0.01
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 0.75 has_ethic = ethic_pacifist }
+		modifier = { factor = 0.65 has_ethic = ethic_fanatic_pacifist }
+		modifier = { factor = 1.1 has_ethic = ethic_militarist }
+		modifier = { factor = 1.2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Titan Command Matrix (Tier 4 - Normal)
+tech_titan_command_matrix_t4 = {
+	area = physics
+	tier = 3
+	cost = @tier3cost2
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_drone_neural_impulse_unit_t3" "tech_combat_computers_2" }
+	weight = @tier3weight2
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.02
+		planet_jobs_produces_mult = 0.02
+		station_researchers_produces_mult = 0.02
+		station_gatherers_produces_mult = 0.02
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 0.75 has_ethic = ethic_pacifist }
+		modifier = { factor = 0.65 has_ethic = ethic_fanatic_pacifist }
+		modifier = { factor = 1.1 has_ethic = ethic_militarist }
+		modifier = { factor = 1.2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+#############################################################################################################################
+#############################################################################################################################
+# Interlinked Drone Command Systems (Tier 1 - Hive)
+tech_interlinked_drone_command_systems_t1_hive = {
+	area = physics
+	tier = 1
+	cost = @tier1cost2
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_fusion_power" "tech_administrative_ai" }
+	weight = @tier1weight2
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_health = 0.01
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 0 is_hive_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Drone Neural Casing Network (Tier 2 - Hive)
+tech_drone_neural_casing_network_t2_hive = {
+	area = physics
+	tier = 2
+	cost = @tier2cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_interlinked_drone_command_systems_t1" "tech_cold_fusion_power" "tech_combat_computers_1" }
+	weight = @tier2weight1
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_health = 0.01
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_hive_empire = no }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Drone Neural Impulse Unit (Tier 3 - Hive)
+tech_drone_neural_impulse_unit_t3_hive = {
+	area = physics
+	tier = 2
+	cost = @tier2cost3
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_drone_neural_casing_network_t2" "tech_self_aware_logic" }
+	weight = @tier2weight3
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_health = 0.01
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_hive_empire = no }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Titan Command Matrix (Tier 4 - Hive)
+tech_titan_command_matrix_t4_hive = {
+	area = physics
+	tier = 2
+	cost = @tier2cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_drone_neural_impulse_unit_t3" "tech_combat_computers_2" }
+	weight = @tier2weight1
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.02
+		planet_jobs_produces_mult = 0.02
+		station_researchers_produces_mult = 0.02
+		station_gatherers_produces_mult = 0.02
+	}
+	weight_modifier = { factor = 0.5
+		modifier = { factor = 0.5
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+			}
+		}
+		modifier = { factor = 0 is_hive_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+##### ADAPTIVE COMBAT ALGORITHMS - SYNTHETIC EXCLUSIVE	   #####################################
+##################################################################################################
+# Enhanced Swarm Sensor Fusion (Tier 1)
+tech_enhanced_swarm_sensor_fusion_t1 = {
+	cost = @tier1cost2
+	area = physics
+	tier = 1
+	category = { computing }
+	prerequisites = { "tech_fusion_power" "tech_administrative_ai" }
+	weight = @tier1weight2
+	potential = { is_machine_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.03
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		armies_upkeep_mult = -0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+# Mobile Super-Heavy Drone Hubs (Tier 2)
+tech_mobile_super_heavy_drone_hubs_t2 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_enhanced_swarm_sensor_fusion_t1" "tech_cold_fusion_power" "tech_combat_computers_1" }
+	weight = @tier2weight1
+	potential = { is_machine_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.03
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		armies_upkeep_mult = -0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+##################################################################################################
+# Drone Carriers (Tier 3)
+tech_drone_carriers_t3 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = {
+		"tech_mobile_super_heavy_drone_hubs_t2"
+		"tech_mobile_field_base"
+		"tech_adaptive_combat_algorithms"
+		"tech_self_aware_logic"
+	}
+	weight = @tier2weight3
+	potential = { is_machine_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.03
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		armies_upkeep_mult = -0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+##################################################################################################
+# Drone Dreadnoughts (Tier 4)
+tech_drone_dreadnoughts_t4 = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_drone_carriers_t3" "tech_combat_computers_2" }
+	weight = @tier3weight2
+	potential = { is_machine_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.03
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		armies_upkeep_mult = -0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_industry } }
+	}
+}
+
+##################################################################################################
+# Drone Planetary Fleets (Tier 5)
+tech_drone_planetary_fleets_t5 = {
+	cost = @tier4cost1
+	area = physics
+	tier = 4
+	category = { computing }
+	prerequisites = { "tech_drone_dreadnoughts_t4" "tech_hypercomms_forum" }
+	weight = @tier4weight1
+	potential = { is_machine_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_health = 0.03
+		planet_jobs_produces_mult = 0.01
+		station_researchers_produces_mult = 0.01
+		station_gatherers_produces_mult = 0.01
+		armies_upkeep_mult = -0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+		modifier = { factor = 0 is_machine_empire = no }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_computing } }
+	}
+}
+
+##################################################################################################
+######## CLONE COMMANDOS #########################################################################
+##################################################################################################
+# Clone Commandos (Tier 1)
+tech_clone_commandos_t1 = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_gene_banks" "tech_gene_tailoring" }
+	weight = @tier1weight2
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+##################################################################################################
+# Replicant Commandos (Tier 2)
+tech_replicant_commandos_t2 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_clone_commandos_t1" "tech_gene_expressions" }
+	weight = @tier2weight1
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+##################################################################################################
+# Project Star Shield (Tier 3)
+tech_project_star_shield_t3 = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_replicant_commandos_t2" "tech_combat_computers_2" }
+	weight = @tier2weight3
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory } }
+	}
+}
+
+##################################################################################################
+# Project FORCE (Tier 4)
+tech_force_legion_t4 = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { military_theory }
+	prerequisites = {
+		"tech_project_star_shield_t3"
+		"tech_colonization_4"
+		"tech_combat_computers_3"
+		"tech_advanced_metallurgy_2"
+	}
+	weight = @tier4weight1
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_health = 0.02
+		army_damage_mult = 0.02
+		army_morale = 0.02
+		armies_upkeep_mult = 0.05
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory } }
+	}
+}
+
+##################################################################################################
+######## PSI-WARRIORS ############################################################################
+##################################################################################################
+# Order Commandos (Tier 1)
+tech_order_commandos_t1 = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { psionics }
+	weight = @tier1weight2
+	is_reverse_engineerable = no
+	prerequisites = { "tech_psionic_theory" "tech_gene_banks" }
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_stability_add = 1
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 0.1
+		modifier = { factor = 0.1 is_spiritualist = no }
+		# modifier = { factor = 1.1 research_leader = { area = society has_level > 2 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 1.5 research_leader = { area = society has_level > 3 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 2 research_leader = { area = society has_level > 4 has_trait = "leader_trait_expertise_psionics" } }
+		modifier = { factor = 2 has_ethic = "ethic_fanatic_spiritualist" }
+		modifier = { factor = 5 has_trait_in_council = { TRAIT = leader_trait_maniacal } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0
+			AND = {
+				is_materialist = yes
+				NOT = { has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+			}
+		}
+	}
+	ai_weight = {
+		factor = 5		# Very rare tech
+		modifier = { factor = 1.5 is_spiritualist = yes }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+	}
+}
+
+##################################################################################################
+# Order Wardens (Tier 2)
+tech_order_wardens_t2 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { psionics }
+	weight = @tier2weight1
+	is_reverse_engineerable = no
+	prerequisites = { "tech_order_commandos_t1" "tech_gene_expressions" }
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_stability_add = 1
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 0.1
+		modifier = { factor = 0.1 is_spiritualist = no }
+		# modifier = { factor = 1.1 research_leader = { area = society has_level > 2 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 1.5 research_leader = { area = society has_level > 3 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 2 research_leader = { area = society has_level > 4 has_trait = "leader_trait_expertise_psionics" } }
+		modifier = { factor = 2 has_ethic = "ethic_fanatic_spiritualist" }
+		modifier = { factor = 5 has_trait_in_council = { TRAIT = leader_trait_maniacal } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0
+			AND = {
+				is_materialist = yes
+				NOT = { has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+			}
+		}
+	}
+	ai_weight = {
+		factor = 5		# Very rare tech
+		modifier = { factor = 1.5 is_spiritualist = yes }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+	}
+}
+
+##################################################################################################
+# The Guardian Temple (Tier 3)
+tech_guardian_temple_t3 = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { psionics }
+	weight = @tier2weight3
+	is_reverse_engineerable = no
+	prerequisites = { "tech_order_wardens_t2" "tech_mine_zro" }
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_stability_add = 1
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 0.1
+		modifier = { factor = 0.1 is_spiritualist = no }
+		# modifier = { factor = 1.1 research_leader = { area = society has_level > 2 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 1.5 research_leader = { area = society has_level > 3 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 2 research_leader = { area = society has_level > 4 has_trait = "leader_trait_expertise_psionics" } }
+		modifier = { factor = 2 has_ethic = "ethic_fanatic_spiritualist" }
+		modifier = { factor = 5 has_trait_in_council = { TRAIT = leader_trait_maniacal } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0
+			AND = {
+				is_materialist = yes
+				NOT = { has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+			}
+		}
+	}
+	ai_weight = {
+		factor = 5		# Very rare tech
+		modifier = { factor = 1.5 is_spiritualist = yes }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+	}
+}
+
+##################################################################################################
+# Lords of the Order (Tier 4)
+tech_lords_of_the_order_t4 = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { psionics }
+	weight = @tier4weight1
+	is_reverse_engineerable = no
+	prerequisites = { "tech_guardian_temple_t3" "tech_mine_dark_matter" "tech_telepathy" }
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_stability_add = 2
+		ship_orbital_bombardment_mult = 0.02
+		army_health = 0.02
+		army_damage_mult = 0.02
+		army_morale = 0.02
+		armies_upkeep_mult = 0.05
+	}
+	weight_modifier = { factor = 0.1
+		modifier = { factor = 0.1 is_spiritualist = no }
+		# modifier = { factor = 1.1 research_leader = { area = society has_level > 2 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 1.5 research_leader = { area = society has_level > 3 has_trait = "leader_trait_expertise_psionics" } }
+		# modifier = { factor = 2 research_leader = { area = society has_level > 4 has_trait = "leader_trait_expertise_psionics" } }
+		modifier = { factor = 2 has_ethic = "ethic_fanatic_spiritualist" }
+		modifier = { factor = 5 has_trait_in_council = { TRAIT = leader_trait_maniacal } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0
+			AND = {
+				is_materialist = yes
+				NOT = { has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+			}
+		}
+	}
+	ai_weight = {
+		factor = 5		# Very rare tech
+		modifier = { factor = 1.5 is_spiritualist = yes }
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_psionics } }
+	}
+}
+
+##################################################################################################
+######## XENO CAVALRY ############################################################################
+##################################################################################################
+# Xeno Cavalry (Tier 1)
+tech_xeno_cavalry_t1 = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_morphogenetic_field_mastery" "tech_gene_tailoring" }
+	weight = @tier1weight2
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+#########################################################################################
+# Xenosequence Hybridization (Tier 2)
+tech_xenosequence_hybridization_t2 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_xeno_cavalry_t1" "tech_gene_expressions" }
+	weight = @tier2weight3
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+#########################################################################################
+# Xenomass Augmentation (Tier 3)
+tech_xenomass_augmentation_t3 = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_xenosequence_hybridization_t2" "tech_colonization_4" }
+	weight = @tier2weight3
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+#########################################################################################
+# Immortals (Tier 4)
+tech_immortals_t4 = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { biology }
+	prerequisites = { "tech_xenomass_augmentation_t3" "tech_galactic_campaigns" "tech_galactic_bureaucracy" }
+	weight = @tier4weight1
+	potential = { is_gestalt = no }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_health = 0.02
+		army_damage_mult = 0.02
+		army_morale = 0.02
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+##################################################################################################
+######## XENO CAVALRY (HIVE) #####################################################################
+##################################################################################################
+# Xeno Cavalry (Tier 1)
+tech_xeno_cavalry_t1_hive = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }
+	prerequisites = { "tech_morphogenetic_field_mastery" "tech_gene_tailoring" }
+	weight = @tier1weight2
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_gestalt = no }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+#########################################################################################
+# Xenosequence Hybridization (Tier 2)
+tech_xenosequence_hybridization_t2_hive = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_xeno_cavalry_t1" "tech_gene_expressions" }
+	weight = @tier2weight3
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_gestalt = no }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+#########################################################################################
+# Xenomass Augmentation (Tier 3)
+tech_xenomass_augmentation_t3_hive = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_xenosequence_hybridization_t2" "tech_colonization_4" }
+	weight = @tier2weight3
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.01
+		army_health = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_gestalt = no }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+#########################################################################################
+# Immortals (Tier 4)
+tech_immortals_t4_hive = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { biology }
+	prerequisites = { "tech_xenomass_augmentation_t3" "tech_galactic_campaigns" "tech_galactic_bureaucracy" }
+	weight = @tier4weight1
+	potential = { is_hive_empire = yes }
+	modifier = {
+		ship_orbital_bombardment_mult = 0.02
+		army_health = 0.02
+		army_damage_mult = 0.02
+		army_morale = 0.02
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_gestalt = no }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_biology } }
+	}
+}
+
+##################################################################################################
+######## COMMISSAR SQUADS ########################################################################
+##################################################################################################
+# COMMISSAR SQUADS (Tier 1)
+tech_commissar_squads_t1 = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_planetary_unification" "tech_artificial_moral_codes" }
+	weight = @tier1weight2
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_crime_add = -5
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 NAND = { is_authoritarian = yes is_xenophobe = yes is_militarist = yes } }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+	}
+}
+
+#########################################################################################
+# PRAETOR SQUADS (Tier 2)
+tech_praetor_squads_t2 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_commissar_squads_t1" "tech_colonial_centralization" "tech_combat_training" }
+	weight = @tier2weight3
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_crime_add = -5
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 NAND = { is_authoritarian = yes is_xenophobe = yes is_militarist = yes } }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+	}
+}
+
+#########################################################################################
+# JUDGE SQUADS (Tier 3)
+tech_judge_squads_t3 = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_praetor_squads_t2" "tech_manifest_destiny" "tech_collective_self" }
+	weight = @tier2weight3
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_crime_add = -5
+		ship_orbital_bombardment_mult = 0.01
+		army_damage_mult = 0.01
+		army_morale = 0.01
+		armies_upkeep_mult = 0.01
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 NAND = { is_authoritarian = yes is_xenophobe = yes is_militarist = yes } }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+	}
+}
+
+#########################################################################################
+# THE ULTIMATE SANCTION (Tier 4)  (THIS ENTRY DOES NOT EXIST) (GOT IT?)
+tech_ultimate_sanction_t4 = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { statecraft }
+	prerequisites = { "tech_judge_squads_t3" "tech_galactic_bureaucracy" }
+	weight = @tier4weight1
+	potential = { is_gestalt = no }
+	modifier = {
+		planet_crime_add = -5
+		ship_orbital_bombardment_mult = 0.02
+		army_damage_mult = 0.02
+		army_morale = 0.02
+		armies_upkeep_mult = 0.02
+	}
+	weight_modifier = { factor = 1.5
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+		modifier = { factor = 4 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 NAND = { is_authoritarian = yes is_xenophobe = yes is_militarist = yes } }
+	}
+	ai_weight = {
+		factor = 2
+		modifier = { factor = 1.25 has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft } }
+	}
+}

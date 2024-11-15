@@ -1,0 +1,62 @@
+
+on_game_start_country = {
+	events = {
+		adastratech.4
+	}
+}
+
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		adastratech.4
+		adastratech.1
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		adastratech.0
+	}
+}
+
+# A country is created via create_country or create_rebels
+# This = created country
+# From = root of context where create_country/create_rebels happens
+on_country_created = {
+	events = {
+		adastratech.25 # is_pirate
+		adastratech.26 # is_fallen_empire
+		adastratech.28 # Old Enemies
+		adastratech.29 # origin_post_apocalyptic
+	}
+}
+
+# You have changed the location of your capital. Also called when a country's capital is first set e.g. during galaxy creation (but then FROM is not set)
+# this/root = new capital
+# from = old capital
+on_capital_changed = {
+	events = {
+		adastratech.3
+	}
+}
+
+# This = Federation leader
+# From = Joining member
+on_join_federation = {
+	events = {
+		adastratech.2
+	}
+}
+
+# Called during empire initialization when starting a new game
+# scope: country
+empire_init_add_technologies = {
+	events = {
+		adastratech.2
+		adastratech.26 # is_fallen_empire
+		adastratech.29 # origin_post_apocalyptic
+	}
+}

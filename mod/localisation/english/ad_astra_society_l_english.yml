@@ -1,0 +1,171 @@
+﻿l_english:
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########  AD ASTRA SOCIETY MASTERY TECH     #####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+# Tech Localization Template
+# tech_template:0 ""
+# tech_template_desc:0 ""
+
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########      SOCIETY TECHNOLOGIES          ####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+# Nutrient Replication Mastery
+ tech_nutrient_replication_mastery:0 "Breakthrough: Replicator Technology"
+ tech_nutrient_replication_mastery_desc:1 "Replicator Technology represents a quantum leap forward for our civilization. While extremely costly to manufacture, and extremely energy intense, the Replicator Systems can convert large amounts of raw waste materials into anything that is so required. While the yield is relatively small, due to the technology not being fully efficient, the results speak for themselves in major food output gains and drastically reduced construction times, as we can now produce specialized parts anywhere at any time."
+
+# Colonization 2
+# tech_colonization_2_mastery:0 "Breakthrough: Adaptive Colonization Protocols"
+# tech_colonization_2_mastery_desc:1 "Settling new worlds is a major undertaking. Even our own homeworld has shown its darker tendencies, and other worlds has greater demands. By modifying environmental control and life-support systems on a site-to-site basis, we can improve the overall quality of life for our colonists, and also make more streamlined operation protocols for opening up more of the planet for colonization at a lower cost."
+
+# Colonization 3
+# tech_colonization_3_mastery:0 "Breakthrough: Heavy Colonial Reinforcement Program"
+# tech_colonization_3_mastery_desc:1 "Keen understanding of the various hazardous environments found on other planets help greatly to alleviate the difficulties that are expected of early colonies; but also by studying the vast ranges of different worlds out there - some more extreme than others - solutions are found which allow for settlement in a much greater range of environments and settlements that are much more resilient to local conditions, in addition to more efficient standardized protocols for settling new worlds."
+
+# Colonization 4
+# tech_colonization_4_mastery:0 "Breakthrough: Foreign Worlds Adaptation Protocol"
+# tech_colonization_4_mastery_desc:1 "Investigation of various soils and their properties only forms part of an answer and a solution to living conditions on various worlds; keener understanding of how to utilize various elements to maximize agricultural yields, energy production, mining yields and essentially overall essential resource supply allows our colonists to more easily adapt to the local conditions with little to no difficulty, making living conditions significantly better."
+
+# Colonization 5
+# tech_colonization_5_mastery:1 "Breakthrough: Ecological Analysis Mastery"
+# tech_colonization_5_mastery_desc:2 "No two worlds are exactly the same. Colder, hotter, wetter, drier - the sheer range of different planets is simply staggering in practice. But with the sheer number of worlds we have encountered and the different conditions we've encountered, we've also gained a tremendous amount of knowledge and new technologies that can now be adapted and applied on a grand scale, allowing us to settle worlds that previously would have been impossibly hostile previously to be easily settled."
+
+ ################################################################################################################################
+
+# Genome Mapping
+ tech_genome_mapping_mastery:0 "Breakthrough: Genetic Analysis Standardization"
+ tech_genome_mapping_mastery_desc:1 "The enhanced therapies and medical treatments as a result of more comprehensive full-scale genome mappings has already proven highly useful, and will serve as stepping stones towards creating medical systems vastly superior to our present ones."
+
+# Cloning
+ tech_cloning_mastery:0 "Breakthrough: Cloning Weave"
+ tech_cloning_mastery_desc:1 "Cloning whole bodies is one thing - but once the key factors of how to do so becomes mainstream, creating all but perfect clones of individual organic parts, essentially replacement parts that is much faster and easier to do than a whole body, will allow for rapid replacement of destroyed or damaged limbs and body parts without the fear of rejection by the body."
+
+# Gene Banks
+ tech_gene_banks_mastery:0 "Breakthrough: Gene Bank Augmentations"
+ tech_gene_banks_mastery_desc:1 "The same filtration and curation of available genome templates that we employ in our clones has also had significant advnatages for all others as well - as key understanding of the processes involved means we can also, theoretically, apply the same processes in gene-therapy treatments, making the vast majority - if not all - of our population stronger."
+
+# Regenerative Hull Tissue
+ tech_regenerative_hull_tissue_mastery:0 "Breakthrough: Regenerative Structure Weave"
+ tech_regenerative_hull_tissue_mastery_desc:0 "The applications of the new 'Regenerative Hull Tissues' that we have applied to our vessels also hold applications far beyond - due to their nature, and some work to ensure no issues, they can be applied to a vast range of different technologies - armor, vehicles, aerospace craft among them, allowing for overall far more durable engineering."
+
+ ################################################################################################################################
+
+ # Doctrine: Space Combat
+# tech_doctrine_fleet_size_1_mastery:0 "Breakthrough: Doctrine - Fleet Pre-Battle Analysis Protocols"
+# tech_doctrine_fleet_size_1_mastery_desc:1 "Conflicts in space is not about the actual battles. The truth is that the battles for supremacy start long before the actual conflicts - the logistical chains, the applications of recon, distribution of munitions and so forth, in addition to the refinement of the arsenal of the fleet as a whole, understanding how every weapon has its own place and purpose - is the key to winning not merely one battle, but all. On the ground, this would be one thing. In the three-dimensional realm of space, it is quite another."
+
+ # Doctrine: Reactive Formations
+# tech_doctrine_fleet_size_2_mastery:0 "Breakthrough: Doctrine - Deep Space Forward Operations"
+# tech_doctrine_fleet_size_2_mastery_desc:1 "An Admiral who know all possible adaptations to take advantage of the space around its fleet know how to use its fleets to maximum effectiveness. If the admirals do not know how to adapt advantageously, even if they know all there is to know about the fleet and the space around them, they cannot take advantage of it."
+
+ # Doctrine: Interstellar Warfare
+# tech_doctrine_fleet_size_3_mastery:0 "Breakthrough: Doctrine - Victory Before Battle"
+# tech_doctrine_fleet_size_3_mastery_desc:1 "To engage in warfare across the vast and unforgiving void of space is the furthest possible cry from ground combat and warfare. The art of logistics, of resource management, of command and control, of war on as titanic a scale as multi-lightyear warfare with fleets outstripping entire civilizations in resources and energy - it is an undertaking, a feat on its own, that requires refinement and rethinking of older doctrines on an entirely new scale."
+
+ # Doctrine: Fluid Fleet Templates
+# tech_doctrine_fleet_size_4_mastery:0 "Breakthrough: Doctrine - The Fluid Space"
+# tech_doctrine_fleet_size_4_mastery_desc:1 "When acting in a fluid battlespace, Admirals need to be prepared for any eventuality. In turn, so must their fleets."
+
+ # Doctrine: Armada Battle Formations
+ tech_doctrine_fleet_size_5_mastery:0 "Breakthrough: Doctrine - The Art of Interstellar War"
+ tech_doctrine_fleet_size_5_mastery_desc:1 "The control of a large fleet is the same principle as the control of a few ships; it is merely a question of dividing up their numbers."
+
+ #################################################################################################################################
+
+ # Centralized Command
+ tech_centralized_command_mastery:0 "Breakthrough: Command Adaptations"
+ tech_centralized_command_mastery_desc:1 "The knowledge of how to centralize our command structure - without creating a single, brittle weak-point - is also applicable across the board to every other structure. Planetary Defense, Planetary Command and Control, Training and Command Structure; there are many things that we can merge into a more centralized structure, allowing for greater efficiency overall and a stronger military without rendering our forces weaker to interference or creating a structural roadblock."
+
+ # Combat Training
+ tech_combat_training_mastery:0 "Breakthrough: Campaign Simulations"
+ tech_combat_training_mastery_desc:1 "Every battle is fought before it begins - and victory will usually go to the army and fleet who has the better trained one."
+
+ # Psionic Theory
+ tech_psionic_theory_mastery:0 "Breakthrough: Psionic Analysis"
+ tech_psionic_theory_mastery_desc:1 "Since the dawn of our civilization, the idea of 'magic' and 'mind over matter' has persisted throughout the ages. While we are not certain if this is truly 'magic' - all things considered, one might have to consider that as a possibility in the face of our bizarre universe - but the confirmation of Psionics explains a significant number of phenomena that we had thus far not properly understood - and with the knowledge, we can better both utilize and counter it in the future."
+
+# Precognition Interface
+ tech_precognition_interface_mastery:0 "Breakthrough: Precognition Matrix"
+ tech_precognition_interface_mastery_desc:1 "The integration of Precognition Interfaces extend far beyond the usage onboard vessels; implemented into various technolgical systems, the applications overall become apparent and significant, as our forces are no longer bound in the same way that they were once before."
+
+ # Planetary Unification
+# tech_planetary_unification_mastery:0 "Breakthrough: Planetary Command Force"
+# tech_planetary_unification_mastery_desc:2 "The unity of our homeworld is paramount not just to our empire, but our forces as well. By common cause, the divisions long ago melt away - in their place, a newfound sense of purpose and unity, stronger than all before."
+
+ # Colonial Centralization
+# tech_colonial_centralization_mastery:0 "Breakthrough: Colonial Military League"
+# tech_colonial_centralization_mastery_desc:1 "While a robust framework of local governance created per-case for each colony is well, it is the understanding of each colony - its local culture, thoughts and adaptations - that may allow for a greater reinforcement amongst recruits drawn from the colonies."
+
+ # Galactic Administration
+# tech_galactic_administration_mastery:0 "Breakthrough: Galactic Force"
+# tech_galactic_administration_mastery_desc:1 "The governance of our empire is vast and complex. The world we hold numerous and varied. To understand them - to find the underlying key elements which binds all together, may allow for a stronger, more cohesive military that is significantly more difficult to break."
+
+ # Psionic Shields
+ tech_psionic_shield_mastery:0 "Breakthrough: Psionic Shield Arrays"
+ tech_psionic_shield_mastery_desc:0 "The keen understanding of how to generate, maintain and direct Psionic Shields on the scale we operate is nothing short of exceptional, even by our own quite high standards. Applying the shields on much grander scales - protecting installations, colonies and even integrating it into the standard gear of our forces, though significantly weaker than when performed by a specialist - it is compensated by layering them together with our older shield technologies, resulting in some of the most advanced and powerful shield that have ever been created."
+
+ ###########################################################################################################################################
+
+# Doctrine: Fleet Support
+# tech_doctrine_navy_size_1_mastery:0 "Breakthrough: Doctrine - Fleet Outposts"
+# tech_doctrine_navy_size_1_mastery_desc:1 "The establishment and maintenance of small outposts - usually converted asteroids or similar - at key locations throughout our empire equate easier and more rapid repair and maintenance for ships, starbases and armies."
+
+# Doctrine: Support Vessels
+# tech_doctrine_navy_size_2_mastery:1 "Breakthrough: Doctrine - Standardized Multi-Purpose Components"
+# tech_doctrine_navy_size_2_mastery_desc:1 "By utilizing components that are easily adapted to a wide range of different purposes, we can reduce the strain on our logistics corps. The most significant issue lies with making sure the components can fit their designated task ranges, but remains doable with significant effort."
+
+# Doctrine: Interstellar Logistics
+# tech_doctrine_navy_size_3_mastery:0 "Breakthrough: Doctrine - Deep Space Supply Networks"
+# tech_doctrine_navy_size_3_mastery_desc:0 "Keeping deep space facilities - close to the edge of the systems, typically small asteroids or rogue planets - that are also hidden supply bases with their own fabricator facilities, hangars and self-sustainment capacity means we can maintain a much more expansive logistics network."
+
+# Doctrine: Fleet Liasons
+# tech_doctrine_navy_size_4_mastery:0 "Breakthrough: Doctrine - Self-Sustainment Operations"
+# tech_doctrine_navy_size_4_mastery_desc:0 "Regardless if it's a matter of fleets, armies or starbases, supplies might not be available as quickly as is needed. By standardizing technology and training that allows a level of self-sustainment - at least for a time - necessary resources for long-endurance operations can be drastically reduced."
+
+ ###########################################################################################################################################
+
+# Deep Strike Simulations
+ tech_space_warfare_simulations:0 "Breakthrough: Space Warfare Simulations"
+ tech_space_warfare_simulations_desc:1 "Conflicts in space is not about the actual battles. The truth is that the battles for supremacy start long before the actual conflicts - the logistical chains, the applications of recon, distribution of munitions and so forth, in addition to the refinement of the arsenal of the fleet as a whole, understanding how every weapon has its own place and purpose - is the key to winning not merely one battle, but all. On the ground, this would be one thing. In the three-dimensional realm of space, it is quite another.\n\nTo that end, establishment and maintenance of small outposts - usually converted asteroids or similar - at key locations throughout our empire equate easier and more rapid repair and maintenance for ships, starbases and armies - but also deep space recon and intelligence that, once fed into pre-engagement simulations - offer potential glimpses into all possible outcomes that an enemy force might commit to."
+
+# Deep Strike Simulations
+ tech_deep_strike_simulations:0 "Breakthrough: Deep Strike Simulations"
+ tech_deep_strike_simulations_desc:1 "An Admiral who know all possible adaptations to take advantage of the space around its fleet know how to use its fleets to maximum effectiveness. If the admirals do not know how to adapt advantageously, even if they know all there is to know about the fleet and the space around them, they cannot take advantage of it."
+
+# Campaign Simulation Systems
+ tech_campaign_simulation_systems:0 "Breakthrough: Campaign Simulation Systems"
+ tech_campaign_simulation_systems_desc:1 "To engage in warfare across the vast and unforgiving void of space is the furthest possible cry from ground combat and warfare. The art of logistics, of resource management, of command and control, of war on as titanic a scale as multi-lightyear warfare with fleets outstripping entire civilizations in resources and energy - it is an undertaking, a feat on its own, that requires refinement and rethinking of older doctrines on an entirely new scale."
+
+# Independent Operation Standardization
+ tech_independent_operation_standardization:0 "Breakthrough: Independent Operation Standardization"
+ tech_independent_operation_standardization_desc:1 "When acting in a fluid battlespace, Admirals need to be prepared for any eventuality. In turn, so must their fleets. In that regard - regardless if it's a matter of fleets, armies or starbases, supplies might not be available as quickly as is needed. By standardizing technology and training that allows a level of self-sustainment - at least for a time - necessary resources for long-endurance operations can be drastically reduced."
+
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########    SOCIETY WEAPON TECHNOLOGIES      ####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+# Amoeba Strike Craft
+ tech_amoeba_strike_craft_1_mastery:0 "Breakthrough: Amoeba Bionics"
+ tech_amoeba_strike_craft_1_mastery_desc:1 "The 'Space Amoeba' life-form is a particularly bizarre creature - it is born in space, lives and reproduces in space and ultimately lives out its entire lifespan in it, implying a genetic and biological structure that is distinctly unique. This has in turn led to many applications of its evolutionary traits in bionic technology, resulting in many major steps forward overall across the board - micro-drones, radiation energy conversion more efficient than our own; the list goes on, but in general, the biology behind the 'Space Amoeba' has many uses to us."
+
+# Swarm Strike Craft
+ tech_swarm_strike_craft_1_mastery:0 "Breakthrough: Swarm Bionics"
+ tech_swarm_strike_craft_1_mastery_desc:1 "Dissection and analysis of the remains of the Prethoryn Scourge's bizarre strike craft - the bulk of which is organic in nature with seemingly bionic and non-organic parts 'grown' inside their bodies (a level of biological and genetic control far beyond our own), reveals a level of biological and bionic engineering on a colossal scale. Learning from this and applying it in our own bionic systems and material technologies will take significant amounts of time, but have immense applications."
+
+# Swarm Scourge Missile
+ tech_scourge_missile_1_mastery:0 "Breakthrough: Scourge Arsenal"
+ tech_scourge_missile_1_mastery_desc:1 ""Scourge Missiles" as they are referred to are, at their core, bionic constructs which combine technology with biological structure - in essence, every part is an organ or organic for the most part, but is infused with non-organic materials and structure in such a manner that it can replicate the ability of advanced technology; even beyond our own.\n\nThis means that the Scourge Missiles can be grown rather than built at extremely rapid rates - and possess a significant amount of power, easily matching our most advanced missile technology. Studying and reverse-engineering the materials and technology involved may yield critical insights into drastically improving our own weapon technologies."
+
+# Space Whale Weapons
+ tech_space_whale_weapon_1_mastery:0 "Breakthrough: Frequency Siphon"
+ tech_space_whale_weapon_1_mastery_desc:1 "The Tiyanki energy siphon technology is incredibly useful in many ways; but most of all, it allows for a dramatic reduction in waste heat generated by our technology, which would otherwise have been forced to radiated away. This means our systems are significantly more fuel efficient, which boosts our energy production across the board overall."
+
+ tech_old_enemies:0 "Old Enemies"
+ tech_old_enemies_desc:0 ""

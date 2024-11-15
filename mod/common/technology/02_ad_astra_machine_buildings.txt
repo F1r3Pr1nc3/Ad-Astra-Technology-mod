@@ -1,0 +1,480 @@
+# ##################
+# AD ASTRA NORMAL BUILDINGS TECHNOLOGIES
+# ##################
+# Synchronized Research Networks
+tech_synchronized_research_networks = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_basic_science_lab_3"
+		"tech_space_science_3"
+		"tech_sensors_4"
+		"tech_self_aware_logic"
+		"tech_power_hub_2"
+		"tech_combat_computers_3"
+		"tech_power_plant_4"
+		"tech_colonization_4"
+		"tech_advanced_metallurgy_2"
+		"tech_mine_dark_matter"
+		"tech_zero_point_power"
+	}
+	weight = @tier5weight1
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+######################################################
+# The Infinity Network
+tech_the_infinity_network_synthetic = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_synchronized_research_networks"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_machine_empire = yes }
+	modifier = { job_cynosural_drone_machine_intelligence_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Streamlined Mega-Production
+tech_streamlined_megaproduction_synthetic = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_construction_templates"
+		"tech_space_defense_station_improvement"
+		"tech_space_mining_4"
+		"tech_mineral_purification_2"
+		"tech_mining_3"
+		"tech_ship_armor_4"
+		"tech_resource_processing_algorithms"
+		"tech_alloys_2"
+		"tech_self_aware_logic"
+		"tech_mass_drivers_4"
+	}
+	weight = @tier5weight1
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 is_gestalt = yes }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+	}
+}
+
+#############################################################################
+# Starlifting Operations
+tech_starlift_operations_synthetic = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_streamlined_megaproduction_synthetic"
+		"tech_space_mining_5"
+		"tech_nanite_assemblers"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_machine_empire = yes }
+	modifier = { job_starlift_drone_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Dedicated Organic Analysis Engines
+tech_dedicated_organic_analysis_engines = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_biomechanics"
+		"tech_food_processing_2"
+		"tech_colonization_5"
+		"tech_galactic_administration"
+		"tech_galactic_bureaucracy"
+		"tech_colonization_4"
+		"tech_basic_science_lab_3"
+		"tech_self_aware_logic"
+		"tech_resource_processing_algorithms"
+		"tech_adaptive_bureaucracy"
+	}
+	weight = @tier5weight1
+	modifier = { job_macro_core_drone_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0.01 has_civic = civic_machine_terminator }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+#############################################################################
+# Bio-Codexing
+tech_bio_codexing = {
+	area = society
+	category = { new_worlds }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_dedicated_organic_analysis_engines"
+		"tech_climate_restoration"
+		"tech_gene_expressions"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0.01 has_civic = civic_machine_terminator }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
+		}
+	}
+}
+
+#############################################################################
+#############################################################################
+# Quantum Mirror Signalling
+tech_quantum_mirror_signalling = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_positronic_implants"
+		"tech_autocurating_vault"
+		"tech_embodied_dynamism"
+		"tech_galactic_administration"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+#############################################################################
+# Quantum-FTL Entanglement
+tech_quantum_ftl_entanglement = {
+	area = physics
+	category = { computing }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_social_megahubs"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight3
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+	}
+}
+
+#######################################################################################################
+#######################################################################################################
+# Central Defence Command
+tech_central_defence_command = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_global_defense_grid"
+		"tech_combat_training"
+		"tech_command_matrix"
+		"tech_galactic_administration"
+		"tech_construction_templates"
+	}
+	weight = @tier5weight1
+	potential = { is_machine_empire = yes }
+	modifier = { job_warmind_drone_per_pop = 0.01 }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Adaptive Defence Matrix
+tech_adaptive_defence_matrix = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = { "tech_central_defence_command" }
+	weight = @tier5weight2
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = {
+				any_owned_planet = {
+					OR = {
+						merg_is_arcology = yes
+						merg_is_machine_world = yes
+					}
+				}
+				has_ascension_perk = ap_machine_worlds
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Omni-Force Command
+tech_omni_force_command = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost2
+	prerequisites = {
+		"tech_central_defence_command"
+		"tech_mega_engineering"
+	}
+	weight = @tier5weight2
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Orbital Command Core
+tech_orbital_command_core = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_central_defence_command"
+		"tech_habitat_1"
+	}
+	weight = @tier5weight1
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 1.5 has_ethic = ethic_militarist }
+		modifier = { factor = 2 has_ethic = ethic_fanatic_militarist }
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+##############################################################################################
+# Cybernetic Defence Grid
+tech_cybernetic_defence_grid = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost1
+	prerequisites = {
+		"tech_central_defence_command"
+		"tech_adaptive_combat_algorithms"
+		"tech_nanite_assemblers"
+		"tech_combat_computers_autonomous"
+	}
+	weight = @tier5weight1
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = {
+			factor = 0
+			NOR = { has_ascension_perk = ap_synthetic_age }
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}
+
+#######################################################################################
+# Enigmatic Arsenal
+tech_enigmatic_arsenal_synthetic = {
+	area = society
+	category = { military_theory }
+	tier = 5
+	cost = @tier5cost3
+	prerequisites = {
+		"tech_central_defence_command"
+		"tech_mine_dark_matter"
+		"tech_ship_armor_5"
+		"tech_enigmatic_encoder"
+		"tech_enigmatic_decoder"
+	}
+	weight = @tier5weight3
+	is_rare = yes
+	potential = { is_machine_empire = yes }
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
+		modifier = { factor = 0 has_technology = tech_enigmatic_arsenal_synthetic }
+		modifier = { factor = 0 has_technology = tech_enigmatic_arsenal }
+		modifier = {
+			factor = 0
+			NOR = { has_ascension_perk = ap_synthetic_age }
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
+		}
+	}
+}

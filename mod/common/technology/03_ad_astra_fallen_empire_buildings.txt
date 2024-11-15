@@ -1,0 +1,61 @@
+# ##################
+# AD ASTRA NORMAL BUILDINGS TECHNOLOGIES
+# ##################
+
+# The Aegis Forge
+tech_aegis_forge = {
+	area = society
+	is_rare = yes
+	category = { military_theory }
+	tier = 5
+	cost = 0
+	weight = 0
+}
+
+################################################################
+
+# The Atomic Forge
+tech_atomic_forge = {
+	area = engineering
+	is_rare = yes
+	category = { industry }
+	tier = 5
+	cost = 0
+	weight = 0
+}
+
+#################################################################
+
+# Celestial Paradise
+tech_celestial_paradise = {
+	area = society
+	is_rare = yes
+	category = { statecraft }
+	tier = 5
+	cost = 0
+	weight = 0
+}
+
+#################################################################
+
+# Cynosural Singularity
+tech_cynosural_singularity = {
+	area = physics
+	is_rare = yes
+	category = { computing }
+	tier = 5
+	cost = 0
+	weight = 0
+}
+
+#################################################################
+
+# World Engine
+tech_world_engine = {
+	area = society
+	is_rare = yes
+	category = { new_worlds }
+	tier = 5
+	cost = 0
+	weight = 0
+}

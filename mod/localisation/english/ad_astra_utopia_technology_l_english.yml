@@ -1,0 +1,63 @@
+﻿l_english:
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########   AD ASTRA UTOPIA ASCENSION TECH    ####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########    BIOLOGICAL ASCENSION TECH       ####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+# Biorobotics Mastery
+ tech_biorobotics_mastery:0 "Bio-Robotics Mastery"
+ tech_biorobotics_mastery_desc:0 "Our understanding and mastery of the biological realm, in conjunction with our understanding gleamed from the vast Cynosural Realm, has led us to a point where we now stand on the threshold of going beyond mere evolution. Biorobotics - the art of understanding, creating and molding biological and bionic systems to rival and even in some cases exceed the purely synthetic - essentially becoming biological entities that rival synthetics in every aspect - but able to grow, adapt, evolve, reproduce. Effectively, a new stage of biological life, as we can literally grow into our new path rather than be forced to change. What lies ahead, we cannot say for certain. But it may be a new frontier, and we stand ready to boldly forge ahead towards a new horizon."
+ tech_biorobotics_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$ \n\n£job£ Empire Job Output: §G+5%§!\nEmpire Mineral, Food and Energy Output: §G+5%§!\nEmpire Army Morale, Damage, Health: §G+5%§!\nShip Damage, Hull, Armor, Shields, Range, Speed: §G+5%§!\nMilitary Station Hull: §G+5%§!\nMilitary Station and Starbase Damage: §G+5%§!\nMachine Modification Points: §G+1§!\nLeader Age: §G+50 Years§!"
+
+# Bionic Suit
+ tech_bionic_suit_technology:0 "Bionic Suit"
+ tech_bionic_suit_technology_desc:0 "With our effective mastery of biotechnology and bionics, we have reached a point where we are capable of creating new bionic power suits, nicknamed 'Skin Suits' or "Gel Suits". These suits utilize highly advanced biotechnology and bionic technology which, in their smallest form, is essentially a suit that is a translucent or transparent layer at most as thick as the skin of our species at most; yet is completely self-healing and provides effectively all the boons a fully sealed suit of our best power armors would without being in any way, shape or form a hindrance to the user. More advanced and larger variants only escalate from there in protection and power, and the technology is easily adapted to the vast majority of our technology, resulting in a massive overall boon to our industry and military."
+
+# Bionic Engineering
+ tech_bionic_engineering:0 "Bionic Engineering"
+ tech_bionic_engineering_desc:0 "Our mastery of the biological realm has become something of a merger between the synthetic and the organic realm - we can now create organic structures that are as resilient, powerful and efficient as synthetic ones, but retain their organic structure and nature - vice versa, impart bionic properties onto synthetic systems. After all, the base components of reality remain unchanged; all we've done is alter the base materials and structure of organic matter to incredible results. In theory, we can apply our knowledge to create self-healing, extremely strong materials of any kind and on a massive scale; essentially, we can create augments, armor, ships, vehicles and aerospace craft that are both resilient and near maintenance free; living materials, strong and enduring. The possibilities are massive."
+
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########    SYNTHETIC ASCENSION TECH        #####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+# Quantum Foam Computing
+ tech_quantum_foam_computing:0 "Quantum Foam Computing"
+ tech_quantum_foam_computing_desc:0 "Our entire civilization has ascended past our ancient limitations. We are free to do as we please, and yet ... we are not secure in our place. Nor are we truly, properly finished. Our researchers have put forward an idea - utilizing our connection to the Cynosural Realm, we theorize the use of a new, immensely powerful form of 'Mind' for a lack of better words, using quantum foam technology storing the bulk of components outside the standard baryonic realms, Neutronium-density materials and zero-point energy systems. The result is effectively continent or even planet-sized brain capacity stored in impossibly small containment systems. Even if destroyed, the 'Mind' will remain linked to the Cynosural Realm - though in what state it will continue to exist in, we cannot even begin to guess. We may be taking the first steps towards a new frontier, beyond even our synthetic existence."
+ tech_quantum_foam_computing_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$ \n\n£job£ Empire Job Output: §G+5%§!\nEmpire Mineral and Energy Output: §G+5%§!\nEmpire Army Morale, Damage, Health: §G+5%§!\nShip Damage, Hull, Armor, Shields, Range, Speed: §G+5%§!\nMilitary Station Hull: §G+5%§!\nMilitary Station and Starbase Damage: §G+5%§!\nMachine Modification Points: §G+1§!\nLeader Skill Level Capacity:§G+1§!"
+
+# Swarm Intelligence
+ tech_swarm_intelligence:0 "Swarm Intelligence"
+ tech_swarm_intelligence_desc:0 "In the past, the definition of a body was essentially that it could only hold one mind. But what if we can redefine that? What if, we can go beyond that? Using our most advanced FTL communication technology, synchronized network algorithms, superpositioning solutions and mass-enhanced neural matrix connections, a single individual mind can control hundreds, even thousands of smaller drones and synthetic bodies without requiring the aid of an artificial intelligence. In essence, one mind become a thousand bodies - the Hive Mind of the Individual."
+
+# Singularity Network
+ tech_singularity_network:0 "Singularity Network"
+ tech_singularity_network_desc:0 "With our ascension comes new challenges. And new opportunities. We no longer need vessels that are crewed by hundreds, even thousands and armies of countless individuals - but a single, all-present Captain or Commander and supporting AI systems, operating at speeds that would be so far beyond anything organics could ever achieve, utilizing hyper-advanced computing networks and software on a scale that is unheard of. With this change, we can replace many unnecessary things - such as life-support, crew quarters and so forth - with additional power, armor, shields and engines. Likewise, on the ground, a single commander operating entire armies is now not only feasible, but practical. The cost will be much greater, certainly. But the reward will be vast improvements."
+
+ ####################################################################################################################################
+ #############                                 ######################################################################################
+ ###########      PSIONIC ASCENSION TECH        #####################################################################################
+ ############                                  ######################################################################################
+ ####################################################################################################################################
+
+# Cynosural Ascension
+ tech_cynosural_ascension:0 "Cynosural Ascension"
+ tech_cynosural_ascension_desc:0 "While our understanding of The Shroud grows, another realm draws our attention. A strange realm, but ... familiar, somehow, perhaps a part of The Shroud or perhaps something akin to The Shroud. We cannot say for certain. The Cynosural Realm, however, has its own share of beings - many of them more powerful than majority of entities that roam The Shroud, yet most nigh completely uncaring of our comings and goings. It has not the raw Psychic might of The Shroud - but incredible power nevertheless to rival it. If we were to understand this realm, perhaps even delve into it - we could learn so much, we could understand and evolve far past anything we have seen thus far. We may even rival the beings of The Shroud, or find a new path of existence and a Second Transcendence, as we stand before the threshold of a new age - and a brave new world yonder."
+ tech_cynosural_ascension_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n£job£ Empire Job Output: §G+5%§!\nEmpire Energy, Food and Mineral Output: §G+5%§!\nEmpire Army Morale, Damage, Health: §G+5%§!\nShip Damage, Hull, Armor, Shields, Range, Speed: §G+5%§!\nStarbase Hull: §G+5%§!\nMilitary Station and Starbase Damage: §G+5%§!\nMachine Modification Points: §G+1§!\nLeader Age: §G+50 Years§!"
+
+# Phase Armor
+ tech_phase_armor_technology:0 "Phase Armor"
+ tech_phase_armor_technology_desc:0 "The Phase Armor is, at first glance, a bizarre form of technology. Sacrificing armor for Psionic Amplifiers and Shield Generators, the Phase Armor is engrained with colossal amounts of Zro-bonded materials (at least relative to our previous generations), creating a psionically reactive dust material called Aetherium. When it is melted and forged into materials, the result is effectively a 'Shroud Armor' that act as an amplifier for Psionic potential. While the Aetherium Dust has many other uses as well, bonding it to create Phase Armor results in a level of sheer Psionic power that elevates our weakest Psionics to levels previously reserved for our most potent wielders."
+
+# Shroud Force
+ tech_shroud_force:0 "Shroud Force"
+ tech_shroud_force_desc:0 "The Shroud offers us many gifts - knowledge, power, all we could ever desire. But as we move through The Shroud, we also catch glimpses of ... something else. A realm, adjacent to The Shroud - or perhaps one that The Shroud seeks to understand as well. We cannot say for certain. What we do know, is that this 'Cynosural Realm' is different from The Shroud - more "real", as if part of our reality in such ways that we cannot quite understand it, yet ... holds the strange old familiarity in the same way The Shroud does. By combining what we learn from both realms - the few pockets where we glimpse the Cynosural Realm and The Shroud equally, we learn to harness more and more of our potential - in time, perhaps, becoming something greater."

@@ -1,0 +1,534 @@
+# Maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+# morale_damage = 1		# Average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+# Arsenal Command Vehicle
+arsenal_command_vehicle = {
+	damage = 2
+	health = 2
+	morale = 2
+	morale_damage = 2
+	collateral_damage = 1.5
+	war_exhaustion = 2
+	time = 180
+	icon = GFX_army_type_primitive
+	prerequisites = { "tech_mobile_field_base" }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			alloys = 50
+			rare_crystals = 10
+			exotic_gases = 10
+			volatile_motes = 10
+		}
+		upkeep = { energy = 2 }
+	}
+	show_tech_unlock_if = {
+		OR = {
+			is_machine_empire = no
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			OR = {
+				is_machine_empire = no
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+	}
+}
+
+#######################################################
+# Arsenal Command Vehicle
+arsenal_command_vehicle_synthetic = {
+	damage = 2
+	health = 2
+	has_morale = no
+	morale_damage = 2
+	collateral_damage = 3
+	war_exhaustion = 1
+	time = 180
+	has_species = yes
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			alloys = 50
+			rare_crystals = 10
+			exotic_gases = 10
+			volatile_motes = 10
+		}
+		upkeep = { energy = 2 }
+	}
+	potential_country = { is_machine_empire = yes }
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
+	}
+
+	show_tech_unlock_if = { is_machine_empire = yes }
+	prerequisites = { "tech_mobile_field_base" }
+}
+
+####################################################################
+####################################################################
+# Augment Forces
+augment_forces = {
+	damage = 2
+	health = 2
+	morale_damage = 1.5
+	collateral_damage = 3
+	war_exhaustion = 1
+	has_morale = no
+	time = 120
+	icon = GFX_army_type_slave
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+			alloys = 25
+			rare_crystals = 5
+			exotic_gases = 5
+			volatile_motes = 5
+		}
+		upkeep = { energy = 1 }
+	}
+	prerequisites = {
+		"tech_mobile_field_base"
+		"tech_slave_colonies"
+	}
+	allow = {
+		any_owned_pop = { is_pop_category = slave }
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			has_policy_flag = slavery_allowed
+			is_machine_empire = no
+		}
+		planet = { has_modifier = slave_colony }
+	}
+}
+
+# Replicant Arsenal Force
+replicant_arsenal_force = {
+	damage = 2
+	health = 2
+	morale = 2
+	collateral_damage = 2.5
+	war_exhaustion = 1
+	time = 60
+	icon = GFX_army_type_clone
+	pop_limited = no
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			alloys = 50
+			rare_crystals = 10
+			exotic_gases = 10
+			volatile_motes = 10
+		}
+		upkeep = { energy = 1.5 }
+	}
+	prerequisites = {
+		"tech_mobile_field_base"
+		"tech_gene_banks"
+	}
+	show_tech_unlock_if = {
+		has_technology = tech_mobile_field_base
+		OR = {
+			is_machine_empire = no
+			has_civic = civic_machine_assimilator
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			OR = {
+				is_machine_empire = no
+				has_civic = civic_machine_assimilator
+			}
+		}
+	}
+}
+
+# Gene Vanguard Armies
+gene_vanguard_army = {
+	damage = 3
+	health = 3.75
+	morale = 3.75
+	morale_damage = 1.5
+	collateral_damage = 1.125
+	war_exhaustion = 4.5
+	time = 225
+	icon = GFX_army_type_gene_warrior
+	resources = {
+		category = armies
+		cost = {
+			minerals = 300
+			alloys = 150
+			rare_crystals = 20
+			exotic_gases = 20
+			volatile_motes = 20
+		}
+		upkeep = { energy = 4.5 }
+	}
+	prerequisites = {
+		"tech_mobile_field_base"
+		"tech_gene_seed_purification"
+	}
+	show_tech_unlock_if = { has_technology = tech_mobile_field_base }
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			is_machine_empire = no
+		}
+	}
+}
+
+####################################################################
+####################################################################
+# Cybernetic Commander
+cybernetic_commander = {
+	damage = 3
+	health = 5
+	morale_damage = 3
+	collateral_damage = 4
+	war_exhaustion = 2
+	has_morale = no
+	time = 240
+	icon = GFX_army_type_robot
+	has_species = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+			alloys = 100
+			rare_crystals = 25
+			exotic_gases = 25
+			volatile_motes = 25
+		}
+		upkeep = { energy = 4 }
+	}
+	potential = {
+		from = { has_trait = "trait_mechanical" }
+		owner = {
+			is_machine_empire = no
+		}
+	}
+	prerequisites = { "tech_cybernetic_command" }
+	allow = {
+		owner = {
+			NOT = { has_policy_flag = robots_outlawed }
+		}
+		planet = { has_building = "building_arsenal_command_terminal" }
+	}
+}
+
+####################################################################
+# Warform Commander
+warform_commander = {
+	damage = 3
+	health = 5
+	morale_damage = 3
+	collateral_damage = 4
+	war_exhaustion = 2
+	has_morale = no
+	time = 240
+	icon = GFX_army_type_robot
+	has_species = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+			alloys = 100
+			rare_crystals = 25
+			exotic_gases = 25
+			volatile_motes = 25
+		}
+		upkeep = { energy = 4 }
+	}
+	potential_country = { is_machine_empire = yes }
+	potential = {
+		from = { has_trait = "trait_machine_unit" }
+		planet = { has_building = "building_arsenal_command_nexus" }
+	}
+	prerequisites = { "tech_cybernetic_defence_grid" }
+}
+
+################################################################################
+################################################################################
+# Wyrmguard
+wyrmguard = {
+	damage = 4
+	health = 5
+	morale = 5
+	morale_damage = 2
+	collateral_damage = 1.5
+	war_exhaustion = 6
+	time = 300
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			minerals = 300
+			alloys = 150
+			rare_crystals = 50
+			exotic_gases = 50
+			volatile_motes = 50
+		}
+		upkeep = {
+			energy = 5
+			alloys = 0.5
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			is_machine_empire = no
+			OR = {
+				has_technology = tech_wyrmguard
+				has_technology = tech_xenodraconian_mutations
+			}
+		}
+		planet = {
+			OR = {
+				has_building = "building_wyrmguard_citadel"
+				has_building = "building_wyrmguard_citadel_hive"
+			}
+		}
+	}
+}
+
+################################################################################
+################################################################################
+# Occulari Order
+occulari_order = {
+	damage = 4
+	morale_damage = 3
+	health = 3.5
+	morale = 5
+	collateral_damage = 1
+	war_exhaustion = 6
+	time = 240
+	icon = GFX_army_type_psionic
+	resources = {
+		category = armies
+		cost = {
+			alloys = 250
+			rare_crystals = 50
+			exotic_gases = 50
+			sr_zro = 5
+		}
+		upkeep = {
+			energy = 5
+			sr_zro = 0.2
+		}
+	}
+	prerequisites = { "tech_occulari_order" }
+	potential = {
+		from = {
+			OR = {
+				has_utopia = no
+				has_psionic_species_trait = yes
+			}
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			is_machine_empire = no
+		}
+		planet = { has_building = "building_occulari_tower" }
+	}
+}
+
+################################################################################
+################################################################################
+# Omega Fortress (Machine Empire)
+omega_fortress_synthetic = {
+	damage = 8
+	health = 12
+	has_morale = no
+	morale_damage = 3
+	collateral_damage = 8
+	war_exhaustion = 8
+	time = 1000
+	has_species = no
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			alloys = 800
+			sr_dark_matter = 5
+			sr_living_metal = 5
+		}
+		upkeep = {
+			energy = 16
+			sr_dark_matter = 0.2
+			sr_living_metal = 0.2
+		}
+	}
+	potential_country = { is_machine_empire = yes }
+	potential = {
+		planet = { has_building = "building_alpha_core" }
+	}
+
+	prerequisites = { "tech_enigmatic_arsenal_synthetic" }
+}
+
+# Omega Fortress (Synthetic Evolution)
+omega_fortress = {
+	damage = 8
+	health = 12
+	has_morale = no
+	morale_damage = 3
+	collateral_damage = 8
+	war_exhaustion = 8
+	time = 1000
+	has_species = no
+	icon = GFX_army_type_machine_assault
+	resources = {
+		category = armies
+		cost = {
+			alloys = 800
+			sr_dark_matter = 5
+			sr_living_metal = 5
+		}
+		upkeep = {
+			energy = 16
+			sr_dark_matter = 0.2
+			sr_living_metal = 0.2
+		}
+	}
+	potential = {
+		from = { has_trait = "trait_mechanical" }
+		owner = {
+			is_machine_empire = no
+		}
+		planet = { has_building = "building_alpha_fortress" }
+	}
+	prerequisites = { "tech_enigmatic_arsenal" }
+}
+
+################################################################################
+################################################################################
+# Colossi Army
+colossi_army = {
+	damage = 3
+	morale_damage = 2.75
+	health = 2.6
+	morale = 3.75
+	collateral_damage = 0.75
+	war_exhaustion = 2
+	time = 180
+	icon = GFX_army_type_psionic
+	resources = {
+		category = armies
+		cost = {
+			alloys = 150
+			rare_crystals = 25
+			exotic_gases = 25
+			sr_zro = 1
+		}
+		upkeep = {
+			energy = 4
+			sr_zro = 0.1
+		}
+	}
+	prerequisites = { "tech_psi_forge_technologies" }
+	potential = {
+		from = {
+			OR = {
+				has_utopia = no
+				has_psionic_species_trait = yes
+			}
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+			}
+			is_sapient = yes
+		}
+		owner = {
+			is_machine_empire = no
+		}
+		planet = { has_building = "building_occulari_tower" }
+	}
+}
+
+###############################################################################################
+###############################################################################################
+# Xeno Reavers
+xeno_reavers = {
+	damage = 3
+	morale_damage = 3
+	collateral_damage = 7.5
+	war_exhaustion = 1
+	health = 3
+	has_morale = no
+	time = 150
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	resources = {
+		category = armies
+		cost = {
+			alloys = 150
+			rare_crystals = 25
+			exotic_gases = 25
+			volatile_motes = 25
+		}
+		upkeep = {
+			energy = 3
+			exotic_gases = 0.1
+		}
+	}
+	potential_country = {
+		is_machine_empire = no
+		OR = {
+			has_technology = tech_bio_war_mastery
+			has_technology = tech_dread_hive_mutations
+		}
+	}
+	potential = {
+		planet = {
+			OR = {
+				has_building = "building_gene_forge_spires"
+				has_building = "building_forced_evolution_spires"
+			}
+		}
+	}
+}
