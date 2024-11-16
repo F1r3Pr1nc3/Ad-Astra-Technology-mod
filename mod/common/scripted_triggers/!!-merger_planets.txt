@@ -3,8 +3,23 @@
 is_giga_habitat = { always = no }
 giga_is_pc_ringworld_hive = { always = no }
 
-merg_is_arcology = { is_planet_class = pc_city }
-merg_is_relic_world = { is_planet_class = pc_relic }
+merg_is_arcology = {
+	OR = {
+		is_planet_class = pc_city
+
+		# NOTE: evolved and merger are not compatible, so no issue if people use merger and this added check gets overwritten
+		tec_is_city_world = yes
+	}
+
+}
+merg_is_relic_world = {
+	OR = {
+		is_planet_class = pc_relic
+
+		# NOTE: evolved and merger are not compatible, so no issue if people use merger and this added check gets overwritten
+		tec_is_relic_world = yes
+	}
+}
 # List of all habitable ringworld sections.
 merg_is_hab_ringworld = {
 	habitable_structure = yes # Exlcude some ringworld entities is_artificial = yes
@@ -47,6 +62,9 @@ merg_is_hab_ringworld = {
 		# # Warship Girls and MIST species.
 		# is_planet_class = pc_ringworld_habitable_sh
 		# is_planet_class = pc_ringworld_habitable_wsg
+
+		# NOTE: evolved and merger are not compatible, so no issue if people use merger and this added check gets overwritten
+		tec_is_ringworld = yes
 	}
 }
 
@@ -86,6 +104,9 @@ merg_is_habitat = {
 		# is_planet_class = pc_gigaorbital_ring ### (Mod) Gigastructural Engineering & More
 		# is_planet_class = pc_pd_toxic_hab # Giga Diversity
 		# is_planet_class = pc_GFnytp_habitis # Nyto Species Pack
+
+		# NOTE: evolved and merger are not compatible, so no issue if people use merger and this added check gets overwritten
+		tec_is_habitat = yes
 	}
 }
 
@@ -95,6 +116,9 @@ merg_is_hive_world = {
 		is_planet_class = pc_hive
 		giga_is_pc_ringworld_hive = yes # Gigastructural Engineering & More
 		uses_district_set = hive_world
+
+		# NOTE: evolved and merger are not compatible, so no issue if people use merger and this added check gets overwritten
+		tec_is_hive_world = yes
 	}
 }
 
@@ -125,7 +149,7 @@ merg_is_gas_giant = {
 # TODO UPDATE active sub-mod-triggers
 merg_is_machine_world = {
 	optimize_memory
-	# OR = {
+	OR = {
 		is_planet_class = pc_machine
 		# Planetary Diversity
 		# pd_is_pd_machine_arc = yes
@@ -140,7 +164,10 @@ merg_is_machine_world = {
 		# ZOFE
 		# is_zofe_utopian_machine = yes
 		# is_zofe_utopian_machine_ringworld = yes
-	# }
+
+		# NOTE: evolved and merger are not compatible, so no issue if people use merger and this added check gets overwritten
+		tec_is_machine_world = yes
+	}
 }
 
 gpm_is_planet_class_city = {

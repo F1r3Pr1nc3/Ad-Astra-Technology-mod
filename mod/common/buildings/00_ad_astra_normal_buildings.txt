@@ -48,6 +48,60 @@ building_grand_academy = {
 		}
 		job_cynosural_researcher_add = 1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_technician_add = -1
+				job_head_researcher_add = -1
+				job_researcher_add = -5
+				job_enforcer_add = -1
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				regular_count = 1
+				regular_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_head_researcher
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 5
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -116,6 +170,68 @@ building_cynosural_beacon = {
 		planet_researchers_produces_mult = 0.15
 		planet_technician_energy_produces_mult = 0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -2
+				job_technician_add = -2
+				job_merchant_add = -1
+				job_head_researcher_add = -1
+				job_researcher_add = -7
+				job_enforcer_add = -2
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 2
+				secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				regular_count = 2
+				regular_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_head_researcher
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 7
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -179,6 +295,67 @@ building_cynosural_lighthouse = {
 		job_enforcer_add = 2
 		planet_researchers_produces_mult = 0.2
 		planet_technician_energy_produces_mult = 0.2
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -2
+				job_technician_add = -2
+				job_merchant_add = -1
+				job_head_researcher_add = -1
+				job_researcher_add = -7
+				job_enforcer_add = -2
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 2
+				secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				regular_count = 2
+				regular_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_head_researcher
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 7
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -245,6 +422,7 @@ building_tectonic_foundry = {
 		planet_metallurgists_produces_mult = 0.1
 		planet_artisans_produces_mult = 0.1
 	}
+
 	country_modifier = { country_resource_max_add = 500 }
 	triggered_planet_modifier = {
 		potential = {
@@ -253,6 +431,7 @@ building_tectonic_foundry = {
 		}
 		job_starlift_specialist_add = 1
 	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -260,6 +439,75 @@ building_tectonic_foundry = {
 		}
 		job_roboticist_add = 1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_miner_add = -2
+				job_foundry_add = -2
+				job_artisan_add = -1
+				job_researcher_add = -2
+				job_enforcer_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = yes }
+				}
+				job_roboticist_add = -1
+			}
+
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 2
+				regular_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_artisan
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -333,6 +581,74 @@ building_starlift_foundry = {
 		}
 		job_roboticist_add = 2
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_miner_add = -4
+				job_foundry_add = -3
+				job_artisan_add = -3
+				job_researcher_add = -4
+				job_enforcer_add = -2
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = yes }
+				}
+				job_roboticist_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 4
+				regular_secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_artisan
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -406,6 +722,74 @@ building_stellar_foundry = {
 		}
 		job_roboticist_add = 2
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_miner_add = -4
+				job_foundry_add = -3
+				job_artisan_add = -3
+				job_researcher_add = -4
+				job_enforcer_add = -2
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = yes }
+				}
+				job_roboticist_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 4
+				regular_secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_artisan
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -475,75 +859,68 @@ building_colonial_agency_headquarters = {
 		}
 		job_farmer_add = 2
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_mechanical_empire = yes }
-		}
-		job_roboticist_add = 1
+
+	# handles all the ruler swaps
+	inline_script = {
+		script = buildings/regular_empire_capital_jobs
+		PRIMARY_JOB = 1
+		SECONDARY_JOB = 1
+		TERTIARY_JOB = 0
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					is_megacorp = yes
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_healthcare_add = -2
+				job_researcher_add = -2
+				job_enforcer_add = -1
 			}
-		}
-		modifier = { job_politician_add = 1 }
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = no }
+				}
+				job_farmer_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 2
+				regular_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { is_mechanical_empire = no }
+				\\\\\\\"
+			}
+		"
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = { job_executive_add = 1 }
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_high_priest_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_noble_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_merchant_add = 1
-		}
-	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -617,74 +994,74 @@ building_evolutionary_spire = {
 		}
 		job_farmer_add = 4
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_mechanical_empire = yes }
-		}
-		job_roboticist_add = 2
+	# handles all the ruler swaps
+	inline_script = {
+		script = buildings/regular_empire_capital_jobs
+		PRIMARY_JOB = 2
+		SECONDARY_JOB = 1
+		TERTIARY_JOB = 0
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					is_megacorp = yes
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_healthcare_add = -4
+				job_researcher_add = -4
+				job_enforcer_add = -1
+				job_soldier_add = -1
 			}
-		}
-		modifier = { job_politician_add = 2 }
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = { job_executive_add = 2 }
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_politician_add = 2
-			job_high_priest_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_politician_add = 2
-			job_noble_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 2
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_politician_add = 2
-			job_merchant_add = 1
-		}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = no }
+				}
+				job_farmer_add = -4
+			}
+
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 4
+				regular_secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { is_mechanical_empire = no }
+				\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -755,74 +1132,73 @@ building_arcadian_garden = {
 		}
 		job_farmer_add = 4
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_mechanical_empire = yes }
-		}
-		job_roboticist_add = 2
+	inline_script = {
+		script = buildings/regular_empire_capital_jobs
+		PRIMARY_JOB = 2
+		SECONDARY_JOB = 1
+		TERTIARY_JOB = 0
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					is_megacorp = yes
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_healthcare_add = -4
+				job_researcher_add = -4
+				job_enforcer_add = -1
+				job_soldier_add = -1
 			}
-		}
-		modifier = { job_politician_add = 2 }
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = { job_executive_add = 2 }
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_politician_add = 2
-			job_high_priest_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_politician_add = 2
-			job_noble_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 2
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_politician_add = 2
-			job_merchant_add = 1
-		}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = no }
+				}
+				job_farmer_add = -4
+			}
+
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 4
+				regular_secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { is_mechanical_empire = no }
+				\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -907,6 +1283,58 @@ building_planetary_forum = {
 		planet_jobs_unity_produces_mult = 0.1
 		pop_government_ethic_attraction = 0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -2
+				job_entertainer_add = -2
+				job_merchant_add = -2
+				job_culture_worker_add = -4
+				job_enforcer_add = -1
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 2
+				secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_culture_worker
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	prerequisites = { "tech_social_megahubs" }
 	upgrades = {
 		"building_paradise_city"
@@ -983,6 +1411,67 @@ building_paradise_city = {
 		planet_jobs_unity_produces_mult = 0.3
 		pop_government_ethic_attraction = 0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -2
+				job_entertainer_add = -4
+				job_merchant_add = -2
+				job_culture_worker_add = -5
+				job_enforcer_add = -1
+				job_soldier_add = -1
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 2
+				secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_culture_worker
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_paradise_engineering" }
 	show_tech_unlock_if = {
 		is_gestalt = no
@@ -1052,6 +1541,59 @@ building_citadel_of_culture = {
 		planet_jobs_unity_produces_mult = 0.15
 		pop_government_ethic_attraction = 0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -4
+				job_entertainer_add = -5
+				job_merchant_add = -4
+				job_culture_worker_add = -7
+				job_enforcer_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 4
+				secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_culture_worker
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_universal_forum" }
 	show_tech_unlock_if = {
 		is_gestalt = no
@@ -1121,6 +1663,59 @@ building_universal_forum = {
 		planet_jobs_unity_produces_mult = 0.2
 		pop_government_ethic_attraction = 0.2
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -4
+				job_entertainer_add = -5
+				job_merchant_add = -4
+				job_culture_worker_add = -7
+				job_enforcer_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 4
+				secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_culture_worker
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_universal_forum" }
 	show_tech_unlock_if = {
 		is_gestalt = no
@@ -1185,6 +1780,51 @@ building_corporate_megaforum = {
 		planet_jobs_unity_produces_mult = 0.1
 		pop_government_ethic_attraction = 0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_entertainer_add = -2
+				job_merchant_add = -2
+				job_manager_add = -6
+				job_enforcer_add = -1
+			}
+
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 6
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_social_megahubs" }
 	convert_to = {
 		building_planetary_forum
@@ -1264,6 +1904,68 @@ building_jewel_city = {
 		planet_jobs_unity_produces_mult = 0.3
 		pop_government_ethic_attraction = 0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -2
+				job_entertainer_add = -5
+				job_merchant_add = -2
+				job_manager_add = -5
+				job_enforcer_add = -1
+				job_soldier_add = -1
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 2
+				secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 5
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_paradise_engineering" }
 	show_tech_unlock_if = { is_megacorp = yes }
 	# ai_weight = { factor = 500 }
@@ -1330,6 +2032,60 @@ building_megacorp_citadel = {
 		planet_jobs_unity_produces_mult = 0.15
 		pop_government_ethic_attraction = 0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -4
+				job_entertainer_add = -5
+				job_merchant_add = -4
+				job_manager_add = -7
+				job_enforcer_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 4
+				secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 7
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_galactic_megacorp_forums" }
 	show_tech_unlock_if = { is_megacorp = yes }
 	# ai_weight = { factor = 500 }
@@ -1396,6 +2152,60 @@ building_megacorp_hyperforum = {
 		planet_jobs_unity_produces_mult = 0.2
 		pop_government_ethic_attraction = 0.2
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -4
+				job_entertainer_add = -5
+				job_merchant_add = -4
+				job_manager_add = -7
+				job_enforcer_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 4
+				secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 7
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_galactic_megacorp_forums" }
 	show_tech_unlock_if = { is_megacorp = yes }
 	# ai_weight = { factor = 500 }
@@ -1454,62 +2264,85 @@ building_temple_city = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_1
 		}
 		planet_housing_add = 1
-		job_priest_add = 1
-		job_clerk_add = 1
-		job_healthcare_add = 1
-		job_enforcer_add = 1
 		pop_amenities_usage_mult = -0.02
 		planet_jobs_unity_produces_mult = 0.03
 		pop_ethic_spiritualist_attraction_mult = 0.03
+		mult = value:ad_astra_temple_scale
 	}
+
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_2
 		}
-		planet_housing_add = 2
 		job_priest_add = 1
 		job_clerk_add = 1
 		job_healthcare_add = 1
 		job_enforcer_add = 1
-		pop_amenities_usage_mult = -0.03
-		planet_jobs_unity_produces_mult = 0.06
-		pop_ethic_spiritualist_attraction_mult = 0.06
+		mult = value:ad_astra_temple_job_scale
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_3
-		}
-		planet_housing_add = 3
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.04
-		planet_jobs_unity_produces_mult = 0.09
-		pop_ethic_spiritualist_attraction_mult = 0.09
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_priest_add = -7
+				job_clerk_add = -2
+				job_healthcare_add = -2
+				job_enforcer_add = -1
+			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_spiritualist = yes }
+				}
+				job_priest_add = -1
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -1
+				mult = value:ad_astra_temple_job_scale
+			}
+
+			inline_script = {
+				script = jobs/tec_priest_split
+				count = 1
+				count_half = 0.5
+				mult = value:ad_astra_temple_job_scale|ADD|7|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|1|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_4
-		}
-		planet_housing_add = 4
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.06
-		planet_jobs_unity_produces_mult = 0.12
-		pop_ethic_spiritualist_attraction_mult = 0.12
-	}
+
 	prerequisites = { "tech_bastions_of_faith" }
 	convert_to = {
 		building_planetary_forum
@@ -1584,61 +2417,82 @@ building_celestial_temple = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_1
 		}
 		planet_housing_add = 1
-		job_priest_add = 1
-		job_clerk_add = 1
-		job_healthcare_add = 1
-		job_enforcer_add = 1
 		pop_amenities_usage_mult = -0.02
 		planet_jobs_unity_produces_mult = 0.03
 		pop_ethic_spiritualist_attraction_mult = 0.03
+		mult = value:ad_astra_temple_scale
 	}
+
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_2
 		}
-		planet_housing_add = 2
 		job_priest_add = 1
 		job_clerk_add = 1
 		job_healthcare_add = 1
 		job_enforcer_add = 1
-		pop_amenities_usage_mult = -0.03
-		planet_jobs_unity_produces_mult = 0.06
-		pop_ethic_spiritualist_attraction_mult = 0.06
+		mult = value:ad_astra_temple_job_scale
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_3
-		}
-		planet_housing_add = 3
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.04
-		planet_jobs_unity_produces_mult = 0.09
-		pop_ethic_spiritualist_attraction_mult = 0.09
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_4
-		}
-		planet_housing_add = 4
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.06
-		planet_jobs_unity_produces_mult = 0.12
-		pop_ethic_spiritualist_attraction_mult = 0.12
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_priest_add = -14
+				job_healthcare_add = -2
+				job_enforcer_add = -2
+			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_spiritualist = yes }
+				}
+				job_priest_add = -1
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -1
+				mult = value:ad_astra_temple_job_scale
+			}
+
+			inline_script = {
+				script = jobs/tec_priest_split
+				count = 1
+				count_half = 0.5
+				mult = value:ad_astra_temple_job_scale|ADD|14|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = value:ad_astra_temple_job_scale
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	prerequisites = { "tech_the_celestial_beacons" }
 	show_tech_unlock_if = { is_spiritualist = yes }
@@ -1703,61 +2557,82 @@ building_celestial_city = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_1
 		}
 		planet_housing_add = 1
-		job_priest_add = 1
-		job_clerk_add = 1
-		job_healthcare_add = 1
-		job_enforcer_add = 1
 		pop_amenities_usage_mult = -0.02
 		planet_jobs_unity_produces_mult = 0.03
 		pop_ethic_spiritualist_attraction_mult = 0.03
+		mult = value:ad_astra_temple_scale
 	}
+
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_2
 		}
-		planet_housing_add = 2
 		job_priest_add = 1
 		job_clerk_add = 1
 		job_healthcare_add = 1
 		job_enforcer_add = 1
-		pop_amenities_usage_mult = -0.03
-		planet_jobs_unity_produces_mult = 0.06
-		pop_ethic_spiritualist_attraction_mult = 0.06
+		mult = value:ad_astra_temple_job_scale
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_3
-		}
-		planet_housing_add = 3
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.04
-		planet_jobs_unity_produces_mult = 0.09
-		pop_ethic_spiritualist_attraction_mult = 0.09
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_4
-		}
-		planet_housing_add = 4
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.06
-		planet_jobs_unity_produces_mult = 0.12
-		pop_ethic_spiritualist_attraction_mult = 0.12
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_priest_add = -14
+				job_healthcare_add = -2
+				job_enforcer_add = -2
+			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_spiritualist = yes }
+				}
+				job_priest_add = -1
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -1
+				mult = value:ad_astra_temple_job_scale
+			}
+
+			inline_script = {
+				script = jobs/tec_priest_split
+				count = 1
+				count_half = 0.5
+				mult = value:ad_astra_temple_job_scale|ADD|14|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = value:ad_astra_temple_job_scale
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	prerequisites = { "tech_the_celestial_beacons" }
 	show_tech_unlock_if = { is_spiritualist = yes }
@@ -1802,6 +2677,51 @@ building_fortress_city = {
 		job_soldier_add = 4
 		planet_orbital_bombardment_damage = -0.05
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -3
+				job_soldier_add = -4
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.1
 		army_defense_damage_mult = 0.1
@@ -1870,6 +2790,53 @@ building_planetary_citadel = {
 		job_soldier_add = 6
 		planet_orbital_bombardment_damage = -0.1
 	}
+
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -4
+				job_soldier_add = -6
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 6
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.15
 		army_defense_damage_mult = 0.15
@@ -1931,6 +2898,50 @@ building_aegis_city = {
 		job_enforcer_add = 4
 		job_soldier_add = 6
 		planet_orbital_bombardment_damage = -0.1
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -4
+				job_soldier_add = -6
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 6
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	army_modifier = {
 		army_defense_health_mult = 0.2
@@ -1997,6 +3008,42 @@ building_panopticon_fortress = {
 		job_enforcer_add = 7
 		planet_crime_add = -50
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -7
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	army_modifier = {
 		army_defense_health_mult = 0.15
 		army_defense_damage_mult = 0.15
@@ -2058,6 +3105,43 @@ building_overseer_spire = {
 		job_enforcer_add = 7
 		pop_cat_slave_political_power = -0.25
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -7
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.15
 		army_defense_damage_mult = 0.15
@@ -2107,6 +3191,60 @@ building_vault_city = {
 		planet_orbital_bombardment_damage = -0.05
 		pc_nuked_habitability = 0.2
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_enforcer_add = -1
+				job_miner_add = -2
+				job_researcher_add = -1
+				job_farmer_add = -2
+			}
+
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 2
+				regular_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 2
+				regular_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -2146,6 +3284,31 @@ building_orbital_command_district = {
 		job_enforcer_add = 3
 		job_soldier_add = 4
 		planet_orbital_bombardment_damage = -0.05
+	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_enforcer_add = -3
+				job_soldier_add = -4
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	army_modifier = {
 		army_defense_health_mult = 0.1
@@ -2270,6 +3433,39 @@ building_gene_forge_spires = {
 		job_soldier_add = 3
 		planet_orbital_bombardment_damage = -0.05
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_healthcare_add = -2
+				job_enforcer_add = -3
+				job_soldier_add = -3
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	army_modifier = {
 		army_defense_health_mult = 0.1
 		army_defense_damage_mult = 0.1
@@ -2334,6 +3530,39 @@ building_arsenal_command_terminal = {
 		job_enforcer_add = 3
 		job_soldier_add = 3
 		planet_orbital_bombardment_damage = -0.05
+	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_roboticist_add = -2
+				job_enforcer_add = -3
+				job_soldier_add = -3
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	army_modifier = {
 		army_defense_health_mult = 0.1
@@ -2407,6 +3636,56 @@ building_wyrmguard_citadel = {
 		job_soldier_add = 7
 		planet_orbital_bombardment_damage = -0.1
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_foundry_add = -2
+				job_researcher_add = -2
+				job_healthcare_add = -2
+				job_enforcer_add = -4
+				job_soldier_add = -7
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = {
 		army_health = 0.1
 		army_damage_mult = 0.1
@@ -2473,6 +3752,56 @@ building_alpha_fortress = {
 		job_soldier_add = 7
 		planet_orbital_bombardment_damage = -0.1
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_foundry_add = -2
+				job_researcher_add = -2
+				job_roboticist_add = -2
+				job_enforcer_add = -4
+				job_soldier_add = -7
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = {
 		army_health = 0.1
 		army_damage_mult = 0.1
@@ -2538,6 +3867,57 @@ building_occulari_tower = {
 		job_enforcer_add = 4
 		job_soldier_add = 7
 		planet_orbital_bombardment_damage = -0.1
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_foundry_add = -2
+				job_researcher_add = -2
+				job_healthcare_add = -2
+				job_enforcer_add = -4
+				job_soldier_add = -7
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_soldier
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -2620,6 +4000,24 @@ building_interstellar_communication_array = {
 	planet_modifier = {
 		job_bureaucrat_add = 10
 		planet_housing_add = 10
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_bureaucrat_add = -10
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 10
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	country_modifier = {
 		empire_size_pops_mult = -0.1		# country_admin_cap_mult = 0.05
@@ -2716,6 +4114,24 @@ building_interstellar_administrative_array = {
 		job_bureaucrat_add = 15
 		planet_housing_add = 15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_bureaucrat_add = -15
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 15
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = {
 		empire_size_pops_mult = -0.1		# country_admin_cap_mult = 0.05
 	}
@@ -2807,6 +4223,24 @@ building_galactic_administrative_array = {
 		job_bureaucrat_add = 20
 		planet_housing_add = 20
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_bureaucrat_add = -20
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 20
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = {
 		empire_size_pops_mult = -0.1		# country_admin_cap_mult = 0.05
 	}
@@ -2865,6 +4299,9 @@ building_hydroponics_complex = {
 			merg_is_machine_world = yes
 			has_modifier = resort_colony
 		}
+
+		# evolved use evolved ones
+		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
 		exists = owner
@@ -2872,6 +4309,7 @@ building_hydroponics_complex = {
 			merg_is_machine_world = yes
 			has_modifier = resort_colony
 			# buildings_no_motes = yes
+			has_stellaris_evolved = yes
 		}
 	}
 	# allow = {
@@ -2927,6 +4365,54 @@ building_hydroponics_complex = {
 		}
 		modifier = { planet_housing_add = 1 }
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = {
+					job_farmer_add = -5
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = {
+					job_agri_drone_add = -5
+				}
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 5
+				regular_secondary_count = 3
+				hive_count = 5
+				hive_secondary_count = 3
+				machine_count = 5
+				machine_secondary_count = 3
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer_secondary
+				regular_count = 2
+				hive_count = 2
+				machine_count = 2
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -2953,6 +4439,10 @@ building_hydroponics_complex = {
 		text = job_farmer_effect_desc
 	}
 	prerequisites = { "tech_food_processing_2" }
+	show_tech_unlock_if = {
+		always = yes
+		has_stellaris_evolved = no
+	}
 	# ai_weight = {
 	# 	weight = 0
 	# 	modifier = {
@@ -2988,10 +4478,17 @@ building_mining_ports = {
 	category = resource
 	potential = {
 		NOT = { has_modifier = resort_colony }
+		# evolved use evolved ones
+		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
 		# exists = owner
-		has_modifier = resort_colony
+		OR = {
+			has_modifier = resort_colony
+
+			# evolved use evolved ones
+			has_stellaris_evolved = yes
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -3007,6 +4504,54 @@ building_mining_ports = {
 		}
 		modifier = { job_mining_drone_add = 2 }
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = {
+					job_miner_add = -2
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = {
+					job_mining_drone_add = -2
+				}
+			}
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 2
+				regular_secondary_count = 1
+				hive_count = 2
+				hive_secondary_count = 1
+				machine_count = 2
+				machine_secondary_count = 1
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_miner_secondary
+				regular_count = 1
+				hive_count = 1
+				machine_count = 1
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = { minerals = 300 }
@@ -3021,6 +4566,10 @@ building_mining_ports = {
 	}
 	prerequisites = { tech_deep_space_mining }
 	upgrades = { "building_mining_port_complex" }
+	show_tech_unlock_if = {
+		always = yes
+		has_stellaris_evolved = no
+	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3080,9 +4629,17 @@ building_mining_port_complex = {
 	can_build = no
 	potential = {
 		NOT = { has_modifier = resort_colony }
+
+		# evolved use evolved ones
+		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
-		has_modifier = resort_colony
+		OR = {
+			has_modifier = resort_colony
+
+			# evolved use evolved ones
+			has_stellaris_evolved = yes
+		}
 		# OR = {
 		# 	# buildings_no_motes = yes
 		# }
@@ -3114,6 +4671,55 @@ building_mining_port_complex = {
 		}
 		modifier = { planet_housing_add = 1 }
 	}
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = {
+					job_miner_add = -5
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = {
+					job_mining_drone_add = -5
+				}
+			}
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 5
+				regular_secondary_count = 3
+				hive_count = 5
+				hive_secondary_count = 3
+				machine_count = 5
+				machine_secondary_count = 3
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_miner_secondary
+				regular_count = 2
+				hive_count = 2
+				machine_count = 2
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -3133,6 +4739,10 @@ building_mining_port_complex = {
 		}
 	}
 	prerequisites = { tech_mineral_purification_2 }
+	show_tech_unlock_if = {
+		always = yes
+		has_stellaris_evolved = no
+	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3201,7 +4811,20 @@ building_reactor_complex = {
 	category = resource
 	potential = {
 		NOT = { has_modifier = resort_colony }
+
+		# evolved use evolved ones
+		has_stellaris_evolved = no
 	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+
+			# evolved use evolved ones
+			has_stellaris_evolved = yes
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -3215,6 +4838,53 @@ building_reactor_complex = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = { job_technician_drone_add = 2 }
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = {
+					job_technician_add = -2
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = {
+					job_technician_drone_add = -2
+				}
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				regular_count = 1
+				regular_secondary_count = 1
+				hive_count = 1
+				hive_secondary_count = 1
+				machine_count = 1
+				machine_secondary_count = 1
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_technician_secondary
+				regular_count = 1
+				hive_count = 1
+				machine_count = 1
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -3230,6 +4900,10 @@ building_reactor_complex = {
 	}
 	prerequisites = { tech_localized_power_systems }
 	upgrades = { "building_reactor_megacomplex" }
+	show_tech_unlock_if = {
+		always = yes
+		has_stellaris_evolved = no
+	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3293,9 +4967,16 @@ building_reactor_megacomplex = {
 	can_build = no
 	potential = {
 		NOT = { has_modifier = resort_colony }
+		# evolved use evolved ones
+		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
-		has_modifier = resort_colony
+		OR = {
+			has_modifier = resort_colony
+
+			# evolved use evolved ones
+			has_stellaris_evolved = yes
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -3317,6 +4998,52 @@ building_reactor_megacomplex = {
 			planet_housing_add = 3
 		}
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = {
+					job_technician_add = -5
+				}
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = {
+					job_technician_drone_add = -5
+				}
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				regular_count = 5
+				regular_secondary_count = 3
+				hive_count = 5
+				hive_secondary_count = 3
+				machine_count = 5
+				machine_secondary_count = 3
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_technician_secondary
+				regular_count = 2
+				hive_count = 2
+				machine_count = 2
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -3336,6 +5063,10 @@ building_reactor_megacomplex = {
 		}
 	}
 	prerequisites = { tech_power_hub_2 }
+	show_tech_unlock_if = {
+		always = yes
+		has_stellaris_evolved = no
+	}
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -3503,6 +5234,23 @@ building_medical_mega_facility = {
 	}
 	allow = { num_pops >= 50 }
 	planet_modifier = { job_healthcare_add = 2 }
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_healthcare_add = -2
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	army_modifier = { army_defense_health_mult = 0.05 }
 	resources = {
 		category = planet_branch_office_buildings
@@ -3593,6 +5341,32 @@ building_planetary_security_facilities = {
 		job_soldier_add = 1
 		job_enforcer_add = 1
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_soldier_add = -1
+				job_enforcer_add = -1
+			}
+			inline_script = {
+				script = jobs/tec_job
+				job = tec_hired_soldier
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = { country_naval_cap_add = 10 }
 	resources = {
 		category = planet_branch_office_buildings
@@ -3673,6 +5447,33 @@ building_information_brokers = {
 		job_merchant_add = 1
 		job_researcher_add = 1
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_merchant_add = -1
+				job_researcher_add = -1
+			}
+			inline_script = {
+				script = jobs/tec_job
+				job = tec_hired_researcher
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -3746,6 +5547,72 @@ building_academy_district = {
 			job_researcher_add = 2
 		}
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_technician_add = -1
+				job_researcher_add = -2
+				job_enforcer_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				}
+				modifier = {
+					job_researcher_add = -2
+				}
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				regular_count = 1
+				regular_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -3830,6 +5697,95 @@ building_foundry_district = {
 		}
 		job_roboticist_add = 1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_miner_add = -1
+				job_foundry_add = -1
+				job_artisan_add = -1
+				job_enforcer_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				}
+				modifier = {
+					job_foundry_add = -1
+					job_artisan_add = -1
+				}
+			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = yes }
+				}
+				job_roboticist_add = -1
+			}
+
+			inline_script = {
+				script = jobs/tec_miner
+				regular_count = 1
+				regular_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_artisan
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_artisan
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -3899,75 +5855,90 @@ building_agency_operations_district = {
 			job_healthcare_add = 1
 		}
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					is_megacorp = yes
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_farmer_add = -1
+				job_healthcare_add = -1
+				job_researcher_add = -1
+				job_enforcer_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				}
+				modifier = {
+					job_farmer_add = -1
+					job_healthcare_add = -1
 				}
 			}
-		}
-		modifier = { job_politician_add = 1 }
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 1
+				regular_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				regular_count = 1
+				regular_secondary_count = 1
+				mult = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { has_ascension_perk = ap_voidborn }
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_mechanical_empire = yes }
-		}
-		job_roboticist_add = 1
+
+	inline_script = {
+		script = buildings/regular_empire_capital_jobs
+		PRIMARY_JOB = 1
+		SECONDARY_JOB = 1
+		TERTIARY_JOB = 0
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_megacorp = yes }
-		}
-		modifier = { job_executive_add = 1 }
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_high_priest_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_noble_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_politician_add = 1
-			job_merchant_add = 1
-		}
-	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -4058,6 +6029,97 @@ building_orbital_forum = {
 			job_culture_worker_add = 1
 		}
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_clerk_add = -1
+				job_entertainer_add = -1
+				job_merchant_add = -1
+				job_culture_worker_add = -2
+				job_enforcer_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_social_megahubs
+					}
+				}
+				modifier = {
+					job_entertainer_add = -1
+					job_culture_worker_add = -1
+				}
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_social_megahubs
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_culture_worker
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_culture_worker
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_social_megahubs
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_social_megahubs" }
 	show_tech_unlock_if = {
 		is_gestalt = no
@@ -4117,62 +6179,27 @@ building_orbital_temple = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_1
 		}
 		planet_housing_add = 1
-		job_priest_add = 1
-		job_clerk_add = 1
-		job_healthcare_add = 1
-		job_enforcer_add = 1
 		pop_amenities_usage_mult = -0.02
 		planet_jobs_unity_produces_mult = 0.03
 		pop_ethic_spiritualist_attraction_mult = 0.03
+		mult = value:ad_astra_temple_scale
 	}
+
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_2
 		}
-		planet_housing_add = 2
 		job_priest_add = 1
 		job_clerk_add = 1
 		job_healthcare_add = 1
 		job_enforcer_add = 1
-		pop_amenities_usage_mult = -0.03
-		planet_jobs_unity_produces_mult = 0.06
-		pop_ethic_spiritualist_attraction_mult = 0.06
+		mult = value:ad_astra_temple_job_scale
 	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_3
-		}
-		planet_housing_add = 3
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.04
-		planet_jobs_unity_produces_mult = 0.09
-		pop_ethic_spiritualist_attraction_mult = 0.09
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_spiritualist = yes }
-			has_modifier = consecrated_quality_4
-		}
-		planet_housing_add = 4
-		job_priest_add = 2
-		job_clerk_add = 2
-		job_healthcare_add = 2
-		job_enforcer_add = 2
-		pop_amenities_usage_mult = -0.06
-		planet_jobs_unity_produces_mult = 0.12
-		pop_ethic_spiritualist_attraction_mult = 0.12
-	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -4185,6 +6212,90 @@ building_orbital_temple = {
 			planet_housing_add = 2
 			job_priest_add = 2
 		}
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_priest_add = -7
+				job_clerk_add = -2
+				job_healthcare_add = -2
+				job_enforcer_add = -1
+			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_spiritualist = yes }
+				}
+				job_priest_add = -1
+				job_clerk_add = -1
+				job_healthcare_add = -1
+				job_enforcer_add = -1
+				mult = value:ad_astra_temple_job_scale
+			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_bastions_of_faith
+					}
+				}
+				modifier = {
+					job_priest_add = -2
+				}
+			}
+
+			inline_script = {
+				script = jobs/tec_priest_split
+				count = 1
+				count_half = 0.5
+				mult = value:ad_astra_temple_job_scale|ADD|7|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_priest_split
+				count = 1
+				count_half = 0.5
+				mult = 2
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_bastions_of_faith
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 1
+				secondary_count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_healthcare
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|2|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = value:ad_astra_temple_job_scale|ADD|1|
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	prerequisites = { "tech_bastions_of_faith" }
 	show_tech_unlock_if = { is_spiritualist = yes }
@@ -4256,6 +6367,88 @@ building_megacorp_orbital_forum = {
 			job_manager_add = 3
 		}
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_entertainer_add = -1
+				job_merchant_add = -1
+				job_manager_add = -3
+				job_enforcer_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_social_megahubs
+					}
+				}
+				modifier = {
+					job_merchant_add = -1
+					job_manager_add = -3
+				}
+			}
+			inline_script = {
+				script = jobs/tec_entertainer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_merchant
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_social_megahubs
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_bureaucrat
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_social_megahubs
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	prerequisites = { "tech_social_megahubs" }
 	show_tech_unlock_if = { is_megacorp = yes }
 	# ai_weight = { factor = 500 }
@@ -4294,6 +6487,35 @@ building_expedition_headquarters = {
 		job_enforcer_add = 1
 		job_archeologist_regular_add = 2
 	}
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_researcher_add = -5
+				job_enforcer_add = -1
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 5
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_enforcer
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -4357,6 +6579,44 @@ building_strategic_resource_silo = {
 		}
 		modifier = { job_maintenance_drone_add = 2 }
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = { job_clerk_add = -4 }
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = { job_maintenance_drone_add = -2 }
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 4
+				secondary_count = 4
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 2
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = { minerals = 500 }
@@ -4439,6 +6699,43 @@ building_deep_strategic_resource_reserves = {
 		}
 		modifier = { job_maintenance_drone_add = 3 }
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = { job_clerk_add = -5 }
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = { job_maintenance_drone_add = -3 }
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 5
+				secondary_count = 5
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 3
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = { minerals = 500 }
@@ -4498,6 +6795,44 @@ building_universal_resource_reserves = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = { job_maintenance_drone_add = 5 }
+	}
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_regular_empire = yes }
+				}
+				modifier = { job_clerk_add = -7 }
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_gestalt = yes }
+				}
+				modifier = { job_maintenance_drone_add = -5 }
+			}
+			inline_script = {
+				script = jobs/tec_clerk
+				count = 7
+				secondary_count = 7
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 5
+				mult = 1
+				display = no_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings

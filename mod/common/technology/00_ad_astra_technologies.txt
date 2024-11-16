@@ -2223,6 +2223,10 @@ tech_strategic_resource_reserves = {
 		# modifier = { factor = 0.75 NOT = { research_leader = { area = engineering has_level > 3 } } }
 		modifier = { factor = 6 has_ascension_perk = ap_technological_ascendancy }
 	}
+	potential = {
+		always = yes
+		has_stellaris_evolved = no
+	}
 	ai_weight = {
 		modifier = { factor = 5 }
 	}

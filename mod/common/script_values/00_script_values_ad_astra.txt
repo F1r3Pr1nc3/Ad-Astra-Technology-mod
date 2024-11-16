@@ -6,3 +6,50 @@ tech_age_likelihood = {
 	subtract = $YEAR$ # effectively start year
 	mult = $STEP$ # 0.2 for ten years (2/10), 0.4 for five years (2/5)
 }
+
+ad_astra_temple_job_scale = {
+	base = 0
+	modifier = {
+		OR = {
+			has_modifier = consecrated_quality_1
+			has_modifier = consecrated_quality_2
+		}
+		set = 1
+	}
+	modifier = {
+		OR = {
+			has_modifier = consecrated_quality_3
+			has_modifier = consecrated_quality_4
+		}
+		set = 2
+	}
+	modifier = {
+		NAND = {
+			exists = owner
+			owner = { is_spiritualist = yes }
+		}
+		mult = 0
+	}
+
+	[[ADD] add = $ADD$ ]
+}
+
+ad_astra_temple_scale = {
+	base = 0
+	modifier = {
+		has_modifier = consecrated_quality_1
+		set = 1
+	}
+	modifier = {
+		has_modifier = consecrated_quality_2
+		set = 2
+	}
+	modifier = {
+		has_modifier = consecrated_quality_3
+		set = 3
+	}
+	modifier = {
+		has_modifier = consecrated_quality_4
+		set = 4
+	}
+}
