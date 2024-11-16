@@ -26,13 +26,12 @@ tech_biorobotics_mastery = {
 		}
 		OR = {
 			has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
-			AND = {
-				has_stellaris_evolved = yes
-				has_technology = tech_tec_advanced_genemodding
-			}
-			AND = {
-				has_stellaris_evolved = yes
-				tec_has_any_genetic_ascension_finished = yes
+			inline_script = {
+				script = ad_astra_evolved_present
+				code = "
+					has_technology = tech_tec_advanced_genemodding
+					tec_has_any_genetic_ascension_finished = yes
+				"
 			}
 		}
 
@@ -98,13 +97,12 @@ tech_bionic_suit_technology = {
 		}
 		OR = {
 			has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
-			AND = {
-				has_stellaris_evolved = yes
-				has_technology = tech_tec_advanced_genemodding
-			}
-			AND = {
-				has_stellaris_evolved = yes
-				tec_has_any_genetic_ascension_finished = yes
+			inline_script = {
+				script = ad_astra_evolved_present
+				code = "
+					has_technology = tech_tec_advanced_genemodding
+					tec_has_any_genetic_ascension_finished = yes
+				"
 			}
 		}
 	}
@@ -290,9 +288,11 @@ tech_cynosural_ascension = {
 		}
 		OR = {
 			has_tradition = tr_psionics_finish
-			AND = {
-				has_stellaris_evolved = yes
-				tec_has_any_psionic_ascension_finished = yes
+			inline_script = {
+				script = ad_astra_evolved_present
+				code = "
+					tec_has_any_psionic_ascension_finished = yes
+				"
 			}
 		}
 	}
@@ -361,9 +361,11 @@ tech_phase_armor_technology = {
 		}
 		OR = {
 			has_tradition = tr_psionics_finish
-			AND = {
-				has_stellaris_evolved = yes
-				tec_has_any_psionic_ascension_finished = yes
+			inline_script = {
+				script = ad_astra_evolved_present
+				code = "
+					tec_has_any_psionic_ascension_finished = yes
+				"
 			}
 		}
 	}
