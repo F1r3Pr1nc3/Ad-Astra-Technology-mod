@@ -60,7 +60,19 @@ tech_bionic_engineering = {
 		"tech_colonization_4"
 	}
 	weight = @repeatableTechWeight
-	potential = { has_tradition = tr_genetics_resequencing }
+	potential = {
+		OR = {
+			has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+			AND = {
+				has_stellaris_evolved = yes
+				has_technology = tech_tec_advanced_genemodding
+			}
+			AND = {
+				has_stellaris_evolved = yes
+				tec_has_any_genetic_ascension_finished = yes
+			}
+		}
+	}
 	weight_modifier = {
 		factor = 0.5
 		modifier = { factor = @repatableTechFactor has_ascension_perk = ap_technological_ascendancy }
@@ -102,7 +114,15 @@ tech_shroud_force = {
 		"tech_colonization_4"
 	}
 	weight = @repeatableTechWeight
-	potential = { has_tradition = tr_psionics_finish }
+	potential = {
+		OR = {
+			has_tradition = tr_psionics_finish
+			AND = {
+				has_stellaris_evolved = yes
+				tec_has_any_psionic_ascension_finished = yes
+			}
+		}
+	}
 	weight_modifier = {
 		factor = 0.5
 		modifier = { factor = @repatableTechFactor has_ascension_perk = ap_technological_ascendancy }

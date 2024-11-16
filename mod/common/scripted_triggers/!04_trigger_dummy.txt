@@ -27,3 +27,32 @@ is_zofe_country = {
 }
 
 is_progenitor_empires = { always = no } # ACOT
+
+# Evolved
+tec_is_city_world = {
+	always = no
+}
+
+tec_is_relic_world = {
+	always = no
+}
+
+tec_is_ringworld = {
+	always = no
+}
+
+tec_is_habitat = {
+	always = no
+}
+
+tec_is_hive_world = {
+	always = no
+}
+
+tec_is_machine_world = {
+	always = no
+}
+
+has_stellaris_evolved = {
+	always = no
+}

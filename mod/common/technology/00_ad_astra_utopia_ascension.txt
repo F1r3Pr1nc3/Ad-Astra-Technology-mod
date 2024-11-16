@@ -24,7 +24,18 @@ tech_biorobotics_mastery = {
 			has_technology = tech_unified_research_hives
 			has_technology = tech_synchronized_research_networks
 		}
-		has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+		OR = {
+			has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+			AND = {
+				has_stellaris_evolved = yes
+				has_technology = tech_tec_advanced_genemodding
+			}
+			AND = {
+				has_stellaris_evolved = yes
+				tec_has_any_genetic_ascension_finished = yes
+			}
+		}
+
 	}
 	modifier = {
 		planet_jobs_produces_mult = 0.05
@@ -85,7 +96,17 @@ tech_bionic_suit_technology = {
 			has_technology = tech_unified_research_hives
 			has_technology = tech_synchronized_research_networks
 		}
-		has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+		OR = {
+			has_tradition = tr_genetics_resequencing # has_tradition = tr_genetics_resequencing
+			AND = {
+				has_stellaris_evolved = yes
+				has_technology = tech_tec_advanced_genemodding
+			}
+			AND = {
+				has_stellaris_evolved = yes
+				tec_has_any_genetic_ascension_finished = yes
+			}
+		}
 	}
 	prerequisites = {
 		"tech_powered_exoskeletons"
@@ -267,7 +288,13 @@ tech_cynosural_ascension = {
 			has_technology = tech_unified_research_hives
 			has_technology = tech_synchronized_research_networks
 		}
-		has_tradition = tr_psionics_finish
+		OR = {
+			has_tradition = tr_psionics_finish
+			AND = {
+				has_stellaris_evolved = yes
+				tec_has_any_psionic_ascension_finished = yes
+			}
+		}
 	}
 	modifier = {
 		planet_jobs_produces_mult = 0.05
@@ -332,7 +359,13 @@ tech_phase_armor_technology = {
 			has_technology = tech_unified_research_hives
 			has_technology = tech_synchronized_research_networks
 		}
-		has_tradition = tr_psionics_finish
+		OR = {
+			has_tradition = tr_psionics_finish
+			AND = {
+				has_stellaris_evolved = yes
+				tec_has_any_psionic_ascension_finished = yes
+			}
+		}
 	}
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.05
