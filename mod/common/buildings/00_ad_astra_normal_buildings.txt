@@ -67,7 +67,7 @@ building_grand_academy = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -75,14 +75,14 @@ building_grand_academy = {
 				regular_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_head_researcher
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -90,14 +90,14 @@ building_grand_academy = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -190,7 +190,7 @@ building_cynosural_beacon = {
 				secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -198,21 +198,21 @@ building_cynosural_beacon = {
 				regular_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_head_researcher
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -220,14 +220,14 @@ building_cynosural_beacon = {
 				count_half = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -316,7 +316,7 @@ building_cynosural_lighthouse = {
 				secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -324,21 +324,21 @@ building_cynosural_lighthouse = {
 				regular_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_head_researcher
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -346,14 +346,14 @@ building_cynosural_lighthouse = {
 				count_half = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -466,21 +466,21 @@ building_tectonic_foundry = {
 				regular_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_artisan
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -488,24 +488,21 @@ building_tectonic_foundry = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
-				script = jobs/tec_roboticist
+				script = jobs/tec_assembly
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
-					exists = owner
-					owner = { is_mechanical_empire = yes }
-				\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -611,21 +608,21 @@ building_starlift_foundry = {
 				regular_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_artisan
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -633,24 +630,21 @@ building_starlift_foundry = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
-				script = jobs/tec_roboticist
+				script = jobs/tec_assembly
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"
-					exists = owner
-					owner = { is_mechanical_empire = yes }
-				\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -755,21 +749,21 @@ building_stellar_foundry = {
 				regular_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_artisan
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -777,24 +771,21 @@ building_stellar_foundry = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
-				script = jobs/tec_roboticist
+				script = jobs/tec_assembly
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"
-					exists = owner
-					owner = { is_mechanical_empire = yes }
-				\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -900,21 +891,21 @@ building_colonial_agency_headquarters = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer
@@ -922,10 +913,10 @@ building_colonial_agency_headquarters = {
 				regular_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { is_mechanical_empire = no }
-				\\\"
+				\\\\\\\"
 			}
 		"
 	}
@@ -1035,7 +1026,7 @@ building_evolutionary_spire = {
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -1043,21 +1034,21 @@ building_evolutionary_spire = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer
@@ -1065,10 +1056,10 @@ building_evolutionary_spire = {
 				regular_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { is_mechanical_empire = no }
-				\\\"
+				\\\\\\\"
 			}
 		"
 	}
@@ -1172,7 +1163,7 @@ building_arcadian_garden = {
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -1180,21 +1171,21 @@ building_arcadian_garden = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer
@@ -1202,10 +1193,10 @@ building_arcadian_garden = {
 				regular_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { is_mechanical_empire = no }
-				\\\"
+				\\\\\\\"
 			}
 		"
 	}
@@ -1312,35 +1303,35 @@ building_planetary_forum = {
 				secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_culture_worker
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1441,42 +1432,42 @@ building_paradise_city = {
 				secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_culture_worker
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1570,35 +1561,35 @@ building_citadel_of_culture = {
 				secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_culture_worker
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1692,35 +1683,35 @@ building_universal_forum = {
 				secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_culture_worker
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1807,14 +1798,14 @@ building_corporate_megaforum = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_bureaucrat
@@ -1822,14 +1813,14 @@ building_corporate_megaforum = {
 				count_half = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1934,21 +1925,21 @@ building_jewel_city = {
 				secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_bureaucrat
@@ -1956,21 +1947,21 @@ building_jewel_city = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2061,21 +2052,21 @@ building_megacorp_citadel = {
 				secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_bureaucrat
@@ -2083,14 +2074,14 @@ building_megacorp_citadel = {
 				count_half = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2181,21 +2172,21 @@ building_megacorp_hyperforum = {
 				secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_bureaucrat
@@ -2203,14 +2194,14 @@ building_megacorp_hyperforum = {
 				count_half = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2325,7 +2316,7 @@ building_temple_city = {
 				count_half = 0.5
 				mult = value:ad_astra_temple_job_scale|ADD|7|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_clerk
@@ -2333,21 +2324,21 @@ building_temple_city = {
 				secondary_count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|1|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2477,7 +2468,7 @@ building_celestial_temple = {
 				count_half = 0.5
 				mult = value:ad_astra_temple_job_scale|ADD|14|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_clerk
@@ -2485,21 +2476,21 @@ building_celestial_temple = {
 				secondary_count = 1
 				mult = value:ad_astra_temple_job_scale
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2617,7 +2608,7 @@ building_celestial_city = {
 				count_half = 0.5
 				mult = value:ad_astra_temple_job_scale|ADD|14|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_clerk
@@ -2625,21 +2616,21 @@ building_celestial_city = {
 				secondary_count = 1
 				mult = value:ad_astra_temple_job_scale
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2705,28 +2696,28 @@ building_fortress_city = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2820,28 +2811,28 @@ building_planetary_citadel = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 6
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2927,28 +2918,28 @@ building_aegis_city = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 6
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3035,21 +3026,21 @@ building_panopticon_fortress = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3132,21 +3123,21 @@ building_overseer_spire = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3220,14 +3211,14 @@ building_vault_city = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_miner
@@ -3235,14 +3226,14 @@ building_vault_city = {
 				regular_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer
@@ -3250,7 +3241,7 @@ building_vault_city = {
 				regular_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3308,14 +3299,14 @@ building_orbital_command_district = {
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3457,21 +3448,21 @@ building_gene_forge_spires = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3551,25 +3542,25 @@ building_arsenal_command_terminal = {
 				job_soldier_add = -3
 			}
 			inline_script = {
-				script = jobs/tec_roboticist
+				script = jobs/tec_assembly
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3662,7 +3653,7 @@ building_wyrmguard_citadel = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -3670,28 +3661,28 @@ building_wyrmguard_citadel = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3769,7 +3760,7 @@ building_alpha_fortress = {
 			planet_modifier = {
 				job_foundry_add = -2
 				job_researcher_add = -2
-				job_healthcare_add = -2
+				job_roboticist_add = -2
 				job_enforcer_add = -4
 				job_soldier_add = -7
 			}
@@ -3778,7 +3769,7 @@ building_alpha_fortress = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -3786,28 +3777,28 @@ building_alpha_fortress = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
-				script = jobs/tec_healthcare
+				script = jobs/tec_assembly
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -3895,7 +3886,7 @@ building_occulari_tower = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -3903,28 +3894,28 @@ building_occulari_tower = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_soldier
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4024,7 +4015,7 @@ building_interstellar_communication_array = {
 				count = 10
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4137,7 +4128,7 @@ building_interstellar_administrative_array = {
 				count = 15
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4246,7 +4237,7 @@ building_galactic_administrative_array = {
 				count = 20
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4408,7 +4399,7 @@ building_hydroponics_complex = {
 				machine_secondary_count = 3
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer_secondary
@@ -4417,7 +4408,7 @@ building_hydroponics_complex = {
 				machine_count = 2
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4547,7 +4538,7 @@ building_mining_ports = {
 				machine_secondary_count = 1
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_miner_secondary
@@ -4556,7 +4547,7 @@ building_mining_ports = {
 				machine_count = 1
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4715,7 +4706,7 @@ building_mining_port_complex = {
 				machine_secondary_count = 3
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_miner_secondary
@@ -4724,7 +4715,7 @@ building_mining_port_complex = {
 				machine_count = 2
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -4882,7 +4873,7 @@ building_reactor_complex = {
 				machine_secondary_count = 1
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician_secondary
@@ -4891,7 +4882,7 @@ building_reactor_complex = {
 				machine_count = 1
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5040,7 +5031,7 @@ building_reactor_megacomplex = {
 				machine_secondary_count = 3
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician_secondary
@@ -5049,7 +5040,7 @@ building_reactor_megacomplex = {
 				machine_count = 2
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5256,7 +5247,7 @@ building_medical_mega_facility = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5365,14 +5356,14 @@ building_planetary_security_facilities = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5472,14 +5463,14 @@ building_information_brokers = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5583,7 +5574,7 @@ building_academy_district = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -5591,7 +5582,7 @@ building_academy_district = {
 				regular_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -5599,7 +5590,7 @@ building_academy_district = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -5607,17 +5598,17 @@ building_academy_district = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { has_ascension_perk = ap_voidborn }
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5728,54 +5719,70 @@ building_foundry_district = {
 					job_artisan_add = -1
 				}
 			}
+
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { is_mechanical_empire = yes }
+				}
+				job_roboticist_add = -1
+			}
+
 			inline_script = {
 				script = jobs/tec_miner
 				regular_count = 1
 				regular_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { has_ascension_perk = ap_voidborn }
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_artisan
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_artisan
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { has_ascension_perk = ap_voidborn }
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -5877,7 +5884,7 @@ building_agency_operations_district = {
 				regular_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer
@@ -5886,41 +5893,41 @@ building_agency_operations_district = {
 				mult = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { has_ascension_perk = ap_voidborn }
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = { has_ascension_perk = ap_voidborn }
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6054,61 +6061,61 @@ building_orbital_forum = {
 				secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_entertainer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_social_megahubs
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_culture_worker
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_culture_worker
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_social_megahubs
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6250,7 +6257,7 @@ building_orbital_temple = {
 				count_half = 0.5
 				mult = value:ad_astra_temple_job_scale|ADD|7|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_priest_split
@@ -6258,13 +6265,13 @@ building_orbital_temple = {
 				count_half = 0.5
 				mult = 2
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_bastions_of_faith
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_clerk
@@ -6272,21 +6279,21 @@ building_orbital_temple = {
 				secondary_count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_healthcare
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|2|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = value:ad_astra_temple_job_scale|ADD|1|
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6390,54 +6397,54 @@ building_megacorp_orbital_forum = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_merchant
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_social_megahubs
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_bureaucrat
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_bureaucrat
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_social_megahubs
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6497,14 +6504,14 @@ building_expedition_headquarters = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_enforcer
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6598,14 +6605,14 @@ building_strategic_resource_silo = {
 				secondary_count = 4
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 2
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6718,14 +6725,14 @@ building_deep_strategic_resource_reserves = {
 				secondary_count = 5
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 3
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -6816,14 +6823,14 @@ building_universal_resource_reserves = {
 				secondary_count = 7
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 5
 				mult = 1
 				display = no_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}

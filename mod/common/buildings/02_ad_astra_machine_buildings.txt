@@ -55,7 +55,7 @@ building_omni_network_nodes = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -63,21 +63,21 @@ building_omni_network_nodes = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -85,7 +85,7 @@ building_omni_network_nodes = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -164,7 +164,7 @@ building_cynosural_uplink_node = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -172,21 +172,21 @@ building_cynosural_uplink_node = {
 				machine_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -194,7 +194,7 @@ building_cynosural_uplink_node = {
 				count_half = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -268,7 +268,7 @@ building_cynosural_uplink_nexus = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -276,21 +276,21 @@ building_cynosural_uplink_nexus = {
 				machine_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -298,7 +298,7 @@ building_cynosural_uplink_nexus = {
 				count_half = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -381,7 +381,7 @@ building_tectonic_forge = {
 				machine_secondary_count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -389,28 +389,28 @@ building_tectonic_forge = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_assembly
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -490,7 +490,7 @@ building_starlift_forge = {
 				machine_secondary_count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -498,28 +498,28 @@ building_starlift_forge = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_assembly
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -597,7 +597,7 @@ building_stellar_forge = {
 				machine_secondary_count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -605,28 +605,28 @@ building_stellar_forge = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_assembly
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -701,14 +701,14 @@ building_bio_analysis_core = {
 				machine_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -716,14 +716,14 @@ building_bio_analysis_core = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -805,14 +805,14 @@ building_bio_codex_core = {
 				machine_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -820,21 +820,21 @@ building_bio_codex_core = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -910,14 +910,14 @@ building_bio_codex_vault = {
 				machine_secondary_count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -925,21 +925,21 @@ building_bio_codex_vault = {
 				count_half = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1029,21 +1029,21 @@ building_signal_mirror_core = {
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1122,28 +1122,28 @@ building_quantum_core = {
 				machine_secondary_count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1215,28 +1215,28 @@ building_quantum_core_network = {
 				machine_secondary_count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 7
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1294,7 +1294,7 @@ building_adaptive_defence_core = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -1302,21 +1302,21 @@ building_adaptive_defence_core = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1399,7 +1399,7 @@ building_wartech_core = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -1407,21 +1407,21 @@ building_wartech_core = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 6
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1498,7 +1498,7 @@ building_interceptor_core = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -1506,21 +1506,21 @@ building_interceptor_core = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 6
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1591,14 +1591,14 @@ building_orbital_command_node = {
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1667,21 +1667,21 @@ building_arsenal_command_nexus = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 3
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 5
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1765,35 +1765,35 @@ building_alpha_core = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_assembly
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_foundry
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 4
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_warrior_drone
 				count = 8
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -1904,7 +1904,7 @@ building_orbital_research_uplink = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_technician
@@ -1912,21 +1912,21 @@ building_orbital_research_uplink = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -1934,7 +1934,7 @@ building_orbital_research_uplink = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher_split
@@ -1942,13 +1942,13 @@ building_orbital_research_uplink = {
 				count_half = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_synchronized_research_networks
 					}
-				\\\"
+				\\\\\\\"
 			}
 		"
 	}
@@ -2054,7 +2054,7 @@ building_foundry_unit = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_miner
@@ -2062,13 +2062,13 @@ building_foundry_unit = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_streamlined_megaproduction_synthetic
 					}
-				\\\"
+				\\\\\\\"
 			}
 
 			inline_script = {
@@ -2076,7 +2076,7 @@ building_foundry_unit = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 
 			inline_script = {
@@ -2084,7 +2084,7 @@ building_foundry_unit = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 
 			inline_script = {
@@ -2092,7 +2092,7 @@ building_foundry_unit = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 
 			inline_script = {
@@ -2100,20 +2100,20 @@ building_foundry_unit = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_streamlined_megaproduction_synthetic
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_assembly
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2212,7 +2212,7 @@ building_orbital_bio_analysis_unit = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_farmer
@@ -2220,20 +2220,20 @@ building_orbital_bio_analysis_unit = {
 				machine_secondary_count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_dedicated_organic_analysis_engines
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 
 			inline_script = {
@@ -2241,27 +2241,27 @@ building_orbital_bio_analysis_unit = {
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_researcher
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_dedicated_organic_analysis_engines
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2375,20 +2375,20 @@ building_orbital_mirror_core = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_evaluator
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_quantum_mirror_signalling
 					}
-				\\\"
+				\\\\\\\"
 			}
 
 			inline_script = {
@@ -2396,27 +2396,27 @@ building_orbital_mirror_core = {
 				count = 2
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_maintenance_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"
+				trigger = \\\\\\\"
 					exists = owner
 					owner = {
 						has_ascension_perk = ap_voidborn
 						has_technology = tech_quantum_mirror_signalling
 					}
-				\\\"
+				\\\\\\\"
 			}
 			inline_script = {
 				script = jobs/tec_patrol_drone
 				count = 1
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2479,7 +2479,7 @@ building_interstellar_coordination_array = {
 				count = 10
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2581,7 +2581,7 @@ building_interstellar_conflux_array = {
 				count = 15
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
@@ -2676,7 +2676,7 @@ building_galactic_network_array = {
 				count = 20
 				mult = 1
 				display = with_desc
-				trigger = \\\"\\\"
+				trigger = \\\\\\\"\\\\\\\"
 			}
 		"
 	}
