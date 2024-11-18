@@ -30,7 +30,12 @@ tech_bionic_material_engineering = {
 	is_rare = yes
 	prerequisites = { "tech_biomechanics" "tech_colonization_4" }
 	weight = @tier4cost2
-	potential = { is_machine_empire = yes }
+	potential = {
+		OR = {
+			is_machine_empire = yes
+			is_individual_machine = yes
+		}
+	}
 	modifier = {
 		army_health = 0.01
 		army_damage_mult = 0.01
@@ -39,7 +44,13 @@ tech_bionic_material_engineering = {
 		MACHINE_species_trait_points_add = 1
 	}
 	weight_modifier = {
-		modifier = { factor = 0 is_machine_empire = no }
+		modifier = {
+			factor = 0
+			OR = {
+				is_machine_empire = yes
+				is_individual_machine = yes
+			}
+		}
 		modifier = { factor = 0.1
 			NOR = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
@@ -72,7 +83,12 @@ tech_living_matter_theorem = {
 		"tech_advanced_metallurgy_2"
 	}
 	weight = @tier4cost2
-	potential = { is_machine_empire = yes }
+	potential = {
+		OR = {
+			is_machine_empire = yes
+			is_individual_machine = yes
+		}
+	}
 	modifier = {
 		army_health = 0.01
 		army_damage_mult = 0.01
@@ -86,7 +102,13 @@ tech_living_matter_theorem = {
 		BIOLOGICAL_species_trait_points_add = 1		# @tech_living_matter_theorem_megaproject_POINTS
 	}
 	weight_modifier = {
-		modifier = { factor = 0 is_machine_empire = no }
+		modifier = {
+			factor = 0
+			OR = {
+				is_machine_empire = yes
+				is_individual_machine = yes
+			}
+		}
 		modifier = { factor = 0.1
 			NOR = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }

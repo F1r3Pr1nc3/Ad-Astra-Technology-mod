@@ -35,6 +35,41 @@ building_deep_research_hives = {
 		}
 		job_cynosural_drone_hive_mind_add = 1
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_technician_drone_add = -2
+				job_patrol_drone_add = -1
+				job_brain_drone_add = -6
+			 }
+			inline_script = {
+				script = jobs/tec_technician
+				hive_count = 2
+				hive_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 6
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -94,6 +129,57 @@ building_cynosural_nexus = {
 		planet_researchers_produces_mult = 0.15
 		planet_technician_energy_produces_mult = 0.15
 	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_technician_drone_add = -2
+				job_maintenance_drone_add = -3
+				job_patrol_drone_add = -2
+				job_brain_drone_add = -7
+				job_synapse_drone_add = -1
+			 }
+			inline_script = {
+				script = jobs/tec_technician
+				hive_count = 2
+				hive_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 7
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -145,6 +231,57 @@ building_cynosural_link = {
 		job_synapse_drone_add = 1
 		planet_researchers_produces_mult = 0.2
 		planet_technician_energy_produces_mult = 0.2
+	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_technician_drone_add = -2
+				job_maintenance_drone_add = -3
+				job_patrol_drone_add = -2
+				job_brain_drone_add = -7
+				job_synapse_drone_add = -1
+			 }
+			inline_script = {
+				script = jobs/tec_technician
+				hive_count = 2
+				hive_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 7
+				count_half = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -206,6 +343,58 @@ building_tectonic_hive = {
 		}
 		job_starlift_drone_add = 1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_mining_drone_add = -2
+				job_alloy_drone_add = -3
+				job_brain_drone_add = -4
+				job_synapse_drone_add = -1
+				job_patrol_drone_add = -1
+			 }
+			inline_script = {
+				script = jobs/tec_miner
+				hive_count = 2
+				hive_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = { country_resource_max_add = 500 }
 	resources = {
 		category = planet_buildings
@@ -264,6 +453,66 @@ building_starlift_foundry_hive = {
 		planet_miners_minerals_produces_mult = 0.15
 		planet_metallurgists_produces_mult = 0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_mining_drone_add = -4
+				job_alloy_drone_add = -3
+				job_brain_drone_add = -4
+				job_synapse_drone_add = -1
+				job_maintenance_drone_add = -2
+				job_patrol_drone_add = -2
+			 }
+			inline_script = {
+				script = jobs/tec_miner
+				hive_count = 4
+				hive_secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	country_modifier = { country_resource_max_add = 1500 }
 	resources = {
 		category = planet_buildings
@@ -319,6 +568,67 @@ building_stellar_foundry_hive = {
 		planet_miners_minerals_produces_mult = 0.15
 		planet_metallurgists_produces_mult = 0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_mining_drone_add = -4
+				job_alloy_drone_add = -3
+				job_brain_drone_add = -4
+				job_synapse_drone_add = -1
+				job_maintenance_drone_add = -2
+				job_patrol_drone_add = -2
+			 }
+			inline_script = {
+				script = jobs/tec_miner
+				hive_count = 4
+				hive_secondary_count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	country_modifier = { country_resource_max_add = 1500 }
 	resources = {
 		category = planet_buildings
@@ -373,6 +683,59 @@ building_adaptation_hive = {
 		planet_farmers_food_produces_mult = 0.1
 		planet_pops_organics_food_upkeep_mult = -0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_agri_drone_add = -2
+				job_synapse_drone_add = -1
+				job_spawning_drone_add = -1
+				job_brain_drone_add = -2
+				job_patrol_drone_add = -2
+			 }
+			inline_script = {
+				script = jobs/tec_farmer
+				hive_count = 2
+				hive_secondary_count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -432,6 +795,58 @@ building_evolutionary_forge = {
 		planet_farmers_food_produces_mult = 0.15
 		planet_pops_organics_food_upkeep_mult = -0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_agri_drone_add = -6
+				job_synapse_drone_add = -2
+				job_spawning_drone_add = -1
+				job_brain_drone_add = -4
+				job_patrol_drone_add = -3
+			 }
+			inline_script = {
+				script = jobs/tec_farmer
+				hive_count = 6
+				hive_secondary_count = 6
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -483,6 +898,58 @@ building_hive_garden = {
 		job_patrol_drone_add = 3
 		planet_farmers_food_produces_mult = 0.2
 		planet_pops_organics_food_upkeep_mult = -0.2
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_agri_drone_add = -6
+				job_synapse_drone_add = -2
+				job_spawning_drone_add = -1
+				job_brain_drone_add = -4
+				job_patrol_drone_add = -3
+			 }
+			inline_script = {
+				script = jobs/tec_farmer
+				hive_count = 6
+				hive_secondary_count = 6
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 4
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -552,6 +1019,41 @@ building_synaptic_link = {
 		planet_jobs_unity_produces_mult = 0.1
 		pop_amenities_usage_no_happiness_mult = -0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -4
+				job_synapse_drone_add = -6
+				job_patrol_drone_add = -1
+			 }
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+	
 	prerequisites = { "tech_synaptic_beacons" }
 	upgrades = {
 		"building_synaptic_nexus"
@@ -608,6 +1110,40 @@ building_synaptic_nexus = {
 		planet_jobs_unity_produces_mult = 0.15
 		pop_amenities_usage_no_happiness_mult = -0.15
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -7
+				job_synapse_drone_add = -7
+				job_patrol_drone_add = -4
+			 }
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	prerequisites = { "tech_synaptic_hive_core" }
 	show_tech_unlock_if = { is_hive_empire = yes }
 	# ai_weight = { factor = 500 }
@@ -657,6 +1193,41 @@ building_uni_link_hive = {
 		planet_jobs_unity_produces_mult = 0.2
 		pop_amenities_usage_no_happiness_mult = -0.2
 	}
+
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -7
+				job_synapse_drone_add = -7
+				job_patrol_drone_add = -4
+			 }
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
 	prerequisites = { "tech_synaptic_hive_core" }
 	show_tech_unlock_if = { is_hive_empire = yes }
 	# ai_weight = { factor = 500 }
@@ -693,6 +1264,41 @@ building_greater_warrior_hive = {
 		job_warrior_drone_add = 5
 		planet_orbital_bombardment_damage = -0.05
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -2
+				job_patrol_drone_add = -2
+				job_warrior_drone_add = -5
+			 }
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_warrior_drone
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.1
 		army_defense_damage_mult = 0.1
@@ -754,6 +1360,41 @@ building_warrior_core = {
 		job_warrior_drone_add = 6
 		planet_orbital_bombardment_damage = -0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -2
+				job_patrol_drone_add = -4
+				job_warrior_drone_add = -6
+			 }
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_warrior_drone
+				count = 6
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.15
 		army_defense_damage_mult = 0.15
@@ -809,6 +1450,41 @@ building_swarm_core = {
 		job_warrior_drone_add = 6
 		planet_orbital_bombardment_damage = -0.1
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -2
+				job_patrol_drone_add = -4
+				job_warrior_drone_add = -6
+			 }
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_warrior_drone
+				count = 6
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.2
 		army_defense_damage_mult = 0.2
@@ -860,6 +1536,33 @@ building_orbital_war_hive = {
 		job_warrior_drone_add = 4
 		planet_orbital_bombardment_damage = -0.05
 	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_patrol_drone_add = -3
+				job_warrior_drone_add = -4
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_warrior_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
+	}
+
 	army_modifier = {
 		army_defense_health_mult = 0.1
 		army_defense_damage_mult = 0.1
@@ -906,6 +1609,31 @@ building_forced_evolution_spires = {
 		job_patrol_drone_add = 5
 		job_warrior_drone_add = 4
 		planet_orbital_bombardment_damage = -0.05
+	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_patrol_drone_add = -5
+				job_warrior_drone_add = -4
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 5
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_warrior_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	army_modifier = {
 		army_defense_health_mult = 0.1
@@ -967,6 +1695,56 @@ building_wyrmguard_citadel_hive = {
 		job_patrol_drone_add = 4
 		job_warrior_drone_add = 7
 		planet_orbital_bombardment_damage = -0.1
+	}
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_alloy_drone_add = -2
+				job_spawning_drone_add = -1
+				job_brain_drone_add = -2
+				job_patrol_drone_add = -4
+				job_warrior_drone_add = -7
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 4
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_warrior_drone
+				count = 7
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	country_modifier = {
 		army_health = 0.1
@@ -1039,7 +1817,72 @@ building_orbital_research_hive = {
 				has_technology = tech_unified_research_hives
 			}
 		}
-		modifier = { planet_housing_add = 2 job_brain_drone_add = 2 }
+		modifier = {
+			planet_housing_add = 2
+			job_brain_drone_add = 2
+		}
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_technician_drone_add = -1
+				job_patrol_drone_add = -1
+				job_brain_drone_add = -3
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_unified_research_hives
+					}
+				}
+				modifier = {
+					job_brain_drone_add = -2
+				}
+			}
+			inline_script = {
+				script = jobs/tec_technician
+				hive_count = 1
+				hive_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 3
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_unified_research_hives
+					}
+				\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -1103,7 +1946,104 @@ building_foundry_hive = {
 				has_technology = tech_streamlined_megaproduction_hive
 			}
 		}
-		modifier = { planet_housing_add = 2 job_mining_drone_add = 1 job_alloy_drone_add = 1 }
+		modifier = {
+			planet_housing_add = 2
+			job_mining_drone_add = 1
+			job_alloy_drone_add = 1
+		}
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_mining_drone_add = -1
+				job_alloy_drone_add = -1
+				job_brain_drone_add = -2
+				job_synapse_drone_add = -1
+				job_patrol_drone_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_streamlined_megaproduction_hive
+					}
+				}
+				modifier = {
+					job_mining_drone_add = -1
+					job_alloy_drone_add = -1
+				}
+			}
+			inline_script = {
+				script = jobs/tec_miner
+				hive_count = 1
+				hive_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_miner
+				hive_count = 1
+				hive_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_streamlined_megaproduction_hive
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+
+			inline_script = {
+				script = jobs/tec_foundry
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_streamlined_megaproduction_hive
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 2
+				count_half = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	country_modifier = { country_resource_max_add = 250 }
 	resources = {
@@ -1162,7 +2102,103 @@ building_orbital_mutation_hive = {
 				has_technology = tech_adaptive_hive_networks
 			}
 		}
-		modifier = { planet_housing_add = 2 job_agri_drone_add = 1 job_synapse_drone_add = 1 }
+		modifier = {
+			planet_housing_add = 2
+			job_agri_drone_add = 1
+			job_synapse_drone_add = 1
+		}
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_agri_drone_add = -1
+				job_synapse_drone_add = -1
+				job_spawning_drone_add = -1
+				job_brain_drone_add = -1
+				job_patrol_drone_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_adaptive_hive_networks
+					}
+				}
+				modifier = {
+					job_agri_drone_add = -1
+					job_synapse_drone_add = -1
+				}
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				hive_count = 1
+				hive_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_farmer
+				hive_count = 1
+				hive_secondary_count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_adaptive_hive_networks
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_adaptive_hive_networks
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_assembly
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings
@@ -1235,7 +2271,85 @@ building_orbital_synaptic_nexus = {
 				has_technology = tech_synaptic_beacons
 			}
 		}
-		modifier = { planet_housing_add = 2 job_maintenance_drone_add = 1 job_synapse_drone_add = 1 }
+		modifier = {
+			planet_housing_add = 2
+			job_maintenance_drone_add = 1
+			job_synapse_drone_add = 1
+		}
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_maintenance_drone_add = -2
+				job_synapse_drone_add = -3
+				job_patrol_drone_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_synaptic_beacons
+					}
+				}
+				modifier = {
+					job_maintenance_drone_add = -1
+					job_synapse_drone_add = -1
+				}
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_maintenance_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_synaptic_beacons
+					}
+				\\\\\\\"
+			}
+
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 3
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_synapse
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = {
+						has_ascension_perk = ap_voidborn
+						has_technology = tech_synaptic_beacons
+					}
+				\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+		"
 	}
 	prerequisites = { "tech_synaptic_beacons" }
 	show_tech_unlock_if = { is_hive_empire = yes }
@@ -1278,6 +2392,54 @@ building_expedition_vault = {
 			}
 		}
 		modifier = { job_calculator_add = 5 job_archeologist_machine_intelligence_add = 2 }
+	}
+
+	inline_script = {
+		script = ad_astra_ethic_mod_swap
+		vanilla = ""
+		bug_branch = ""
+		evolved = "
+			planet_modifier = {
+				job_patrol_drone_add = -1
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = { has_technology = tech_deep_space_expeditions }
+					owner = { is_hive_empire = yes }
+				}
+				modifier = { job_brain_drone_add = -5 }
+			}
+			triggered_planet_modifier = {
+				potential = {
+					exists = owner
+					owner = {
+						has_technology = tech_deep_space_expeditions
+						is_machine_empire = yes
+					}
+				}
+				modifier = { job_calculator_add = -5 }
+			}
+
+			inline_script = {
+				script = jobs/tec_patrol_drone
+				count = 1
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"\\\\\\\"
+			}
+			inline_script = {
+				script = jobs/tec_researcher_split
+				count = 5
+				count_half = 2
+				mult = 1
+				display = with_desc
+				trigger = \\\\\\\"
+					exists = owner
+					owner = { has_technology = tech_deep_space_expeditions }
+				\\\\\\\"
+			}
+		"
 	}
 	resources = {
 		category = planet_buildings

@@ -1,0 +1,9 @@
+# This is used till vanilla extracts the effects into inlines ideally
+# to update essentially copy most triggered stuff in `researcher` job
+
+triggered_country_modifier = {
+    modifier = {
+        country_naval_cap_add = 1
+    }
+    mult = planet.modifier:job_researcher_naval_cap_add
+}
