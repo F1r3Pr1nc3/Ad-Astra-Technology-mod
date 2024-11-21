@@ -272,7 +272,7 @@ colonial_agent = {
 		script = ad_astra_ethic_mod_swap
 		vanilla = "inline_script = jobs/ad_astra_vanilla_enforcer_effects"
 		evolved = "inline_script = jobs/effects/type/tec_enforcer_effect"
-		# atm none extra
+		# Atm none extra
 		bug_branch = "inline_script = jobs/ad_astra_vanilla_enforcer_effects"
 	}
 
@@ -354,8 +354,7 @@ colonial_agent = {
 		}
 		modifier = {
 			factor = 0.2
-			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOR = { has_citizenship_rights = yes has_trait = trait_mechanical }
 		}
 		modifier = {
 			factor = 2
@@ -460,7 +459,7 @@ strategic_command = {
 		script = ad_astra_ethic_mod_swap
 		vanilla = "inline_script = jobs/ad_astra_vanilla_enforcer_effects"
 		evolved = "inline_script = jobs/effects/type/tec_enforcer_effect"
-		# atm none extra
+		# Atm none extra
 		bug_branch = "inline_script = jobs/ad_astra_vanilla_enforcer_effects"
 	}
 
@@ -475,8 +474,7 @@ strategic_command = {
 
 		modifier = {
 			factor = 0.2
-			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOR = { has_citizenship_rights = yes has_trait = trait_mechanical }
 		}
 		modifier = {
 			factor = 2
@@ -598,8 +596,7 @@ salvager_crew = {
 
 		modifier = {
 			factor = 0.2
-			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOR = { has_citizenship_rights = yes has_trait = trait_mechanical }
 		}
 		modifier = {
 			factor = 2
@@ -884,7 +881,7 @@ colossi_artificer = {
 			factor = 5
 			has_job = colossi_artificer
 		}
-		# low income modifier
+		# Low income modifier
 		modifier = {
 			factor = 1.2
 			exists = planet
@@ -940,7 +937,7 @@ colossi_guardian = {
 		script = ad_astra_ethic_mod_swap
 		vanilla = "inline_script = jobs/ad_astra_vanilla_enforcer_effects"
 		evolved = "inline_script = jobs/effects/type/tec_enforcer_effect"
-		# atm none extra
+		# Atm none extra
 		bug_branch = "inline_script = jobs/ad_astra_vanilla_enforcer_effects"
 	}
 	# soldier
@@ -966,8 +963,7 @@ colossi_guardian = {
 		}
 		modifier = {
 			factor = 0.2
-			has_citizenship_rights = no
-			NOT = { has_trait = trait_mechanical }
+			NOR = { has_citizenship_rights = yes has_trait = trait_mechanical }
 		}
 		modifier = {
 			factor = 2
@@ -1242,7 +1238,7 @@ macro_synapse_drone = {
 		}
 		upkeep = { energy = 6 }
 	}
-	# patrol drone
+	# Patrol drone
 	pop_modifier = { pop_defense_armies_add = 2 }
 
 	planet_modifier = {

@@ -1,4 +1,4 @@
-# will be overwriten
+# Will be overwritten
 @has_stellaris_evolved = 0
 @has_bug_branch = 0
-# add other in case of compat
+# Add other in case of compat

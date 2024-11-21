@@ -27,6 +27,7 @@ is_zofe_country = {
 }
 
 is_progenitor_empires = { always = no } # ACOT
+is_giga_crisis_faction = { always = no } # Gigastructural Engineering & More
 
 # Evolved
 tec_is_city_world = {

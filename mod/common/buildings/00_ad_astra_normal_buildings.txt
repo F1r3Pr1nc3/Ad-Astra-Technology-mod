@@ -860,7 +860,7 @@ building_colonial_agency_headquarters = {
 		job_farmer_add = 2
 	}
 
-	# handles all the ruler swaps
+	# Handles all the ruler swaps
 	inline_script = {
 		script = buildings/regular_empire_capital_jobs
 		PRIMARY_JOB = 1
@@ -994,7 +994,7 @@ building_evolutionary_spire = {
 		}
 		job_farmer_add = 4
 	}
-	# handles all the ruler swaps
+	# Handles all the ruler swaps
 	inline_script = {
 		script = buildings/regular_empire_capital_jobs
 		PRIMARY_JOB = 2
@@ -4300,7 +4300,7 @@ building_hydroponics_complex = {
 			has_modifier = resort_colony
 		}
 
-		# evolved use evolved ones
+		# Evolved use evolved ones
 		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
@@ -4478,7 +4478,7 @@ building_mining_ports = {
 	category = resource
 	potential = {
 		NOT = { has_modifier = resort_colony }
-		# evolved use evolved ones
+		# Evolved use evolved ones
 		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
@@ -4486,7 +4486,7 @@ building_mining_ports = {
 		OR = {
 			has_modifier = resort_colony
 
-			# evolved use evolved ones
+			# Evolved use evolved ones
 			has_stellaris_evolved = yes
 		}
 	}
@@ -4630,14 +4630,14 @@ building_mining_port_complex = {
 	potential = {
 		NOT = { has_modifier = resort_colony }
 
-		# evolved use evolved ones
+		# Evolved use evolved ones
 		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
 
-			# evolved use evolved ones
+			# Evolved use evolved ones
 			has_stellaris_evolved = yes
 		}
 		# OR = {
@@ -4812,7 +4812,7 @@ building_reactor_complex = {
 	potential = {
 		NOT = { has_modifier = resort_colony }
 
-		# evolved use evolved ones
+		# Evolved use evolved ones
 		has_stellaris_evolved = no
 	}
 
@@ -4820,7 +4820,7 @@ building_reactor_complex = {
 		OR = {
 			has_modifier = resort_colony
 
-			# evolved use evolved ones
+			# Evolved use evolved ones
 			has_stellaris_evolved = yes
 		}
 	}
@@ -4967,14 +4967,14 @@ building_reactor_megacomplex = {
 	can_build = no
 	potential = {
 		NOT = { has_modifier = resort_colony }
-		# evolved use evolved ones
+		# Evolved use evolved ones
 		has_stellaris_evolved = no
 	}
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
 
-			# evolved use evolved ones
+			# Evolved use evolved ones
 			has_stellaris_evolved = yes
 		}
 	}

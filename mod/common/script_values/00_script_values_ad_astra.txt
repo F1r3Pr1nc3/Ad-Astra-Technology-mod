@@ -3,7 +3,7 @@ tech_age_likelihood = {
 	min = 0.1
 	max = 40
 	add = trigger:years_passed
-	subtract = $YEAR$ # effectively start year
+	subtract = $YEAR$ # Effectively start year
 	mult = $STEP$ # 0.2 for ten years (2/10), 0.4 for five years (2/5)
 }
 

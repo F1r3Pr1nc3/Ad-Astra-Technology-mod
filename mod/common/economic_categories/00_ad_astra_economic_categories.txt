@@ -1,441 +1,441 @@
-# following planet_knights, this inherits researchers, miners
+# Following planet_knights, this inherits researchers, miners
 planet_ad_astra_starlift_specialist = {
-    icon = job_starlift_specialist
-    parent = planet_jobs_productive
-    generate_mult_modifiers = {
-        produces
-        upkeep
+	icon = job_starlift_specialist
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
     }
-    generate_add_modifiers = {
-        produces
-        upkeep
+	generate_add_modifiers = {
+		produces
+		upkeep
     }
-    modifier_category = pop
+	modifier_category = pop
 
-    # Inherited Modifiers
-    triggered_produces_modifier = {
-        key = planet_researchers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_researchers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_miners
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_miners
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_miners
-        modifier_types = {
-            mult
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_miners
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
 }
 
-# following planet_knights, this inherits researchers, enforcers, farmers/miners depending on empire type
+# Following planet_knights, this inherits researchers, enforcers, farmers/miners depending on empire type
 planet_ad_astra_colonial_agent = {
-    icon = job_colonial_agent
-    parent = planet_jobs_productive
-    generate_mult_modifiers = {
-        produces
-        upkeep
+	icon = job_colonial_agent
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
     }
-    generate_add_modifiers = {
-        produces
-        upkeep
+	generate_add_modifiers = {
+		produces
+		upkeep
     }
-    modifier_category = pop
+	modifier_category = pop
 
-    # Inherited Modifiers
-    triggered_produces_modifier = {
-        key = planet_researchers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_researchers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_enforcers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_enforcers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_enforcers
-        modifier_types = {
-            mult
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_enforcers
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_farmer
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            exists = owner
-            owner = {
-                is_synthetic_empire = no
-                is_lithoid = no
-            }
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_farmer
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			exists = owner
+			owner = {
+				is_synthetic_empire = no
+				is_lithoid = no
+			}
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_farmer
-        modifier_types = {
-            mult
-        }
-        trigger = {
-            exists = owner
-            owner = {
-                is_synthetic_empire = no
-                is_lithoid = no
-            }
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_farmer
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			exists = owner
+			owner = {
+				is_synthetic_empire = no
+				is_lithoid = no
+			}
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_miners
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            exists = owner
-            owner = {
-                is_synthetic_empire = no
-                is_lithoid = yes
-            }
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_miners
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			exists = owner
+			owner = {
+				is_synthetic_empire = no
+				is_lithoid = yes
+			}
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_miners
-        modifier_types = {
-            mult
-        }
-        trigger = {
-            exists = owner
-            owner = {
-                is_synthetic_empire = no
-                is_lithoid = yes
-            }
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_miners
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			exists = owner
+			owner = {
+				is_synthetic_empire = no
+				is_lithoid = yes
+			}
+		}
+		use_parent_icon = yes
     }
 }
 
-# following planet_knights, this inherits enforcers, soldiers
+# Following planet_knights, this inherits enforcers, soldiers
 planet_ad_astra_strategic_command = {
-    icon = job_strategic_command
-    parent = planet_jobs_productive
-    generate_mult_modifiers = {
-        produces
-        upkeep
+	icon = job_strategic_command
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
     }
-    generate_add_modifiers = {
-        produces
-        upkeep
+	generate_add_modifiers = {
+		produces
+		upkeep
     }
-    modifier_category = pop
+	modifier_category = pop
 
-    # Inherited Modifiers
-    triggered_produces_modifier = {
-        key = planet_enforcers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_enforcers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_enforcers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_enforcers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_soldiers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_soldiers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_soldiers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_soldiers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
 }
 
-# following planet_knights, this inherits researchers, soldiers
+# Following planet_knights, this inherits researchers, soldiers
 planet_ad_astra_salvager_crew = {
-    icon = job_salvager_crew
-    parent = planet_jobs_productive
-    generate_mult_modifiers = {
-        produces
-        upkeep
+	icon = job_salvager_crew
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
     }
-    generate_add_modifiers = {
-        produces
-        upkeep
+	generate_add_modifiers = {
+		produces
+		upkeep
     }
-    modifier_category = pop
+	modifier_category = pop
 
-    # Inherited Modifiers
-    triggered_produces_modifier = {
-        key = planet_researchers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_researchers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_soldiers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_soldiers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_soldiers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_soldiers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
 }
 
 planet_ad_astra_colossi_artificer = {
-    icon = job_colossi_artificer
-    parent = planet_jobs_productive
-    generate_mult_modifiers = {
-        produces
-        upkeep
+	icon = job_colossi_artificer
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
     }
-    generate_add_modifiers = {
-        produces
-        upkeep
+	generate_add_modifiers = {
+		produces
+		upkeep
     }
-    modifier_category = pop
+	modifier_category = pop
 
-    # Inherited Modifiers
-    triggered_produces_modifier = {
-        key = planet_telepaths
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_telepaths
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_telepaths
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_telepaths
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_metallurgists
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_metallurgists
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_metallurgists
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_metallurgists
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_artisans
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_artisans
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_artisans
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_artisans
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
 }
 
 planet_ad_astra_colossi_guardian = {
-    icon = job_colossi_artificer
-    parent = planet_jobs_productive
-    generate_mult_modifiers = {
-        produces
-        upkeep
+	icon = job_colossi_artificer
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
     }
-    generate_add_modifiers = {
-        produces
-        upkeep
+	generate_add_modifiers = {
+		produces
+		upkeep
     }
-    modifier_category = pop
+	modifier_category = pop
 
-    # Inherited Modifiers
-    triggered_produces_modifier = {
-        key = planet_telepaths
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_telepaths
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_telepaths
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_telepaths
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_produces_modifier = {
-        key = planet_soldiers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_produces_modifier = {
+		key = planet_soldiers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
-    triggered_upkeep_modifier = {
-        key = planet_soldiers
-        modifier_types = {
-            mult
-            add
-        }
-        trigger = {
-            always = yes
-        }
-        use_parent_icon = yes
+	triggered_upkeep_modifier = {
+		key = planet_soldiers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
     }
 }

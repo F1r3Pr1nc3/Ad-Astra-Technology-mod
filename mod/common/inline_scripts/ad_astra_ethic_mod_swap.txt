@@ -1,25 +1,25 @@
-# in case something in evolved breaks just replace both `has_stellaris_evolved` with `0`
+# In case something in evolved breaks just replace both `has_stellaris_evolved` with `0`
 
 inline_script = {
-    script = _ad_astra_present
-    x = @[|has_stellaris_evolved + has_bug_branch - 1|]
-    code = "
-        $vanilla$
+	script = _ad_astra_present
+	x = @[|has_stellaris_evolved + has_bug_branch - 1|]
+	code = "
+		$vanilla$
     "
 }
 
 inline_script = {
-    script = _ad_astra_present
-    x = @[has_stellaris_evolved]
-    code = "
-        $evolved$
+	script = _ad_astra_present
+	x = @[has_stellaris_evolved]
+	code = "
+		$evolved$
     "
 }
 
 inline_script = {
-    script = _ad_astra_present
-    x = @[has_bug_branch]
-    code = "
-        $bug_branch$
+	script = _ad_astra_present
+	x = @[has_bug_branch]
+	code = "
+		$bug_branch$
     "
 }

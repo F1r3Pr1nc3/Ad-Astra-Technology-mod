@@ -1,6 +1,6 @@
 inline_script = {
-    script = _ad_astra_present
-    # ideally these should never be together
-    x = @[|has_stellaris_evolved + has_bug_branch - 1|]
-    code = "$code$"
+	script = _ad_astra_present
+	# Ideally these should never be together
+	x = @[|has_stellaris_evolved + has_bug_branch - 1|]
+	code = "$code$"
 }

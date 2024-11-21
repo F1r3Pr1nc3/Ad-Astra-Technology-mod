@@ -1,5 +1,5 @@
 inline_script = {
-    script = _ad_astra_present
-    x = @has_bug_branch
-    code = "$code$"
+	script = _ad_astra_present
+	x = @has_bug_branch
+	code = "$code$"
 }

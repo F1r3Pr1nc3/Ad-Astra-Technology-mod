@@ -1,44 +1,44 @@
 # This is used till vanilla extracts the effects into inlines ideally
-# to update essentially copy most triggered stuff in `warrior_drone` job
+# To update essentially copy most triggered stuff in `warrior_drone` job
 
 triggered_country_modifier = {
-    potential = {
-        planet = {
-            exists = owner
-            owner = { has_technology = "tech_ground_defense_planning" }
-        }
+	potential = {
+		planet = {
+			exists = owner
+			owner = { has_technology = "tech_ground_defense_planning" }
+		}
     }
-    modifier = {
-        country_naval_cap_add = 2
+	modifier = {
+		country_naval_cap_add = 2
     }
 }
 
 triggered_planet_modifier = {
-    modifier = {
-        planet_stability_add = 1
+	modifier = {
+		planet_stability_add = 1
     }
-    mult = planet.modifier:job_soldier_stability_add
+	mult = planet.modifier:job_soldier_stability_add
 }
 
 triggered_planet_modifier = {
-    potential = {
-        planet = {
-            exists = owner
-            owner = { has_tradition = "tr_modularity_3" }
-        }
+	potential = {
+		planet = {
+			exists = owner
+			owner = { has_tradition = "tr_modularity_3" }
+		}
     }
-    modifier = {
-        planet_stability_add = 0.25
+	modifier = {
+		planet_stability_add = 0.25
     }
 }
 
 triggered_country_modifier = {
-    potential = {
-        planet = {
-            has_deposit = d_abandoned_black_needle_base
-        }
+	potential = {
+		planet = {
+			has_deposit = d_abandoned_black_needle_base
+		}
     }
-    modifier = {
-        country_naval_cap_add = @abandoned_black_needle_base_naval_cap_from_soldier_job
+	modifier = {
+		country_naval_cap_add = @abandoned_black_needle_base_naval_cap_from_soldier_job
     }
 }

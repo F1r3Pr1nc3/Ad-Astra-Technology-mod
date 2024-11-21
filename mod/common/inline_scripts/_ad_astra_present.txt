@@ -1,4 +1,4 @@
 inline_script = {
-    script = _ad_astra_present_$x$
-    code = "$code$"
+	script = _ad_astra_present_$x$
+	code = "$code$"
 }
