@@ -9,7 +9,13 @@ is_endgame_crisis = {
 		is_country_type = synth_queen
 		is_country_type = awakened_synth_queen
 		is_country_type = synth_queen_storm
-		is_country_type = sbtg_stellarborne_empire # ACOT SBTG
+		# inline_script = { # ACOT SBTG
+		# 	script = merger_of_rules/toggled_code
+		# 	code = "
+		# 		is_country_type = sbtg_stellarborne_empire
+		# 	"
+		# 	toggle = @has_sbtg_mod
+		# }
 		inline_script = { # Gigastructural Engineering & More
 			script = merger_of_rules/toggled_code
 			code = "
@@ -27,7 +33,7 @@ is_crisis_faction = {
 		is_country_type = gray_goo
 		is_country_type = awakened_marauders
 		is_country_type = voidworms_crisis
-		# is_country_type = formless removed in v.3.12.3
+		# is_country_type = formless removed in v3.12.3
 		# is_cruel_abomination_country_type = yes # Cruel Conquerers
 		# is_country_type = darkness_country # Destiny: The Darkness Crisis
 		inline_script = { # Shroud Rising
