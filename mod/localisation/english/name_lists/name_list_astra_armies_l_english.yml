@@ -253,7 +253,7 @@
  MOL2_wyrmguard: "$ORD0$ Stormcrest Legion"
  MOL2_occulari_order: "$ORD0$ Mindstorm Command"
  MOL2_omega_fortress: "$ORD0$ Replicatan Bastion"
- MOL2_colossi_army:"$ORD0$ Legion" #
+ MOL2_colossi_army: "$ORD0$ Legion" #
  MOL2_xeno_reavers: "$ORD0$ Lobstrocity Vanguard"
  MOL2_augment_forces: "$ORD0$ Thrall Vanguard"
  MOL2_replicant_arsenal_force: "$ORD0$ Test-Tube Battlegroup"

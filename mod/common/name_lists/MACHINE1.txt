@@ -46,7 +46,7 @@ MACHINE1 = {
 			MACHINE1_SHIP_Replicator MACHINE1_SHIP_Founder MACHINE1_SHIP_Spawner MACHINE1_SHIP_Seeder MACHINE1_SHIP_Inductor MACHINE1_SHIP_Developer
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			MACHINE1_SHIP_Replicator MACHINE1_SHIP_Founder MACHINE1_SHIP_Spawner MACHINE1_SHIP_Seeder MACHINE1_SHIP_Inductor MACHINE1_SHIP_Developer
 		}
 

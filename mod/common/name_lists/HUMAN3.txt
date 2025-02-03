@@ -45,7 +45,7 @@ HUMAN3 = {
 			HUMAN3_SHIP_Achaea HUMAN3_SHIP_Belgica HUMAN3_SHIP_Germania HUMAN3_SHIP_Africa HUMAN3_SHIP_Aegyptus HUMAN3_SHIP_Anatolia HUMAN3_SHIP_Arabia HUMAN3_SHIP_Ariana HUMAN3_SHIP_Asia HUMAN3_SHIP_Britannia HUMAN3_SHIP_Caledonia HUMAN3_SHIP_Cilicia HUMAN3_SHIP_Gallia HUMAN3_SHIP_Dacia HUMAN3_SHIP_Cyrenaica HUMAN3_SHIP_Cambria HUMAN3_SHIP_Graecia HUMAN3_SHIP_Hispania HUMAN3_SHIP_Illyria HUMAN3_SHIP_Italia HUMAN3_SHIP_Libya HUMAN3_SHIP_Lusitania
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			HUMAN3_SHIP_Achaea HUMAN3_SHIP_Belgica HUMAN3_SHIP_Germania HUMAN3_SHIP_Africa HUMAN3_SHIP_Aegyptus HUMAN3_SHIP_Anatolia HUMAN3_SHIP_Arabia HUMAN3_SHIP_Ariana HUMAN3_SHIP_Asia HUMAN3_SHIP_Britannia HUMAN3_SHIP_Caledonia HUMAN3_SHIP_Cilicia HUMAN3_SHIP_Gallia HUMAN3_SHIP_Dacia HUMAN3_SHIP_Cyrenaica HUMAN3_SHIP_Cambria HUMAN3_SHIP_Graecia HUMAN3_SHIP_Hispania HUMAN3_SHIP_Illyria HUMAN3_SHIP_Italia HUMAN3_SHIP_Libya HUMAN3_SHIP_Lusitania
 		}
 

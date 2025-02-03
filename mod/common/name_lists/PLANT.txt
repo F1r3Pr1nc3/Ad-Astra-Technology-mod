@@ -44,7 +44,7 @@ PLANT = {
 			PLANT_SHIP_SeedCapsule PLANT_SHIP_FruitCarrier
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			PLANT_SHIP_SeedCapsule PLANT_SHIP_FruitCarrier
 		}
 

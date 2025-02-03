@@ -1,0 +1,1 @@
+@has_ad_astra_tech_mod = 1

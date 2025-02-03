@@ -103,14 +103,13 @@ building_cynosural_nexus = {
 	icon = building_cynosural_beacon
 	category = research
 	potential = {
-		merg_is_habitat = no
 		OR = {
 			merg_is_hive_world = yes
 			merg_is_arcology = yes
 		}
 		exists = owner
 		owner = { is_hive_empire = yes }
-		NOT = { has_building = building_cynosural_singularity }
+		NOR = { merg_is_habitat = yes has_building = building_cynosural_singularity }
 	}
 	convert_to = {
 		building_grand_academy
@@ -210,10 +209,9 @@ building_cynosural_link = {
 	category = research
 	potential = {
 		is_artificial = yes
-		merg_is_habitat = no
+		NOR = { merg_is_habitat = yes has_building = building_cynosural_singularity }
 		exists = owner
 		owner = { is_hive_empire = yes }
-		NOT = { has_building = building_cynosural_singularity }
 	}
 	convert_to = {
 		building_grand_academy
@@ -315,10 +313,9 @@ building_tectonic_hive = {
 	icon = building_tectonic_foundry
 	category = resource
 	potential = {
-		is_artificial = no
+		NOR = { is_artificial = yes has_building = building_atomic_forge }
 		exists = owner
 		owner = { is_hive_empire = yes }
-		NOT = { has_building = building_atomic_forge }
 	}
 	convert_to = {
 		building_tectonic_forge
@@ -1053,7 +1050,7 @@ building_synaptic_link = {
 			}
 		"
 	}
-	
+
 	prerequisites = { "tech_synaptic_beacons" }
 	upgrades = {
 		"building_synaptic_nexus"
@@ -2378,8 +2375,7 @@ building_expedition_vault = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_deep_space_expeditions }
-			owner = { is_hive_empire = yes }
+			owner = { has_technology = tech_deep_space_expeditions is_hive_empire = yes }
 		}
 		modifier = { job_brain_drone_add = 5 job_archeologist_hive_mind_add = 2 }
 	}
@@ -2405,8 +2401,7 @@ building_expedition_vault = {
 			triggered_planet_modifier = {
 				potential = {
 					exists = owner
-					owner = { has_technology = tech_deep_space_expeditions }
-					owner = { is_hive_empire = yes }
+					owner = { has_technology = tech_deep_space_expeditions is_hive_empire = yes }
 				}
 				modifier = { job_brain_drone_add = -5 }
 			}

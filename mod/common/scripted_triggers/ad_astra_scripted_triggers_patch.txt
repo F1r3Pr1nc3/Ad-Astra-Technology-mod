@@ -1,0 +1,65 @@
+# Vanilla override
+has_any_farming_district_or_buildings = {
+	OR = {
+		has_district = district_farming
+		has_district = district_rw_farming
+		has_district = district_farming_uncapped
+		has_building = building_hydroponics_farm
+		# Ad Astra
+		has_building = building_evolutionary_spire
+		has_building = building_hydroponics_complex
+		# Ad Astra Hive
+		has_building = building_adaptation_hive
+		has_building = building_evolutionary_forge
+		has_building = building_hive_garden
+		has_building = building_orbital_mutation_hive
+		# Ad Astra Machine
+		has_building = building_bio_analysis_core
+		has_building = building_bio_codex_core
+		has_building = building_bio_codex_vault
+		has_building = building_orbital_bio_analysis_unit
+		# Ad Astra FE
+		has_building = building_world_engine
+	}
+}
+has_any_generator_district_or_building = {
+	OR = {
+		has_district = district_generator
+		has_district = district_hab_energy
+		has_district = district_generator_uncapped
+		has_district = district_rw_generator
+		has_building = building_betharian_power_plant
+		# Ad Astra
+		has_building = building_reactor_complex
+		has_building = building_reactor_megacomplex
+	}
+}
+has_research_building = {
+	OR = {
+		has_building = building_research_lab_1
+		has_building = building_research_lab_2
+		has_building = building_research_lab_3
+		has_building = building_institute
+		has_building = building_supercomputer
+		has_building = building_astrometeorology_observation_center
+		# Ad Astra Normal
+		has_building = building_grand_academy
+		has_building = building_cynosural_beacon
+		has_building = building_cynosural_lighthouse
+		has_building = building_academy_district
+		has_building = building_expedition_headquarters
+		# Ad Astra Hive
+		has_building = building_deep_research_hives
+		has_building = building_cynosural_nexus
+		has_building = building_cynosural_link
+		has_building = building_orbital_research_hive
+		has_building = building_expedition_vault
+		# Ad Astra Machine
+		has_building = building_omni_network_nodes
+		has_building = building_cynosural_uplink_node
+		has_building = building_cynosural_uplink_nexus
+		has_building = building_orbital_research_uplink
+		# Ad Astra FE
+		has_building = building_cynosural_singularity
+	}
+}

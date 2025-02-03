@@ -48,7 +48,7 @@ HUMAN1 = {
 			HUMAN1_SHIP_Jamaica HUMAN1_SHIP_Macau HUMAN1_SHIP_Mozambique HUMAN1_SHIP_Philippines HUMAN1_SHIP_Somalia HUMAN1_SHIP_SriLanka HUMAN1_SHIP_Taiwan
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			HUMAN1_SHIP_Mayflower HUMAN1_SHIP_Abundance HUMAN1_SHIP_Bountiful HUMAN1_SHIP_Felicity HUMAN1_SHIP_Hope HUMAN1_SHIP_Opportunity HUMAN1_SHIP_Serenity HUMAN1_SHIP_Unity HUMAN1_SHIP_Destiny HUMAN1_SHIP_Britannia HUMAN1_SHIP_Byzantium HUMAN1_SHIP_Caledonia HUMAN1_SHIP_ElDorado HUMAN1_SHIP_Knossos HUMAN1_SHIP_Memphis
 			HUMAN1_SHIP_Olympus HUMAN1_SHIP_Persepolis HUMAN1_SHIP_SierradelaPlata HUMAN1_SHIP_Sparta HUMAN1_SHIP_Valhalla HUMAN1_SHIP_CrystalPalace HUMAN1_SHIP_Alaska HUMAN1_SHIP_Angola HUMAN1_SHIP_Australia HUMAN1_SHIP_Brazil HUMAN1_SHIP_Canada HUMAN1_SHIP_Congo HUMAN1_SHIP_Guinea HUMAN1_SHIP_India HUMAN1_SHIP_Indonesia
 			HUMAN1_SHIP_Jamaica HUMAN1_SHIP_Macau HUMAN1_SHIP_Mozambique HUMAN1_SHIP_Philippines HUMAN1_SHIP_Somalia HUMAN1_SHIP_SriLanka HUMAN1_SHIP_Taiwan

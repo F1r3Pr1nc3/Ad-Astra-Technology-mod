@@ -1,9 +1,8 @@
-version="1.2.1"
+version="1.2.2"
 name="Ad Astra Technology Mod"
 tags={
 	"Military"
 	"Technologies"
-	"Overhaul"
 }
 picture="thumbnail.png"
 supported_version="v3.14.*"

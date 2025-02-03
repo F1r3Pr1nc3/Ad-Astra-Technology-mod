@@ -24,10 +24,11 @@ The list of changes is fairly large, so a summary:
 [h2]LOCALIZATION[/h2][HR]
 The localization for the mod is [b]English[/b] and serves as a stopgap solution for all other localizations. If you want/have a localization patch, just put it on the Workshop (once verified, I’ll make room for the patch and provide a link for everyone else).
 • 🇷🇺 [url=//steamcommunity.com/sharedfiles/filedetails/2810284852]Rus Perevod – Creatoris[/url]
+• 🇨🇳 [url=//steamcommunity.com/sharedfiles/filedetails/3108330591]MC驻群星汉化 –  卡尔文迪斯梅特[/url]
 
 [h2]COMPATIBILITY[/h2][HR]
 This mod is 100% stand-alone, which means [i]vanilla files are unaffected[/i] (except of some name-lists). It should work with every single mod out there, barring a few extreme exceptions that I have yet to encounter. Savegame compatible, but not all empires may receive the special techs.
-– (since v3.14) Harmonized with [URL=//steamcommunity.com/sharedfiles/filedetails/2602025201]Stellaris Evolved[/URL]
+– (since v3.14) Harmonized with [URL=//www.youtube.com/watch?v=KVCEH3OaqLk]Stellaris Evolved[/URL]
 
 [h3]KNOWN ISSUES[/h3][HR]
 – You need to hover over a lot of the new technologies to see their effects, as many have a lot of bonuses (some may display as [b]0[/b], but their effects are still active). A few that add trait bonuses have the issue with modifier description (this may need to be reworked, consider it work in progress), but nothing major.
@@ -44,8 +45,9 @@ This mod is 100% stand-alone, which means [i]vanilla files are unaffected[/i] (e
 
 [h3]Credit[/h3]
 – [URL=//steamcommunity.com/profiles/76561197983010161]Phoenix Star[/URL] creating this mod
+– [URL=//steamcommunity.com/profiles/76561198858429698]FirePrince[/URL] maintaining this mod
 – [URL=//steamcommunity.com/profiles/76561198077276988]VittorioVeneto[/URL] Chinese (workshop)
-– [URL=//steamcommunity.com/sharedfiles/filedetails/2807759164]Inny [The Merger of Rules][/URL] (+workshop)
+– [URL=//steamcommunity.com/sharedfiles/filedetails/2807759164]Inny [The Merger of Rules][/URL] (workshop)
 – [URL=//steamcommunity.com/profiles/76561198156238638]MrRoAdd[/URL] (updating + compat Stellaris Evolved)
 
 [h3]Minor Recommendation[/h3]

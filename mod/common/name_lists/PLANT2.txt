@@ -44,7 +44,7 @@ PLANT2 = {
 			PLANT2_SHIP_Twig PLANT2_SHIP_Undulator PLANT2_SHIP_Whorler PLANT2_SHIP_Petiole
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			PLANT2_SHIP_Twig PLANT2_SHIP_Undulator PLANT2_SHIP_Whorler PLANT2_SHIP_Petiole
 		}
 

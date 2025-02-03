@@ -33,8 +33,7 @@ building_aegis_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_omni_fortress_engineering }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_omni_fortress_engineering is_fallen_empire = no }
 		}
 		job_strategic_command_add = 1
 		job_clerk_add = 1
@@ -46,8 +45,7 @@ building_aegis_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_world_scale_war_hives }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_world_scale_war_hives is_fallen_empire = no }
 		}
 		job_warmind_drone_add = 1
 		job_maintenance_drone_add = 2
@@ -58,8 +56,7 @@ building_aegis_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_omni_force_command }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_omni_force_command is_fallen_empire = no }
 		}
 		job_warmind_drone_add = 1
 		job_maintenance_drone_add = 1
@@ -133,8 +130,7 @@ building_atomic_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_starlift_operations }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_starlift_operations is_fallen_empire = no }
 		}
 		job_starlift_specialist_add = 1
 		job_miner_add = 4
@@ -147,8 +143,7 @@ building_atomic_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_starlift_operations_hive }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_starlift_operations_hive is_fallen_empire = no }
 		}
 		job_starlift_drone_add = 1
 		job_mining_drone_add = 4
@@ -162,8 +157,7 @@ building_atomic_forge = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_starlift_operations_synthetic }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_starlift_operations_synthetic is_fallen_empire = no }
 		}
 		job_starlift_drone_add = 1
 		job_mining_drone_add = 5
@@ -230,10 +224,7 @@ building_celestial_paradise = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_universal_forum }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = no }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_universal_forum is_spiritualist = no is_megacorp = no is_fallen_empire = no }
 		}
 		job_clerk_add = 4
 		job_entertainer_add = 5
@@ -245,10 +236,7 @@ building_celestial_paradise = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_the_celestial_beacons }
-			owner = { is_spiritualist = yes }
-			owner = { is_megacorp = no }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_the_celestial_beacons is_spiritualist = yes is_megacorp = no is_fallen_empire = no }
 		}
 		job_priest_add = 14
 		job_healthcare_add = 2
@@ -258,10 +246,7 @@ building_celestial_paradise = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_the_celestial_beacons }
-			owner = { is_spiritualist = yes }
-			owner = { is_megacorp = yes }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_the_celestial_beacons is_spiritualist = yes is_megacorp = yes is_fallen_empire = no }
 		}
 		job_priest_add = 14
 		job_healthcare_add = 2
@@ -271,10 +256,7 @@ building_celestial_paradise = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_galactic_megacorp_forums }
-			owner = { is_spiritualist = no }
-			owner = { is_megacorp = yes }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_galactic_megacorp_forums is_spiritualist = no is_megacorp = yes is_fallen_empire = no }
 		}
 		job_entertainer_add = 2
 		job_merchant_add = 2
@@ -285,8 +267,7 @@ building_celestial_paradise = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_synaptic_hive_core }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_synaptic_hive_core is_fallen_empire = no }
 		}
 		job_maintenance_drone_add = 7
 		job_synapse_drone_add = 7
@@ -297,8 +278,7 @@ building_celestial_paradise = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_quantum_ftl_entanglement }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_quantum_ftl_entanglement is_fallen_empire = no }
 		}
 		job_technician_drone_add = 3
 		job_evaluator_add = 7
@@ -362,8 +342,7 @@ building_cynosural_singularity = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_the_infinity_network }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_the_infinity_network is_fallen_empire = no }
 		}
 		job_cynosural_researcher_add = 1
 		job_clerk_add = 2
@@ -377,8 +356,7 @@ building_cynosural_singularity = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_the_infinity_network_hive }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_the_infinity_network_hive is_fallen_empire = no }
 		}
 		job_cynosural_drone_hive_mind_add = 1
 		job_technician_drone_add = 2
@@ -391,8 +369,7 @@ building_cynosural_singularity = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_the_infinity_network_synthetic }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_the_infinity_network_synthetic is_fallen_empire = no }
 		}
 		job_cynosural_drone_machine_intelligence_add = 1
 		job_patrol_drone_add = 2
@@ -463,8 +440,7 @@ building_world_engine = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_colonial_agency_megahubs }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_colonial_agency_megahubs is_fallen_empire = no }
 		}
 		job_colonial_agent_add = 1
 		job_farmer_add = 4
@@ -477,8 +453,7 @@ building_world_engine = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_adaptive_hive_cores }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_adaptive_hive_cores is_fallen_empire = no }
 		}
 		job_macro_synapse_drone_add = 1
 		job_agri_drone_add = 6
@@ -491,8 +466,7 @@ building_world_engine = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_technology = tech_bio_codexing }
-			owner = { is_fallen_empire = no }
+			owner = { has_technology = tech_bio_codexing is_fallen_empire = no }
 		}
 		job_macro_core_drone_add = 1
 		job_agri_drone_add = 4

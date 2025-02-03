@@ -30,10 +30,7 @@ arsenal_command_vehicle = {
 	}
 	potential = {
 		from = {
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {
@@ -109,10 +106,7 @@ augment_forces = {
 	}
 	potential = {
 		from = {
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {
@@ -157,10 +151,7 @@ replicant_arsenal_force = {
 	}
 	potential = {
 		from = {
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {
@@ -200,10 +191,7 @@ gene_vanguard_army = {
 	show_tech_unlock_if = { has_technology = tech_mobile_field_base }
 	potential = {
 		from = {
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {
@@ -310,10 +298,7 @@ wyrmguard = {
 	}
 	potential = {
 		from = {
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {
@@ -364,10 +349,7 @@ occulari_order = {
 				has_utopia = no
 				has_psionic_species_trait = yes
 			}
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {
@@ -477,10 +459,7 @@ colossi_army = {
 				has_utopia = no
 				has_psionic_species_trait = yes
 			}
-			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
-			}
+			is_robotic = no
 			is_sapient = yes
 		}
 		owner = {

@@ -46,7 +46,7 @@ MACHINE2 = {
 			MACHINE2_SHIP_ColonizationCarrier
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			MACHINE2_SHIP_ColonizationCarrier
 		}
 

@@ -237,10 +237,7 @@ tech_beacon_of_the_galaxy = {
 			OR = {
 				has_ethic = ethic_fanatic_xenophobe
 				has_civic = civic_inwards_perfection
-				has_civic = civic_fanatic_purifiers
-				has_civic = civic_hive_devouring_swarm
-				has_civic = civic_machine_terminator
-				has_civic = civic_barbaric_despoilers
+				is_unfriendly = yes
 			}
 		}
 	}

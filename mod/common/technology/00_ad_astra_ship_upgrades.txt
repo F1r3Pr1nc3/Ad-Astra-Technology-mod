@@ -1880,7 +1880,7 @@ tech_construction_ship_upgrade_1 = {
 		station_gatherers_produces_mult = 0.01
 		megastructure_build_speed_mult = 0.05
 		shipclass_constructor_build_speed_mult = -0.5
-		shipclass_constructor_build_cost_mult = 2
+		shipclass_constructor_build_cost_mult = 0.2
 	}
 	weight_modifier = {
 		modifier = { factor = 0.5
@@ -1923,7 +1923,7 @@ tech_construction_ship_upgrade_2 = {
 		station_gatherers_produces_mult = 0.01
 		megastructure_build_speed_mult = 0.05
 		shipclass_constructor_build_speed_mult = -0.5
-		shipclass_constructor_build_cost_mult = 2
+		shipclass_constructor_build_cost_mult = 0.2
 	}
 	weight_modifier = {
 		modifier = { factor = 0.5
@@ -1967,7 +1967,7 @@ tech_construction_ship_upgrade_3 = {
 		station_gatherers_produces_mult = 0.01
 		megastructure_build_speed_mult = 0.05
 		shipclass_constructor_build_speed_mult = -0.5
-		shipclass_constructor_build_cost_mult = 2
+		shipclass_constructor_build_cost_mult = 0.2
 	}
 	weight_modifier = {
 		modifier = { factor = 0.5
@@ -2010,7 +2010,7 @@ tech_construction_ship_upgrade_4 = {
 		station_gatherers_produces_mult = 0.02
 		megastructure_build_speed_mult = 0.05
 		shipclass_constructor_build_speed_mult = -0.5
-		shipclass_constructor_build_cost_mult = 2
+		shipclass_constructor_build_cost_mult = 0.2
 	}
 	weight_modifier = {
 		modifier = { factor = 0.5

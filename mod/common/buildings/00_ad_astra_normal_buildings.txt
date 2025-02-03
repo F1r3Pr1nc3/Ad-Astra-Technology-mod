@@ -507,7 +507,6 @@ building_tectonic_foundry = {
 		"
 	}
 
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -920,7 +919,7 @@ building_colonial_agency_headquarters = {
 			}
 		"
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -2272,7 +2271,6 @@ building_temple_city = {
 		mult = value:ad_astra_temple_scale
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2284,7 +2282,6 @@ building_temple_city = {
 		job_enforcer_add = 1
 		mult = value:ad_astra_temple_job_scale
 	}
-
 
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
@@ -2425,7 +2422,6 @@ building_celestial_temple = {
 		mult = value:ad_astra_temple_scale
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2437,7 +2433,6 @@ building_celestial_temple = {
 		job_enforcer_add = 1
 		mult = value:ad_astra_temple_job_scale
 	}
-
 
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
@@ -2565,7 +2560,6 @@ building_celestial_city = {
 		mult = value:ad_astra_temple_scale
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2577,7 +2571,6 @@ building_celestial_city = {
 		job_enforcer_add = 1
 		mult = value:ad_astra_temple_job_scale
 	}
-
 
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
@@ -2790,8 +2783,6 @@ building_planetary_citadel = {
 		job_soldier_add = 6
 		planet_orbital_bombardment_damage = -0.1
 	}
-
-
 
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
@@ -4672,7 +4663,6 @@ building_mining_port_complex = {
 		modifier = { planet_housing_add = 1 }
 	}
 
-
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
 		vanilla = ""
@@ -5232,7 +5222,7 @@ building_medical_mega_facility = {
 			merg_is_machine_world = yes
 		}
 	}
-	allow = { num_pops >= 50 }
+	allow = { num_sapient_pops >= 50 }
 	planet_modifier = { job_healthcare_add = 2 }
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
@@ -5291,7 +5281,7 @@ building_interstellar_travel_and_trade_hub = {
 			branch_office_owner = { has_valid_civic = civic_free_traders }
 		}
 	}
-	allow = { num_pops >= 50 }
+	allow = { num_sapient_pops >= 50 }
 	planet_modifier = {
 		trade_value_mult = 0.05
 		pop_growth_from_immigration = 0.15
@@ -5336,7 +5326,7 @@ building_planetary_security_facilities = {
 			branch_office_owner = { has_valid_civic = civic_private_military_companies }
 		}
 	}
-	allow = { num_pops >= 50 }
+	allow = { num_sapient_pops >= 50 }
 	planet_modifier = {
 		job_soldier_add = 1
 		job_enforcer_add = 1
@@ -5401,7 +5391,7 @@ building_local_media_megaplex = {
 			has_valid_civic = civic_media_conglomerate
 		}
 	}
-	allow = { num_pops >= 50 }
+	allow = { num_sapient_pops >= 50 }
 	planet_modifier = {
 		pop_government_ethic_attraction = 0.2
 		planet_stability_add = 5
@@ -5439,7 +5429,7 @@ building_information_brokers = {
 		has_branch_office = yes
 		branch_office_owner = { is_criminal_syndicate = yes }
 	}
-	allow = { num_pops >= 50 }
+	allow = { num_sapient_pops >= 50 }
 	planet_modifier = {
 		planet_crime_add = 50
 		planet_stability_add = 5
@@ -5856,7 +5846,6 @@ building_agency_operations_district = {
 		}
 	}
 
-
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
 		vanilla = ""
@@ -6187,7 +6176,6 @@ building_orbital_temple = {
 		mult = value:ad_astra_temple_scale
 	}
 
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -6487,7 +6475,6 @@ building_expedition_headquarters = {
 		job_enforcer_add = 1
 		job_archeologist_regular_add = 2
 	}
-
 
 	inline_script = {
 		script = ad_astra_ethic_mod_swap
@@ -6796,7 +6783,6 @@ building_universal_resource_reserves = {
 		}
 		modifier = { job_maintenance_drone_add = 5 }
 	}
-
 
 	inline_script = {
 		script = ad_astra_ethic_mod_swap

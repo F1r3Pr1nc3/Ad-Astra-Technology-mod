@@ -47,7 +47,7 @@ MACHINE3 = {
 			MACHINE3_SHIP_ReplicationModule
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			MACHINE3_SHIP_ReplicationModule
 		}
 

@@ -718,7 +718,7 @@ tech_subdermal_stimulation_feeds = {
 	# Note to self - anyone researching this is fair game for a Neutronium Slug to the face. In-game, that is.
 	modifier = { planet_jobs_slave_produces_mult = 0.1 planet_crime_add = -5 pop_cat_slave_political_power = -0.05 }
 	weight_modifier = {
-		modifier = { factor = 2 any_owned_pop = { is_enslaved = yes } }
+		modifier = { factor = 2 count_enslaved_species = { count > 0 } }
 		modifier = { factor = 1.5
 			count_owned_pop = {
 				limit = { is_enslaved = yes }
@@ -762,7 +762,7 @@ tech_enhanced_motivational_tools = {
 	# Note to self - anyone researching this is fair game for a Neutronium Slug to the face. In-game, that is.
 	modifier = { planet_jobs_slave_produces_mult = 0.1 planet_crime_add = -5 pop_cat_slave_political_power = -0.05 }
 	weight_modifier = {
-		modifier = { factor = 2 any_owned_pop = { is_enslaved = yes } }
+		modifier = { factor = 2 count_enslaved_species = { count > 0 } }
 		modifier = { factor = 1.5
 			count_owned_pop = {
 				limit = { is_enslaved = yes }
@@ -1705,10 +1705,7 @@ tech_technological_uplift_mastery = {
 			OR = {
 				has_ethic = ethic_fanatic_xenophobe
 				has_civic = civic_inwards_perfection
-				has_civic = civic_fanatic_purifiers
-				has_civic = civic_hive_devouring_swarm
-				has_civic = civic_machine_terminator
-				has_civic = civic_barbaric_despoilers
+				is_unfriendly = yes
 			}
 		}
 		modifier = { factor = 4 is_xenophile = yes }

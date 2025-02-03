@@ -44,7 +44,7 @@ REP4 = {
 			REP4_SHIP_Aiku REP4_SHIP_Globi-Tsaru REP4_SHIP_Pururi-Tsaru REP4_SHIP_Orori-Tsaru REP4_SHIP_Aikiku-Tsaru REP4_SHIP_Glupp REP4_SHIP_Glorp-Kreck REP4_SHIP_Krisch REP4_SHIP_Krakki REP4_SHIP_Klosch REP4_SHIP_Klisch-Klosch REP4_SHIP_Krihi-Ruru REP4_SHIP_Uru-Ru REP4_SHIP_Grepp REP4_SHIP_Kimi-Tsaru REP4_SHIP_Vimi-Tsaru
 		}
 
-		sponsored_colonizer = { # needed when there are no generic names
+		sponsored_colonizer = { # Needed when there are no generic names
 			REP4_SHIP_Aiku REP4_SHIP_Globi-Tsaru REP4_SHIP_Pururi-Tsaru REP4_SHIP_Orori-Tsaru REP4_SHIP_Aikiku-Tsaru REP4_SHIP_Glupp REP4_SHIP_Glorp-Kreck REP4_SHIP_Krisch REP4_SHIP_Krakki REP4_SHIP_Klosch REP4_SHIP_Klisch-Klosch REP4_SHIP_Krihi-Ruru REP4_SHIP_Uru-Ru REP4_SHIP_Grepp REP4_SHIP_Kimi-Tsaru REP4_SHIP_Vimi-Tsaru
 		}
 

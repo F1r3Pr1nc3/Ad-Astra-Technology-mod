@@ -9,8 +9,14 @@ is_endgame_crisis = {
 		is_country_type = synth_queen
 		is_country_type = awakened_synth_queen
 		is_country_type = synth_queen_storm
-		is_country_type = sbtg_stellarborne_empire ## ACOT
-		is_giga_crisis_faction = yes ## Gigastructural Engineering & More
+		is_country_type = sbtg_stellarborne_empire # ACOT SBTG
+		inline_script = { # Gigastructural Engineering & More
+			script = merger_of_rules/toggled_code
+			code = "
+				is_giga_crisis_faction = yes
+			"
+			toggle = @has_gigastructures
+		}
 	}
 }
 
@@ -20,18 +26,30 @@ is_crisis_faction = {
 		is_endgame_crisis = yes
 		is_country_type = gray_goo
 		is_country_type = awakened_marauders
+		is_country_type = voidworms_crisis
 		# is_country_type = formless removed in v.3.12.3
 		# is_cruel_abomination_country_type = yes # Cruel Conquerers
 		# is_country_type = darkness_country # Destiny: The Darkness Crisis
-		# Shroud Rising
-		is_country_type = shroud_cult
-		is_country_type = shroud_entities
-		is_country_type = shroud_horrors
+		inline_script = { # Shroud Rising
+			script = merger_of_rules/toggled_code
+			code = "
+				is_country_type = shroud_horrors
+				is_country_type = shroud_entities
+				is_country_type = shroud_cult
+			"
+			toggle = @has_shroud_rising_mod
+		}
 		# Solar Storm
 		# is_country_type = abyssal_host_invaders_type
 		# is_country_type = SSAB_ab_country_v2
 		# is_country_type = SSAB_ab_remnant
-		# is_country_type = berserker_awoken_hive # The Sleeper
+		inline_script = { # The Sleeper
+			script = merger_of_rules/toggled_code
+			code = "
+				is_country_type = berserker_awoken_hive
+			"
+			toggle = @has_the_sleeper_mod
+		}
 	}
 }
 
@@ -42,6 +60,19 @@ is_pirate_country = {
 		is_country_type = dormant_marauders
 		is_country_type = ruined_marauders
 		is_pirate = yes # is_country_type = pirate
-		is_country_type = pirate_waves_country
+		inline_script = { # Realistic Pirates
+			script = merger_of_rules/toggled_code
+			code = "
+				is_country_type = pirate_waves_country
+			"
+			toggle = @has_realistic_pirates_mod
+		}
+		inline_script = { # Human Fallen Empires
+			script = merger_of_rules/toggled_code
+			code = "
+				is_country_type = hfe_pirate
+			"
+			toggle = @hfe_pirate_base_cost
+		}
 	}
 }
