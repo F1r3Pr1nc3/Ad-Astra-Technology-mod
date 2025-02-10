@@ -1,34 +1,5 @@
 # Irony this is a placeholder file please ignore it
 # For compatibility: Dummy triggers - to be overwritten by their respective mods.
-# HFE
-# hfe_trigger_insane_admiral_trait = {
-# 	always = no
-# 	# OR = {
-# 	# 	is_country_type = hfe_pirate
-# 	# 	has_valid_civic = hfe_civic_features_aggressive_diplomacy
-# 	# }
-# }
-# HFE
-# hfe_trigger_is_human_fallen = {
-# 	always = no
-# 	# OR = {
-# 	# 	has_country_flag = hfe_egypt
-# 	# 	has_country_flag = hfe_future
-# 	# 	is_country_type = hfe_fallen
-# 	# }
-# }
-# ZOFE
-# is_zofe_country = {
-# 	always = no
-# 	# OR = {
-# 	# 	is_country_type = ascended_empire
-# 	# 	is_country_type = lost_empire
-# 	# }
-# }
-
-# is_progenitor_empires = { always = no } # ACOT
-# is_giga_crisis_faction = { always = no } # Gigastructural Engineering & More
-
 # Evolved
 tec_is_city_world = {
 	always = no
