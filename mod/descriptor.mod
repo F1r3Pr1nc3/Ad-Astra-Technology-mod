@@ -1,4 +1,4 @@
-version="1.2.3"
+version="1.2.5"
 name="Ad Astra Technology Mod"
 tags={
 	"Military"

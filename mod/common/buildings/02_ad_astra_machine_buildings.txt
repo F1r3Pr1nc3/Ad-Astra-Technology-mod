@@ -2430,6 +2430,7 @@ building_orbital_mirror_core = {
 # Interstellar Coordination Array
 building_interstellar_coordination_array = {
 	base_buildtime = 480
+	capital = yes
 	base_cap_amount = 1
 	category = government
 	potential = {
@@ -2531,6 +2532,7 @@ building_interstellar_coordination_array = {
 # Interstellar Conflux Array
 building_interstellar_conflux_array = {
 	base_buildtime = 600
+	capital = yes
 	base_cap_amount = 1
 	can_build = no
 	category = government
@@ -2629,6 +2631,7 @@ building_interstellar_conflux_array = {
 # Galactic Network Array
 building_galactic_network_array = {
 	base_buildtime = 720
+	capital = yes
 	base_cap_amount = 1
 	can_build = no
 	category = government

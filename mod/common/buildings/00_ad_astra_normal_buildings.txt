@@ -3953,6 +3953,7 @@ building_occulari_tower = {
 # Interstellar Communication Array
 building_interstellar_communication_array = {
 	base_buildtime = 480
+	capital = yes
 	base_cap_amount = 1
 	category = government
 	potential = {
@@ -4064,6 +4065,7 @@ building_interstellar_communication_array = {
 # Interstellar Administrative Array
 building_interstellar_administrative_array = {
 	base_buildtime = 600
+	capital = yes
 	base_cap_amount = 1
 	can_build = no
 	category = government
@@ -4173,6 +4175,7 @@ building_interstellar_administrative_array = {
 # Galactic Administrative Array
 building_galactic_administrative_array = {
 	base_buildtime = 720
+	capital = yes
 	category = government
 	base_cap_amount = 1
 	can_build = no

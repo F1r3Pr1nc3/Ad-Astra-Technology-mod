@@ -12,7 +12,7 @@
 # @has_epap_mod = 0
 
 # # Additional Vanilla Buildings 2916082557
-# @has_avb_mod = 0
+@has_avb_mod = 0
 
 # # All Ascension Paths 2909582424
 # @aap_mod = 0
